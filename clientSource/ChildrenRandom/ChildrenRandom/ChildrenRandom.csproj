@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63E93C18-6497-4C66-A07C-E58C31D10D6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChildrenRandom</RootNamespace>
+    <AssemblyName>ChildrenRandom</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=11.7.0.0, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>E:\ChildrenRandomEdit\ChildrenRandomEdit\ChildrenRandomEdit\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockWebFromUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockWebFromUser.designer.cs">
+      <DependentUpon>BlockWebFromUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockWebQickSt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockWebQickSt.designer.cs">
+      <DependentUpon>BlockWebQickSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BockProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BockProgram.designer.cs">
+      <DependentUpon>BockProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectMySQL.cs" />
+    <Compile Include="ForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPass.designer.cs">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoad.designer.cs">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fptUpload.cs" />
+    <Compile Include="GetMac.cs" />
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryOfTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryOfTime.Designer.cs">
+      <DependentUpon>HistoryOfTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Idea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Idea.designer.cs">
+      <DependentUpon>Idea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LimitSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimitSoft.designer.cs">
+      <DependentUpon>LimitSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LockApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LockApp.Designer.cs">
+      <DependentUpon>LockApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFailed.designer.cs">
+      <DependentUpon>LoginFailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaHoa.cs" />
+    <Compile Include="MenuLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLogin.designer.cs">
+      <DependentUpon>MenuLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuOffical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOffical.Designer.cs">
+      <DependentUpon>MenuOffical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisChil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisChil.designer.cs">
+      <DependentUpon>RegisChil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestFailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestFailed.designer.cs">
+      <DependentUpon>RequestFailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestSuccess.designer.cs">
+      <DependentUpon>RequestSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapture.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status.designer.cs">
+      <DependentUpon>Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thanks.designer.cs">
+      <DependentUpon>Thanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tienich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tienich.designer.cs">
+      <DependentUpon>Tienich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TienIchKhac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TienIchKhac.designer.cs">
+      <DependentUpon>TienIchKhac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerSetting.designer.cs">
+      <DependentUpon>TimerSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSucess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSucess.designer.cs">
+      <DependentUpon>UpdateSucess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhenStartAg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhenStartAg.designer.cs">
+      <DependentUpon>WhenStartAg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSettingMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsSettingMain.designer.cs">
+      <DependentUpon>WindowsSettingMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockWebFromUser.resx">
+      <DependentUpon>BlockWebFromUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockWebQickSt.resx">
+      <DependentUpon>BlockWebQickSt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BockProgram.resx">
+      <DependentUpon>BockProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPass.resx">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoad.resx">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryOfTime.resx">
+      <DependentUpon>HistoryOfTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idea.resx">
+      <DependentUpon>Idea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimitSoft.resx">
+      <DependentUpon>LimitSoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LockApp.resx">
+      <DependentUpon>LockApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFailed.resx">
+      <DependentUpon>LoginFailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuLogin.resx">
+      <DependentUpon>MenuLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuOffical.resx">
+      <DependentUpon>MenuOffical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisChil.resx">
+      <DependentUpon>RegisChil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestFailed.resx">
+      <DependentUpon>RequestFailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestSuccess.resx">
+      <DependentUpon>RequestSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status.resx">
+      <DependentUpon>Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thanks.resx">
+      <DependentUpon>Thanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tienich.resx">
+      <DependentUpon>Tienich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TienIchKhac.resx">
+      <DependentUpon>TienIchKhac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerSetting.resx">
+      <DependentUpon>TimerSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSucess.resx">
+      <DependentUpon>UpdateSucess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhenStartAg.resx">
+      <DependentUpon>WhenStartAg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSettingMain.resx">
+      <DependentUpon>WindowsSettingMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402237706_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402267780_device_monitor_screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402268558_internt_web_technology-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402268836_openid_open_id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402269345_window_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402269492_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402305141_04_In_alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402305910_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402305910_key1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402383159_Typewriter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402383243_Typewriter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402383316_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402383343_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402383387_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402383449_business_namecard_contact_info_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402480409_checkmark-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402480470_cross-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402480855_circle_back_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402481053_checkmark-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402481067_editor_floopy-dish_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402481216_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402525696_circle_backup_time_history_recent_time-machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402525789_circle_add_plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402525918_editor_trash_delete_recycle_bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402526088_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402526413_Play1Disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402527022_519564-060_Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402527236_bulb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402527294_light_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402527362_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1402527407_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403166443_circle_clock_time_history_recent_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403166538_circle_clock_time_history_recent_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403166982_protect yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403167034_internt_web_technology-07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403167826_common_login_enter_signin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403167888_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403167993_note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403168409_08.Credit-Card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403195111_Restart-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403195239_Turn_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403281980_button_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ij04o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sidebar-Applications-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper-435586.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word0111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1404132100_smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1404132157_computer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1514 @@
+/*
+ Appota.com
+ CSS Framework 1.0.1
+ W: http://appota.com
+*/
+
+.tymRed {color:Red!important;}
+.tymPurple {color:Purple!important;}
+.tymGreen {color:Green!important;}
+.tymYellow {color:Yellow!important;}
+
+.red {color: red;}
+
+.noteInstall {position: absolute;width: 680px;z-index: 90000;font-size: 14px;-webkit-box-shadow: 0px 0px 10px 0px #666; -moz-box-shadow: 0px 0px 10px 0px #666;box-shadow: 0px 0px 10px 0px #666;}
+.noteInstall .closeNote {position: absolute;top:12px;right:10px;text-transform: uppercase;}
+.noteInstall .closeNote a {font-family:monospace;font-size: 16px;color: #ff0000;}
+
+/*Top*/
+#topPage {height:40px;padding: 0;margin:0 auto;position:fixed;top:0;left:0;right:0;z-index:999999;-webkit-box-shadow: 0px 0px 5px #111;border-bottom:1px #000 solid;
+-moz-box-shadow: 0px 0px 5px #111;
+box-shadow: 0px 0px 5px #111;
+background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 100%), url("http://appstore.vn/android/images/bg/bg-body.jpg");
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.1)), color-stop(100%,rgba(0, 0, 0, 0.7))), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0.7) 100%), url("http://appstore.vn/android/images/bg/bg-body.jpg");
+background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0.7) 100%), url("http://appstore.vn/android/images/bg/bg-body.jpg");
+background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0.7) 100%), url("http://appstore.vn/android/images/bg/bg-body.jpg");
+background-image: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0.7) 100%), url("http://appstore.vn/android/images/bg/bg-body.jpg");
+background-color: #343434;
+}
+
+.loginSocial {clear:both;overflow: hidden;}
+.loginSocial .line {text-decoration: line-through;color: #B1B1B1;margin:0 3px;font-size:50px;line-height:40px;position:relative;top:10px;}
+.loginSocial .titleSocial {text-align:center;font-size:13px;line-height:16px;margin-bottom:10px;}
+.loginSocial .selectSocial {font-size:11px;font-weight:bold;margin-bottom:10px;float: left;}
+.loginSocial .btSocial {overflow:hidden;float: right;position: relative;top:-5px;}
+.loginSocial .btSocial a {float:left;margin-left:3px;}
+.loginSocial .btSocial a:first-child {margin:0;}
+
+.user {float: right;margin: 7px 0 0 0;position: relative;z-index: 1000;}
+.user ul {margin:0;padding:0;list-style:none;}
+.user ul li {float:left;display:inline;margin:0;margin-left:5px;position:relative;padding:0;}
+
+.bxLag {display:none!important;}
+
+.user .bxUser a {margin:0!important; }
+.user .bxUser a:hover {color:#fff!important; }
+.user .bxUser a:first-child {-webkit-border-radius: 4px 0 0 4px!important; -moz-border-radius: 4px 0 0 4px!important; border-radius: 4px 0 0 4px!important; }
+.user .bxUser a:last-child {-webkit-border-radius: 0 4px 4px 0!important; -moz-border-radius:0 4px 4px 0!important; border-radius:0 4px 4px 0!important; }
+
+.user .bxUser .welcomeUser,
+.user .bxUser .descUser {background: rgba(255, 255, 255, 0.2);-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;color: #999;float: left;font-size: 12px;height: 26px;line-height: 26px;text-shadow: #000 0 -1px 0;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-image: initial;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;padding:0;margin:0;position:relative;float:left; }
+
+.user .bxUser .welcomeUser .itemUser span {background: url(http://appstore.vn/android/images/icon/user.png) no-repeat  center;display:inline-block;width:30px;height:26px;float:right;margin-left:5px;border-left:1px #111 solid;}
+.user .bxUser .welcomeUser .itemUser {display:inline-block;padding: 0 0 0 10px;color:#fff!important;display:inline-block;cursor:pointer;position:relative;color:#fff;}
+.user .bxUser .welcomeUser .itemUser b {margin-right:3px;}
+
+.user .bxUser .descUser  {margin-left:5px;float:left;padding: 0 0 0 8px;}
+.user .bxUser .descUser  a {display:inline-block;color:#fff;padding:0 5px 0 10px;border-left:1px #111 solid;}
+.user .bxUser .descUser  a:first-child {border:0 #111 solid;}
+.user .bxUser .descUser  .infoTYM {float:left;}
+.user .bxUser .descUser  .infoTYM:hover #mainTYM {display:block;}
+.user .bxUser .descUser  .infoMail {float:left;}
+.user .bxUser .descUser  .infoMail a {display:block;height:26px;}
+.user .bxUser .descUser .iTYM {background:url(http://appstore.vn/android/images/icon/tym.png) no-repeat center;width:20px;height:26px;display:block;text-indent:-9999px;}
+.user .bxUser .descUser .iGreen {background:url(http://appstore.vn/android/images/icon/tymGreen.png) no-repeat left center;}
+.user .bxUser .descUser .iRed {background:url(http://appstore.vn/android/images/icon/tymRed.png) no-repeat left center;}
+.user .bxUser .descUser .iPurple {background:url(http://appstore.vn/android/images/icon/tymPurple.png) no-repeat left center;}
+.user .bxUser .descUser .iYellow {background:url(http://appstore.vn/android/images/icon/tymYellow.png) no-repeat left center;}
+.user .bxUser .descUser .iMail {background:url(http://appstore.vn/android/images/icon/mail-2.png) no-repeat center;width:20px;text-align:center;position:relative;}
+.user .bxUser .descUser .iMail span {font-size:10px;text-shadow:0 0 0 #fff!important;display:block;width:12px;height:12px;background-color:#F00;line-height:12px;position:relative;top:-2px;right:-12px; -webkit-border-radius: 10px;  -moz-border-radius: 10px; border-radius: 10px;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;font-family:"Times New Roman", Times, serif;}
+
+#mainUser {position: absolute;top: 30px;right: 0;width: 221px;z-index:99999;}
+#mainUser .infoMember {color: #5B636A;z-index: 1500;-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);-moz-box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);-webkit-border-radius: 5px 0 5px 5px; -moz-border-radius: 5px 0 5px 5px;border-radius: 5px 0 5px 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;display: block;text-shadow: #fff 0 1px 0;}
+#mainUser .titleForm {height:30px;position:absolute;top:-30px;right:0;float:right;}
+#mainUser .titleForm a {color: #5B636A;z-index: 1500;display: block;height:30px;line-height:28px;float:right;padding: 0 ;text-transform:none;font-size:12px;-webkit-border-radius: 4px 4px 0 0!important; -moz-border-radius: 4px 4px 0 0!important;border-radius: 4px 4px 0 0!important;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;text-shadow: #fff 0 1px 0;background:#EBEBEB url(http://appstore.vn/android/images/icon/user_hover.png) no-repeat center 6px;width:30px;}
+#mainUser .infoMember .infoForm {padding:20px;overflow:hidden;clear:both;}
+#mainUser .infoMember .infoForm label {margin: 10px 0 2px 0;display: block;font-size:14px;font-weight:normal;}
+#mainUser .infoMember .infoForm #login_remember {margin: 20px 6px 0 0;float: left;display: inline;}
+#mainUser .infoMember .infoForm #login_remember_p {font-size: 11px;font-weight: normal;float: left;margin: 19px 0 20px 0;padding:0;}
+#mainUser .infoMember .infoForm .forgot-pwd {display: block;font-size: 11px;font-weight: normal;margin: 5px 0 0;outline: none;}
+#mainUser .infoMember .infoForm a:hover.forgot-pwd {color:#7B9726;}
+#mainUser .infoMember .infoForm input[type="submit"] {width: 250px;display: block;padding: 10px 0;text-align:center;}
+#mainUser .infoMember .infoForm input[type="text"], 
+#mainUser .infoMember .infoForm input[type="password"] {padding: 4px;margin: 0;width: 240px;font-size: 16px;}
+#mainUser .infoMember .infoForm input[type="text"], 
+#mainUser .infoMember .infoForm input[type="password"] {
+outline: none;color: #5C5E61;font: normal normal normal 21px/21px Arial, sans-serif;border: 1px solid #BFC3C7;
+background-color: #F5F6F9;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F6F9), to(#F9FBFD));
+background-image: -webkit-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -moz-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -ms-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -o-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: linear-gradient(top, #F5F6F9, #F9FBFD);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f9', EndColorStr='#f9fbfd');
+-moz-box-shadow: 0px 1px 0px white;-webkit-box-shadow: 0px 1px 0px white;box-shadow: 0px 1px 0px white;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-background-clip: padding;-webkit-background-clip: padding-box;background-clip: padding-box;}
+#mainUser .infoMember .infoForm input[type="submit"] {color: #555;font-weight: bold;font-size: 16px;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;padding: 10px 30px;border: 1px solid #CCC;border-bottom-color: #AAA;filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);background: #F6F6F6;background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;-moz-box-shadow: inset 0 0 1px #fff;-ms-box-shadow: inset 0 0 1px #fff;-webkit-box-shadow: inset 0 0 1px #fff;box-shadow: inset 0 0 1px #fff;border-image: initial;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;}
+#mainUser .infoMember .infoForm ul {margin:0;padding:0;list-style:none;}
+#mainUser .infoMember .infoForm ul li {display:block;color:#333;clear:both;padding:3px 0;border-top:1px #fff solid;border-bottom:1px #ccc solid;width:180px;}
+#mainUser .infoMember .infoForm ul li:first-child {border-top:0 #fff solid;}
+#mainUser .infoMember .infoForm ul li:last-child {border-bottom:0 #ccc solid;}
+#mainUser .infoMember .infoForm ul li a {color:#7B9726;display:block!important;font-size:14px;}
+#mainUser .infoMember .infoForm ul li a span {display:block!important;}
+#mainUser .infoMember .infoForm ul li a:hover {color:#333!important;}
+
+.welcomeUser #mainUser {display:none;}
+.welcomeUser:hover #mainUser {display:block;}
+
+#mainTYM {position: absolute;top: 30px;right: 30px;width: 201px;z-index:99999;display:none;}
+#mainTYM .infoMember {color: #5B636A;z-index: 1500;-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);-moz-box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);-webkit-border-radius: 5px 0 5px 5px; -moz-border-radius: 4px 0 4px 4px;border-radius: 4px 0 4px 4px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;display: block;text-shadow: #fff 0 1px 0;}
+#mainTYM .titleForm {height:30px;float:right;position:absolute;top:-30px;right:0;}
+#mainTYM .titleForm a {color: #5B636A;z-index: 1500;display: block;height:30px;line-height:28px;float:right;padding: 0 ;text-transform:none;font-size:12px;-webkit-border-radius: 5px 5px 0 0!important; -moz-border-radius: 5px 5px 0 0!important;border-radius: 5px 5px 0 0!important;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;text-shadow: #fff 0 1px 0;background:#EBEBEB url(http://appstore.vn/android/images/icon/tym_hover.png) no-repeat center 6px;width:34px;}
+#mainTYM .infoMember .infoForm {padding:20px;overflow:hidden;clear:both;}
+#mainTYM .infoMember .infoForm label {margin: 10px 0 2px 0;display: block;font-size:14px;font-weight:normal;}
+#mainTYM .infoMember .infoForm #login_remember {margin: 20px 6px 0 0;float: left;display: inline;}
+#mainTYM .infoMember .infoForm #login_remember_p {font-size: 11px;font-weight: normal;float: left;margin: 19px 0 20px 0;padding:0;}
+#mainTYM .infoMember .infoForm .forgot-pwd {display: block;font-size: 11px;font-weight: normal;margin: 5px 0 0;outline: none;}
+#mainTYM .infoMember .infoForm a:hover.forgot-pwd {color:#7B9726;}
+#mainTYM .infoMember .infoForm input[type="submit"] {width: 250px;display: block;padding: 10px 0;text-align:center;}
+#mainTYM .infoMember .infoForm input[type="text"], 
+#mainTYM .infoMember .infoForm input[type="password"] {padding: 4px;margin: 0;width: 240px;font-size: 16px;}
+#mainTYM .infoMember .infoForm input[type="text"], 
+#mainTYM .infoMember .infoForm input[type="password"] {
+outline: none;color: #5C5E61;font: normal normal normal 21px/21px Arial, sans-serif;border: 1px solid #BFC3C7;
+background-color: #F5F6F9;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F6F9), to(#F9FBFD));
+background-image: -webkit-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -moz-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -ms-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -o-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: linear-gradient(top, #F5F6F9, #F9FBFD);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f9', EndColorStr='#f9fbfd');
+-moz-box-shadow: 0px 1px 0px white;-webkit-box-shadow: 0px 1px 0px white;box-shadow: 0px 1px 0px white;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-background-clip: padding;-webkit-background-clip: padding-box;background-clip: padding-box;}
+#mainTYM .infoMember .infoForm input[type="submit"] {color: #555;font-weight: bold;font-size: 16px;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;padding: 10px 30px;border: 1px solid #CCC;border-bottom-color: #AAA;filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);background: #F6F6F6;background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;-moz-box-shadow: inset 0 0 1px #fff;-ms-box-shadow: inset 0 0 1px #fff;-webkit-box-shadow: inset 0 0 1px #fff;box-shadow: inset 0 0 1px #fff;border-image: initial;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;}
+#mainTYM .infoMember .infoForm ul {margin:0;padding:0;list-style:none;}
+#mainTYM .infoMember .infoForm ul li {display:block;color:#333;clear:both;padding:3px 0;border-top:1px #fff solid;border-bottom:1px #ccc solid;width:160px;}
+#mainTYM .infoMember .infoForm ul li:first-child {border-top:0 #fff solid;}
+#mainTYM .infoMember .infoForm ul li:last-child {border-bottom:0 #ccc solid;}
+#mainTYM .infoMember .infoForm ul li a {color:#7B9726;display:block!important;font-size:14px;text-align:right;}
+#mainTYM .infoMember .infoForm ul li a span {display:block!important;}
+#mainTYM .infoMember .infoForm ul li a:hover {color:#333!important;}
+
+#mainLogin {position: absolute;top: 30px;right: 0;width: 301px;display:none;z-index:99999;}
+#mainLogin .loginAppota {color: #5B636A;z-index: 1500;-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);-moz-box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);-webkit-border-radius: 5px 0 5px 5px; -moz-border-radius: 5px 0 5px 5px;border-radius: 5px 0 5px 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;display: block;position:relative;z-index:9999;}
+#mainLogin .titleForm {height:30px;position:absolute;top:-30px;float:right;right:0;z-index:999999;}
+#mainLogin .titleForm a {color: #5B636A;z-index: 1500;display: block;height:30px;line-height:28px;float:right;padding:0 10px 0 10px;font-weight:bold;text-transform:uppercase;font-size:12px;-webkit-border-radius: 4px 4px 0 0!important; -moz-border-radius: 4px 4px 0 0!important;border-radius: 4px 4px 0 0!important;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+#mainLogin .loginAppota .loginForm {padding:20px;}
+#mainLogin .loginAppota .loginForm label {margin: 10px 0 2px 0;display: block;font-size:14px;font-weight:normal;}
+#mainLogin .loginAppota .loginForm #login_remember {margin: 20px 6px 0 0;float: left;display: inline;}
+#mainLogin .loginAppota .loginForm #login_remember_p {font-size: 11px;font-weight: normal;float: left;margin: 19px 0 20px 0;padding:0;}
+#mainLogin .loginAppota .loginForm .forgot-pwd {display: block;font-size: 11px;font-weight: normal;margin: 5px 0 0;outline: none;}
+#mainLogin .loginAppota .loginForm a:hover.forgot-pwd {color:#7B9726;}
+#mainLogin .loginAppota .loginForm input[type="submit"] {width: 260px;display: block;padding: 10px 0;text-align:center;margin:0!important;}
+#mainLogin .loginAppota .loginForm input[type="text"], 
+#mainLogin .loginAppota .loginForm input[type="password"] {padding: 4px;margin: 0;width: 250px;font-size: 16px;}
+#mainLogin .loginAppota .loginForm input[type="text"], 
+#mainLogin .loginAppota .loginForm input[type="password"] {
+outline: none;color: #5C5E61;font: normal normal normal 21px/21px Arial, sans-serif;border: 1px solid #BFC3C7;
+background-color: #F5F6F9;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F6F9), to(#F9FBFD));
+background-image: -webkit-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -moz-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -ms-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -o-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: linear-gradient(top, #F5F6F9, #F9FBFD);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f9', EndColorStr='#f9fbfd');
+-moz-box-shadow: 0px 1px 0px white;-webkit-box-shadow: 0px 1px 0px white;box-shadow: 0px 1px 0px white;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-background-clip: padding;-webkit-background-clip: padding-box;background-clip: padding-box;}
+#mainLogin .loginAppota .loginForm input[type="submit"] {
+color: #555;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;border: 1px solid #CCC;border-bottom-color: #AAA;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);
+background: #F6F6F6;
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+border-image: initial;
+font-weight: bold;font-size: 16px;padding: 0 20px;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:40px;line-height:40px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+#mainLogin .loginAppota .loginForm input[type="submit"]:hover {
+background-image:  -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.05)),   color-stop(100%,rgba(0, 0, 0, 0.45)));
+background-image:  -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,rgba(0, 0, 0, 0.45) 100%);
+background-image:  -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -ms-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,   rgba(0, 0, 0, 0.45) 100%);
+background-image:  rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-color: #0088D5;
+color: #fff!important;
+border: 1px solid #004487;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+text-shadow: 0px -1px 1px #333!important;
+font-weight: bold;font-size: 16px;padding: 0 20px;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:40px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+
+.linkApp {padding:20px;overflow:hidden;font-size:12px;}
+.linkApp ul {margin:0 0 10px 0;padding:0;list-style:none;}
+.linkApp ul li {display:block;overflow:hidden;}
+.linkApp label {margin: 0 10px 0 0;display: block;font-size:14px;font-weight:bold;line-height:30px;}
+.linkApp a:hover.forgot-pwd {color:#7B9726;}
+.linkApp .formDialog {margin:0!important;}
+.linkApp .name {}
+
+.linkApp input[type="submit"] {display: block;padding: 5px 0;text-align:center;margin:0!important;}
+.linkApp input[type="text"], 
+.linkApp input[type="password"] {padding: 4px;margin: 0 0 0 0;width: 418px!important;font-size: 16px;clear:both;}
+.linkApp input[type="text"], 
+.linkApp input[type="password"] {
+outline: none;color: #5C5E61;font: normal normal normal 21px/21px Arial, sans-serif;border: 1px solid #BFC3C7;
+background-color: #F5F6F9;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F6F9), to(#F9FBFD));
+background-image: -webkit-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -moz-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -ms-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -o-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: linear-gradient(top, #F5F6F9, #F9FBFD);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f9', EndColorStr='#f9fbfd');
+-moz-box-shadow: 0px 1px 0px white;-webkit-box-shadow: 0px 1px 0px white;box-shadow: 0px 1px 0px white;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-background-clip: padding;-webkit-background-clip: padding-box;background-clip: padding-box;}
+.linkApp select {
+background: #F6F6F6;font-size: 13px;padding: 0;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;
+-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);
+-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);
+-webkit-box-shadow: 0 1px 0 white,inset 0 1px 1px rgba(0, 0, 0, .17);
+box-shadow: 0 1px 0 white,inset 0 1px 1px rgba(0, 0, 0, .17);
+-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;
+border-image: initial;width: 428px;margin-bottom: 10px;padding: 5px;height: 30px;text-indent: 0 0 0 #fff!important;}
+.recaptcha_input_area_text {line-height: normal!important;font-weight: normal!important;}
+.linkApp input[type="submit"]:hover  {
+color: #555!important;text-shadow: 0 1px 0 white!important;text-shadow: 0 0 0 transparent,0 1px 0 white;border: 1px solid #CCC;border-bottom-color: #AAA;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);
+background: #F6F6F6;
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+border-image: initial;
+font-weight: bold;font-size: 16px;padding: 0 ;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:40px;line-height:40px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;cursor:pointer;}
+.linkApp input[type="submit"]{color:#fff;
+background-image:  -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.05)),   color-stop(100%,rgba(0, 0, 0, 0.45)));
+background-image:  -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,rgba(0, 0, 0, 0.45) 100%);
+background-image:  -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -ms-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,   rgba(0, 0, 0, 0.45) 100%);
+background-image:  rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-color: #0088D5;
+color: #fff!important;
+border: 1px solid #004487;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+text-shadow: 0px -1px 1px #333!important;
+font-weight: bold;font-size: 16px;padding:0 ;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:40px;line-height:40px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;cursor:pointer;width:428px;}
+.linkApp .captcha input {width:180px!important;}
+
+.link-wrapper {white-space: nowrap;position:relative;top:-5px;left:5px;float: left;}
+.link-wrapper .install-button {border: 1px solid #dedede;color: #666;cursor: pointer;font-size: 14px;line-height: 1em;font-weight:bold;display:block;}
+.link-wrapper .install-button-price {border: 0 solid white;display: block;padding: 6px 20px;text-shadow:#fff 0 1px 0;}
+.link-wrapper .install-button-price {text-shadow:#666 0 -1px 0;}
+.link-wrapper .install-button{color: white;cursor: pointer;font-size: 14px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px; border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #005d7c;
+background-color: #33b5e5;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#33b5e5), to(#0099cc));
+background-image: -webkit-linear-gradient(top, #33b5e5, #0099cc);
+background-image: -moz-linear-gradient(top, #33b5e5, #0099cc);
+background-image: -ms-linear-gradient(top, #33b5e5, #0099cc);
+background-image: -o-linear-gradient(top, #33b5e5, #0099cc);
+background-image: linear-gradient(top, #33b5e5, #0099cc);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow:#666 0 -1px 1px;
+}
+
+.linkSupport {clear:both;padding-top:10px;}
+.linkSupport h4 {font-weight: normal;margin: 0;padding: 0;color: #666;}
+.linkSupport ul {margin: 0;padding: 0;list-style: none;}
+.linkSupport ul li {float: left;display: inline;margin-left: 7px;}
+.linkSupport ul li:first-child {margin: 0;}
+.linkSupport img {margin-top:10px;}
+#loginNav {width:1024px;margin:0 auto;height:40px;}
+
+#loginNav #search {display:none!important;}
+#loginNav a.button {background: rgba(255, 255, 255, 0.2);border:0 #000 solid;
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;
+box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;color: #999;float: left;font-size: 12px;font-weight: bold;height: 26px;line-height: 26px;padding: 0 10px;text-shadow: #000 0 -1px 0;text-transform: uppercase;border-image: initial;-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+#loginNav a:hover.button {color:#fff;}
+#loginNav #search img {margin-top: 3px;}
+#loginNav .lag {clear:both;}
+#loginNav .btLag img{position:relative;top:6px;}
+
+.subStore {float:left;}
+.subStore ul {margin:0;padding:0;list-style:none;overflow:hidden;height:40px;}
+.subStore ul li {display:inline;float:left;padding:0 ;height:37px;margin-top:3px;}
+.subStore ul li .imgBlock {display:none;}
+.subStore ul li .imgHover {display:block; opacity: 0.6;   filter: alpha(opacity=60); }
+.subStore ul li:hover .imgHover {display:none;}
+.subStore ul li:hover .imgBlock {display:block;}
+.subStore ul li img {width:30px;float:left;margin-top:3px;position:absolute;z-index:1000;}
+.subStore ul li span {float:left;line-height:37px;color:#666;font-weight:bold;font-size:12px;margin-left:30px;text-shadow:0 -1px 0 #000;}
+.subStore ul li:hover span {color:#fff;}
+.subStore ul li a {display:block;overflow:hidden;padding:0 12px 0 6px;}
+.subStore ul li.selected  {padding-top: 3px;margin-top:0;
+background-color: #3798FA;
+background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#3688FA), color-stop(0.50, #4DBAFC), to(#3688FA));
+background-image: -webkit-linear-gradient(left, #3688FA 20%, #4DBAFC 50%, #3688FA 80%);
+background-image:    -moz-linear-gradient(left, #3688FA 20%, #4DBAFC 50%, #3688FA 80%);
+background-image:     -ms-linear-gradient(left, #3688FA 20%, #4DBAFC 50%, #3688FA 80%);
+background-image:      -o-linear-gradient(left, #3688FA 20%, #4DBAFC 50%, #3688FA 80%);
+background-image:         linear-gradient(left, #3688FA 20%, #4DBAFC 50%, #3688FA 80%);
+-webkit-box-shadow: inset 0 1px 0 0 #60e5fe;
+-moz-box-shadow: inset 0 1px 0 0 #60e5fe;
+box-shadow: inset 0 1px 0 0 #60e5fe;}
+
+.subStore ul li.selected .imgHover {display:none;}
+.subStore ul li.selected .imgBlock {display:block;}
+.subStore ul li.selected span {color:#fff;}
+.subStore ul li.selected a {background-color:#222;-webkit-box-shadow: inset 0 -1px 10px rgba(0,0,0,.5);-moz-box-shadow: inset 0 -1px 10px rgba(0,0,0,.5);box-shadow: inset 0 -1px 10px rgba(0,0,0,.5);}
+
+#searchInput {float: left;height: 24px;position: relative;top:-2px;display:block!important;}
+#searchInput .searchQuery {	background: rgba(255, 255, 255, 0.2);border: 0 black solid;-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;color: #8C8C8C;float: left;font-size: 12px;font-weight: normal;height: 26px;padding: 0 10px;text-shadow: black 0 0 0;text-transform: none;border-image: initial;	-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;border-image: initial;width:200px;z-index:900;position:relative;top:2px;}
+#searchInput .searchButton {background:url(http://appstore.vn/android/images/icon/search.png) no-repeat center 0;width:40px;height:26px;position:absolute;right:0;top:0;border:0;cursor:pointer;z-index:1000;}
+#searchInput input {outline:0;}
+#searchInput:hover .searchQuery {	background: rgba(255, 255, 255, 0.5);border: 0 black solid;-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;color: #8C8C8C;}
+#searchInput .searchQuery:focus {	background: rgba(255, 255, 255, 1);border: 0 black solid;-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.3) inset;color: #333;}
+
+.dialog_search #searchInput {height: auto!important;position: relative;top:0!important;}
+
+.buttonUser {display:block;height:32px;text-align:center;color:#ccc!important;font-size:12px;line-height:32px;padding:0 10px;margin-left:5px;-webkit-border-radius: 5px;     -moz-border-radius: 5px;border-radius: 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;position:relative;font-weight: bold;text-align: center;font-size: 12px;text-shadow: -1px -1px black;float:left;
+background-image: -moz-linear-gradient(top, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -o-linear-gradient(top, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -ms-linear-gradient(top, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: linear-gradient(top, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-color: #343434;
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);}
+.buttonUser img {vertical-align:middle;margin-right:5px;}
+.buttonUser span {float:left;}
+
+#navHeader {/*background:url(http://appstore.vn/android/images/bg/tabTop.png) no-repeat center top;*/margin:0 auto;position:relative;width:1024px;margin-top:44px;}
+#navHeader #navTop {height:105px;padding-top:15px;}
+
+#topStore {width:1024px;margin:0 auto;}
+.iconPage {float:left;height:87px;width:400px;}
+
+.iconStore {float:right;height:78px;padding: 6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;overflow: hidden;-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 #444;-webkit-box-shadow: inset 1px 1px 2px #000, inset -1px -1px 0 #444;box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(255,255,255,0.15);position:relative;right:0;}
+.iconStore ul {margin:0;padding:0;list-style:none;}
+.iconStore ul li {float:left;display:inline;width:100px;height:78px;margin-left:6px;}
+.iconStore ul li:first-child {margin-left:0;}
+.iconStore a {display:block;width:100px;height:78px;text-align:center;color:#fff;font-size:12px;-webkit-border-radius: 5px;     -moz-border-radius: 5px;border-radius: 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;position:relative;color: #8C8C8C;font-weight: bold;float: left;text-align: center;font-size: 12px;text-shadow: -1px -1px black;text-transform: uppercase;
+background-image: -moz-linear-gradient(top, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -o-linear-gradient(top, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: -ms-linear-gradient(top, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-image: linear-gradient(top, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%), url("http://appstore.vn/android/images/tab/nav-item-pattern.png");
+background-color: #343434;
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+
+}
+.iconStore a:hover,
+.iconStore a.selected  {background: #7F9B15 url("http://appstore.vn/android/images/tab/noise.jpg") repeat 0 0;
+background: url("http://appstore.vn/android/images/tab/noise.png") 0 0 repeat, -moz-linear-gradient(top, #7C9911 0%, #829E1C 50%, #739102 51%, #7F9B15 100%);
+background: url("http://appstore.vn/android/images/tab/noise.png") 0 0 repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7C9911), color-stop(50%,#829E1C), color-stop(51%,#739102), color-stop(100%,#7F9B15));
+background: url("http://appstore.vn/android/images/tab/noise.png") 0 0 repeat, -webkit-linear-gradient(top, #7C9911 0%,#829E1C 50%,#739102 51%,#7F9B15 100%);
+background: url("http://appstore.vn/android/images/tab/noise.png") 0 0 repeat, -o-linear-gradient(top, #7C9911 0%,#829E1C 50%,#739102 51%,#7F9B15 100%);
+background: url("http://appstore.vn/android/images/tab/noise.png") 0 0 repeat, -ms-linear-gradient(top, #7C9911 0%,#829E1C 50%,#739102 51%,#7F9B15 100%);
+background: url("http://appstore.vn/android/images/tab/noise.png") 0 0 repeat, linear-gradient(top, #7C9911 0%,#829E1C 50%,#739102 51%,#7F9B15 100%);
+color: white;
+-moz-box-shadow: inset 0 0 1px rgba(255,255,255,0.5), inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 4px rgba(0,0,0,0.6);
+-webkit-box-shadow: inset 0 0 1px rgba(255,255,255,0.5), inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 4px rgba(0,0,0,0.6);
+box-shadow: inset 0 0 1px rgba(255,255,255,0.5), inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 4px rgba(0,0,0,0.6);
+}
+.iconStore a img {margin:0 auto;margin-top:0;}
+.iconStore a span {position:absolute;width:100px;text-align:center;bottom:5px;left:0;right:0;font-weight:normal;text-transform:none;color: #8C8C8C;}
+.iconStore a:hover span,
+.iconStore a.selected span{color:#fff;}
+
+#tab-main {position:absolute;top:-48px;left:0;z-index:5000;}
+#tab-main li {float:left;display: inline;}
+#tab-main li a,
+#tab-main li a span {display:block;height:50px;line-height:50px;font-size:20px;font-weight:bold;text-shadow: 1px 1px 0 #fff;font-weight: bold;}
+#tab-main li a span {padding:0 50px;}
+#tab-main li.selected {background:url(http://appstore.vn/android/images/button/active-bg.png) repeat-x 0 0;}
+#tab-main li.selected a  {background:url(http://appstore.vn/android/images/button/active-lineL.png) no-repeat 0 0;}
+#tab-main li.selected a span {background:url(http://appstore.vn/android/images/button/active-lineR.png) no-repeat 100% 0;}
+
+/*Header*/
+#header {position: relative;z-index: 200;}
+#header .main-header {background-color: white;border-top: 1px solid #EDEDED;padding: 9px 0;overflow:hidden;}
+#logo {margin: 0;}
+#logo a {height: 87px;width: 300px;display:block;background-position:0 0;background-repeat:no-repeat!important;}
+#logo a img {height:87px;}
+#header .main-header #unit {width: 66.999%;float: right;margin: 0;}
+#header .main-header #unit #top-nav {margin-left: 0;margin-top: 14px;padding: 0;white-space: nowrap;float:left;width: 66.999%;}
+#header .main-header #unit #top-nav ul {float:right;margin:0;padding:0;list-style:none;}
+#header .main-header #unit #top-nav ul li {display:inline;float:left;border-right: 1px solid #DDD;margin: 9px 10px 5px 0!important;padding: 0 15px 0 5px;text-align: left;}
+#header .main-header #unit #top-nav ul li.selected a{color: #88B131;}
+#header .main-header #unit #top-nav ul li:last-child {border-right: 0 solid #DDD;}
+#header .main-header #unit #search {float:right;margin: 16px 10px 0 5px;}
+#header .main-header #unit #search #search-box{border: 1px solid #BCBDC1;height: 17px;padding: 4px 0 4px 4px;width: 190px;}
+#header .main-header #unit #search #search-text {border: none;float: left;height: 17px;outline: none;padding: 0;width: 164px;}
+#header .main-header #unit #search #search-button {background: no-repeat url(http://appstore.vn/android/images/button/search.png) 0 0;border: none;cursor: pointer;float: left;height: 17px;outline: none;width: 17px;}
+
+
+/*banner top*/
+.clearfix {clear:both;}
+#banner-top {background: #262626;background: rgba(0, 0, 0, 0.1);-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;clear:both;margin:0 auto;width:1024px;}
+#banner-top .slide-banner {margin:0 auto;width:1014px;padding:5px 0 0 0;}
+
+#banner-top .list_carousel {width: 1014px;height:325px;	margin:0 auto;position:relative;}
+#banner-top .list_carousel ul {	margin: 0;	padding: 0;list-style: none;display: block;overflow:hidden;	}
+#banner-top .list_carousel li {	text-align: center;width: 1014px;height: 320px;padding: 0;	margin: 0 auto;display:inline-block;float:left;position:relative;}
+#banner-top .list_carousel li img {width:1014px;height:320px;position:absolute;top:0;left:0;}
+
+#banner-top a.prev {float: left;background:url(http://appstore.vn/android/images/button/slide.png) no-repeat 0 0;display:block;width:28px;height:46px;text-indent:-9999px;position:absolute;top:150px;left:20px;opacity: 0.6;  filter: alpha(opacity=60);}
+#banner-top a:hover.prev {background:url(http://appstore.vn/android/images/button/slide.png) no-repeat 0 0;opacity: 1;  filter: alpha(opacity=100);}
+#banner-top a.next {float: right;background:url(http://appstore.vn/android/images/button/slide.png) no-repeat 0 -46px;display:block;width:28px;height:46px;text-indent:-9999px;position:absolute;top:150px;right:20px;opacity: 0.6;  filter: alpha(opacity=60);}
+#banner-top a:hover.next {background:url(http://appstore.vn/android/images/button/slide.png) no-repeat 0 -46px;opacity: 1;  filter: alpha(opacity=100);}
+
+.slide-banner .pager {position:absolute;top:290px;left:0;right:0}
+
+.pager {	text-align: center;	margin-top:10px;}
+.pager a {		background:url(http://appstore.vn/android/images/button/featured_bullet.png) no-repeat 0 0;display:inline-block;width:10px;height:10px;margin:0 3px;}
+.pager a span {display:block;text-indent:-9999px;}
+.pager a:hover {		background:url(http://appstore.vn/android/images/button/featured_bullet.png) no-repeat -10px 0;}
+.pager a.selected {	background:url(http://appstore.vn/android/images/button/featured_bullet.png) no-repeat -20px 0;}
+.timer {						height: 6px;				width: 0px;			}
+
+/*Pic Shots*/
+#shots-top {clear:both;margin:0 auto;width:660px;margin-top:20px;}
+#shots-top .slide-banner {margin:0 auto;width:660px;padding:5px 0 0 0;}
+
+#shots-top .list_carousel {width: 650px;margin:0 auto;position:relative;}
+#shots-top .list_carousel ul {	margin: 0;	padding: 0;list-style: none;display: block;	}
+#shots-top .list_carousel li {	text-align: center;width: 320px;padding: 0 5px 0 0;	margin: 0 auto;display:inline-block;float:left;}
+#shots-top .list_carousel li img {width:320px;}
+#shots-top #typepic1  {height:500px!important;}
+#shots-top #typepic1 .caroufredsel_wrapper,
+#shots-top #typepic1 ul,
+#shots-top #typepic1 li {height:480px!important;}
+#shots-top #typepic1 li img {width:320px;height:480px;}
+#shots-top #typepic2  {height:240px!important;}
+#shots-top #typepic2 .caroufredsel_wrapper,
+#shots-top #typepic2 ul,
+#shots-top #typepic2 li {height:213px!important;}
+#shots-top #typepic2 li img {width:320px;height:213px;}
+
+#shots-top a.prev {float: left;background:url(http://appstore.vn/android/images/button/slide.png) no-repeat 0 0;display:block;width:28px;height:46px;text-indent:-9999px;position:absolute;left:10px;opacity: 0.6;  filter: alpha(opacity=60);}
+#shots-top a:hover.prev {background:url(http://appstore.vn/android/images/button/slide.png) no-repeat 0 0;opacity: 1;  filter: alpha(opacity=100);}
+#shots-top a.next {float: right;background:url(http://appstore.vn/android/images/button/slide.png) no-repeat 0 -46px;display:block;width:28px;height:46px;text-indent:-9999px;position:absolute;right:15px;opacity: 0.6;  filter: alpha(opacity=60);}
+#shots-top a:hover.next {background:url(http://appstore.vn/android/images/button/slide.png) no-repeat 0 -46px;opacity: 1;  filter: alpha(opacity=100);}
+
+#typepic1 a.prev  {top:220px;}
+#typepic1 a.next  {top:220px;}
+#typepic2 a.prev  {top:90px;}
+#typepic2 a.next  {top:90px;}
+
+/*page*/
+.num-pagination-control {margin: 0;text-align:center;clear:both;}
+.num-pagination-previous {background: url(http://appstore.vn/android/images/icon/nav.png) no-repeat center 0;height: 16px;margin-right: 5px;width: 18px;}
+.num-pagination-next {background: url(http://appstore.vn/android/images/icon/nav.png) no-repeat center -16px;height: 16px;margin-left: 5px;width: 18px;}
+.num-pagination-page-button {cursor: pointer;font-size: 10pt;margin: 0 2px;padding: 1px 5px;vertical-align: middle;}
+.num-pagination-page-selected {background-color: #3a7ec7;color: white;cursor: default;padding: 0 4px 1px 3px;text-align: center;}
+.num-pagination-divider {margin: 0 5px;vertical-align: middle;}
+
+.pagination-pager .pagination-button, 
+.pagination-pager .pagination-pager-link {color: #555;}
+.pagination-button:active, 
+.pagination-button.pagination-button-toggled, 
+.pagination-button.pagination-button-toggled:hover, 
+.pagination-button.pagination-button-toggled:focus {color: #555;border: 1px solid #AAA;border-bottom-color: #CCC;border-top-color: #999;-moz-box-shadow: inset 0 1px 2px #aaa;-ms-box-shadow: inset 0 1px 2px #aaa;-webkit-box-shadow: inset 0 1px 2px #aaa;box-shadow: inset 0 1px 2px #aaa;filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#e6e6e6,EndColorStr=#dcdcdc);background-image: -moz-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);background-image: -ms-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);background-image: -o-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#e6e6e6),color-stop(100%,#dcdcdc));background-image: -webkit-linear-gradient(top,#e6e6e6 0,#dcdcdc 100%);background-image: linear-gradient(to bottom,#e6e6e6 0,#dcdcdc 100%);border-image: initial;}
+a.pagination-button {display: inline-block;line-height: 2.8em;height: 2.78em;}
+.pagination-button {padding:0 15px;height: 20px;border: 1px solid #CCC;color: black;background: #F6F6F6;background-image: -moz-linear-gradient(top,#ffffff,#efefef);background-image: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#efefef));filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#ffffff,endColorStr=#efefef);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;border-image: initial;}
+.pagination-button, 
+.yt-subscription-button.subscribed {color: #555;font-weight: bold;font-size: 12px;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;}
+.pagination-button:hover, 
+.pagination-button:active {filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #fff;-ms-box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #fff;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #fff;box-shadow: 0 1px 2px rgba(0,0,0,0.25),inset 0 0 3px #fff;}
+
+/*banner*/
+.banner-image-panel {padding: 20px;background-color:#fff;}
+.banner-image-panel img {width:705px;}
+/*Footer*/
+#footer {padding:  0;text-align:center;overflow:hidden;margin:0 auto;position:relative;width:1024px;clear:both;}
+#footer-in {width:1024px;margin:0 auto;}
+#footer .footer-link {margin:0 auto;text-shadow: 0 2px 1px rgba(0, 0, 0, .4);text-align:center;font-size: 14px;line-height:16px;color: #ccc;margin-bottom:10px;}
+#footer .footer-link a {color: #ccc;margin: 0 10px;text-shadow: 0 2px 1px rgba(0, 0, 0, .4);text-align:center;font-size: 14px;line-height:16px;}
+#sub-footer,
+#sub-footer a {color: #ccc;font-size: 14px;text-shadow: 0 1px 1px rgba(0, 0, 0, .85);}
+#sub-footer  {padding: 15px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px;overflow: hidden;-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 #444;-webkit-box-shadow: inset 1px 1px 2px #000, inset -1px -1px 0 #444;box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(255,255,255,0.15);position: relative;margin-bottom:20px;background: rgba(0, 0, 0, 0.24);}
+.sub-footer-link  {color: #3D3D3D;margin-left: 16px;text-decoration: none;}
+
+.socialSites {text-align:center;padding-top:50px;background:url(http://appstore.vn/android/images/bg/rb-footer.png) no-repeat center 24px;height:120px;clear:both;}
+.socialSites a.icon {display:inline-block;width: 70px;height: 70px;text-indent: -9999px;margin-right: 10px;background: url("http://appstore.vn/android/images/bg/social-icons.png") no-repeat 0 0;}
+.socialSites a.facebook {background-position: 0px 0!important;}
+.socialSites a.twitter {background-position: -70px 0!important;}
+
+.resources {clear:both;overflow:hidden;}
+.resources .title-list {color: #ccc;text-shadow: 0 2px 1px rgba(30, 30, 30, .4);text-align:left;font-size: 16px;line-height:16px;margin-bottom:10px;}
+.resources .item {float:left;margin-right:20px;width:185px;text-align:left;}
+.resources .item:last-child {margin:0!important;}
+.resources .item ul {margin:0;padding:0;list-style:none;}
+.resources .item ul li {text-align:left;}
+.resources .item ul li,
+.resources .item ul li a {color: #000;font-size: 14px;text-shadow: 0 1px 1px rgba(225, 225, 225, .15);}
+.resources .item ul li a:hover {color:#7B9726;text-shadow: 0 1px 1px rgba(0, 0, 0, .15);}
+/* Slide app */
+.coda-slider-no-js .coda-slider {overflow: auto !important; }
+
+/* Change the width of the entire slider (without dynamic arrows) */
+.coda-slider, .coda-slider .panel { width: 625px!important;} 	
+
+/* Preloader */
+.coda-slider p.loading { padding: 20px; text-align: center }
+
+
+/* Tabbed nav */
+.coda-nav  {float:left;position:absolute;left:20px;bottom:0;}
+.coda-nav ul { overflow: hidden;float:left;margin:0;padding:0;}
+.coda-nav ul li { display: inline;float:left; }
+.coda-nav ul li a { background:url(http://appstore.vn/android/images/icon/tabnav.png) no-repeat 0 0; color: #fff; display: block; float: left;height:16px;width:18px;}
+.coda-nav ul li a.current {  background:url(http://appstore.vn/android/images/icon/tabnav.png) no-repeat 0 -16px; }
+
+/* Miscellaneous */
+.coda-slider-wrapper { clear: both; overflow: auto }
+.coda-slider {  overflow: hidden; }
+.coda-slider .panel { display: block; float: left }
+.coda-slider .panel-container { position: relative }
+.coda-nav-left, 
+.coda-nav-right { float: left;width:18px;height:16px;position:absolute;bottom:0; }
+.coda-nav-left { left:0;bottom:0; }
+.coda-nav-right { left:63px;bottom:0; }
+.coda-nav-left a, .coda-nav-right a { display: block; text-align: center; text-decoration: none;text-indent:-9999px;width:18px;height:16px; }
+.coda-nav-left a {background: url(http://appstore.vn/android/images/icon/nav.png)  no-repeat 0 0;}
+.coda-nav-right a {background: url(http://appstore.vn/android/images/icon/nav.png)  no-repeat 0 -16px;}
+
+/*Popup*/
+/*Popup*/
+.dialog {padding:0;overflow:hidden;-moz-box-shadow: 0 0 5px rgba(0,0,0,.5);
+	  -webkit-box-shadow: 0 0 5px rgba(0,0,0,.5);
+	  box-shadow: 0 0 5px rgba(0,0,0,.5);-webkit-border-radius: 5px; border-radius: 5px;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.dialog .title-bx {
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+border-bottom: 1px #666 solid;
+	  -webkit-border-top-left-radius: 5px;
+	  border-top-left-radius: 5px;
+	  -moz-border-radius-topright: 5px;
+	  -webkit-border-top-right-radius: 5px;
+	  border-top-right-radius: 5px;
+	  background: #ededed;color: #333;text-shadow: 0 1px 0 #EEE;
+	  background-image: -webkit-gradient(linear,left top,left bottom,from(#ededed),to(#bbb));
+	  background-image: -webkit-linear-gradient(top,#ededed,#bbb);
+	  background-image: -moz-linear-gradient(top,#ededed,#bbb);
+	  background-image: -ms-linear-gradient(top,#ededed,#bbb);
+	  background-image: -o-linear-gradient(top,#ededed,#bbb);
+	  background-image: linear-gradient(top,#ededed,#bbb);}
+.dialog .title-bx h1 {font-size:14px;height:30px;line-height:30px;color:#333;padding:0;text-indent: 20px;}
+.dialog .content-bx {border: 0 solid #eee;overflow:hidden;color: #333;text-shadow: 0 1px 0 white;
+background: #ededed;
+-moz-border-radius-bottomleft: 5px;
+-webkit-border-bottom-left-radius: 5px;
+border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-webkit-border-bottom-right-radius: 5px;
+border-bottom-right-radius: 5px;position:relative;}
+
+.helpInstall {clear:both;position:absolute;left:20px;bottom:10px;display: none;}
+.helpInstall ul {margin:0;padding:0;list-style:none;}
+.helpInstall ul li {display:inline-block;float:left;margin-right:20px;}
+.helpInstall ul li a {text-decoration:none;color:#666;}
+.installApp {overflow:hidden;font-size:12px;}
+.installApp .itemInstall {width:580px;}
+
+.installApp .itemInstall .icon-container img {float: left;}
+.installApp .itemInstall .title-container {overflow:hidden;}
+.installApp .itemInstall .title-container .banner-title {font-size: 20px;font-weight: bold;line-height: 22px;overflow: hidden;width: 350px;}
+.installApp .itemInstall .title-container .banner-title .iconAudio {display:inline-block!important;float:none!important;vertical-align:middle;height:16px;width:16px;background:url(http://appstore.vn/android/images/ebook/audio-sm1.png) no-repeat 0 0;display:inline-block;}
+.installApp .itemInstall .title-container .header-link {font-size: 13px;clear:both;float: left;white-space: nowrap;text-overflow: ellipsis;max-width: 180px;overflow: hidden;}
+.installApp .itemInstall .title-container .uploadby {font-size: 13px;display:inline-block;color:#999;float: left;margin-left: 10px;border-left: 1px #999 solid;padding-left: 10px;white-space: nowrap;text-overflow: ellipsis;max-width: 180px;overflow: hidden;}
+.installApp .itemInstall .title-container .app-select {position:absolute;bottom:0;left:0;width:420px;height:70px;}
+.installApp .itemInstall .title-container .app-select select {max-width:90px;}
+.installApp .itemInstall .title-container .app-version {float:left;margin-right:10px;}
+.installApp .itemInstall .title-container .app-version .titleVer {line-height:30px;margin-right:5px;font-weight:bold;}
+.installApp .itemInstall .title-container .app-version select {background: #F6F6F6 ;font-size: 13px;padding: 0;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;padding:5px;height:30px;text-indent:0 0 0 #fff!important;outline:0;}
+.installApp .itemInstall .title-container .app-version select:disabled {color:#999;}
+.installApp .itemInstall .title-container .app-price {float: left;}
+.installApp .itemInstall .title-container .app-price span {font-size: 13px;clear:both;border: 1px solid #999;color: #666;-webkit-border-radius: 5px 0 0 5px;-moz-border-radius: 5px 0 0 5px;border-radius: 5px 0 0 5px;-moz-background-clip: padding;-webkit-background-clip: padding-box;background-clip: padding-box;
+background-color: #FDFDFD;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fdfdfd));
+background-image: -webkit-linear-gradient(top, #eee, #fdfdfd);
+background-image: -moz-linear-gradient(top, #eee, #eee);
+background-image: -ms-linear-gradient(top, #eee, #fdfdfd);
+background-image: -o-linear-gradient(top, #eee, #fdfdfd);
+background-image: linear-gradient(to bottom, #eee, #fdfdfd);float:left;display:block;padding:0 10px;font-weight:bold;text-shadow:#fff 0 1px 0;height:28px;line-height:28px;
+/*-webkit-box-shadow: -1px 1px 0px  #999; -moz-box-shadow: -1px 1px 0px  #999;box-shadow: -1px 1px 0px  #999;*/}
+
+.installApp .itemInstall .title-container .app-install {float:left;height:28px;line-height:28px;}
+.installApp .itemInstall .title-container .app-install a {display:block;padding:0 10px;height:28px;line-height:28px;}
+.installApp .itemInstall .title-container .app-install a span {display:block;font-weight:bold;}
+.installApp .itemInstall .title-container .app-install a {color: white;cursor: pointer;font-size: 14px;ldisplay:block;-webkit-border-radius: 0 5px 5px 0;      -moz-border-radius: 0 5px 5px 0; border-radius: 0 5px 5px 0; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #468000;
+background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#83B842), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow:#666 0 -1px 1px;
+}
+
+.installApp .itemInstall .title-container .app-download {float:left;height:28px;line-height:28px;margin-left:5px;}
+.installApp .itemInstall .title-container .app-download a {display:block;padding:0 10px;height:28px;line-height:28px;}
+.installApp .itemInstall .title-container .app-download a span {display:block;font-weight:bold;}
+.installApp .itemInstall .title-container .app-download a {color: white;cursor: pointer;font-size: 14px;ldisplay:block;-webkit-border-radius: 5px;      -moz-border-radius: 5px; border-radius: 5px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #468000;
+background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#83B842), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow:#666 0 -1px 1px;
+}
+
+#appbox2 .installApp .itemInstall .title-container .app-download a {-webkit-border-radius: 5px;      -moz-border-radius: 5px; border-radius: 5px;margin-left: 5px; }
+
+.installApp .itemInstall .title-container .app-install a:hover,
+.installApp .itemInstall .title-container .app-download a:hover {color: #629721;text-shadow: 0 1px 0 #fff;border: 1px solid #999;
+background-color: #ccc;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+background-image: -webkit-linear-gradient(top, #eee, #ccc);
+background-image: -moz-linear-gradient(top, #eee, #ccc);
+background-image: -ms-linear-gradient(top, #eee, #ccc);
+background-image: -o-linear-gradient(top, #eee, #ccc);
+background-image: linear-gradient(to bottom, #eee, #ccc);}
+
+.installApp .itemInstall .title-container .app-reinstall {float:left;height:28px;line-height:28px;}
+.installApp .itemInstall .title-container .app-reinstall div {display:block;padding:0 20px;height:28px;line-height:28px;}
+.installApp .itemInstall .title-container .app-reinstall div span {display:block;font-weight:bold;}
+.installApp .itemInstall .title-container .app-reinstall div {color: white;font-size: 14px;ldisplay:block;-webkit-border-radius: 0 5px 5px 0;      -moz-border-radius: 0 5px 5px 0; border-radius: 0 5px 5px 0; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #666;
+background-color: #666;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#999), to(#666));
+background-image: -webkit-linear-gradient(top, #999, #666);
+background-image: -moz-linear-gradient(top, #999, #666);
+background-image: -ms-linear-gradient(top, #999, #666);
+background-image: -o-linear-gradient(top, #999, #666);
+background-image: linear-gradient(top, #999, #666);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow:#666 0 -1px 1px;
+}
+
+#appbox2 .thumbCode {
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+border-top: 3px #666 solid;
+	  -webkit-border-radius: 0 0 5px 5px;  border-radius: 0 0 5px 5px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+	  background: #BBB;
+	  background-image: -webkit-gradient(linear,left top,left bottom,from(#BBB),to(#EDEDED));
+	  background-image: -webkit-linear-gradient(top,#BBB,#EDEDED);
+	  background-image: -moz-linear-gradient(top,#BBB,#EDEDED);
+	  background-image: -ms-linear-gradient(top,#BBB,#EDEDED);
+	  background-image: -o-linear-gradient(top,#BBB,#EDEDED);
+	  background-image: linear-gradient(top,#BBB,#EDEDED);}
+#appbox2 .thumbCode {background-color:#BBB;font-size:12px;text-shadow:0 1px 0 #ededed;overflow:hidden;text-shadow:0 1px 0 #fff;}
+#appbox .thumbCode .step{border:1px #ccc solid;}
+
+.installApp .qrcode {-moz-border-radius: 5px;-webkit-border-radius: 5px;background-color: #ddd;border-radius: 5px;margin: 0;padding: 5px;vertical-align: top;width: 120px;float:right;height:120px;color:#fff;background: rgba(0, 0, 0, 0.1);-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;}
+.installApp .qrcode .picCode {-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);}
+.installApp .qrcode .picCode img {width:120px;}
+.installApp .qrcode .txtCode {font-size: 11px;color: #999;position: absolute;right: 20px;bottom:5px;}
+.installApp {font-size:13px;text-shadow:0 1px 0 #ededed;clear:both;position: relative;}
+
+.thumbCode .qrcode {-moz-border-radius: 5px;-webkit-border-radius: 5px;background-color: #ddd;border-radius: 5px;margin: 0;padding: 5px;vertical-align: top;width: 120px;overflow:hidden;float:right;height:120px;color:#fff;background: rgba(0, 0, 0, 0.1);-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;margin-left:10px;}
+.thumbCode .qrcode .picCode {-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);box-shadow: 0 1px 1px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.15);}
+.thumbCode .qrcode .picCode img {width:120px;}
+.thumbCode {overflow:hidden;font-size:12px;text-shadow:0 1px 0 #ededed;clear:both;padding: 20px;}
+
+.thumbCode .step{float:left;margin-left:10px;-webkit-border-radius: 7px;     -moz-border-radius: 7px;          border-radius: 7px;   -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.thumbCode .step img {-webkit-border-radius: 7px;     -moz-border-radius: 7px;          border-radius: 7px;   -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.thumbCode .picInstall {float:right;}
+.thumbCode a {text-decoration:underline;}
+
+.noteApp {padding:10px 20px;color:#fff;background-color:#999;-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;font-size:12px;text-shadow:0 1px 0 #ededed;overflow:hidden;border-bottom:0 #ededed solid;text-shadow:0 -1px 0 #666;}
+.noteApp .note1 {float:left;font-weight:bold;color:#fff;line-height:24px;}
+.noteApp .note1 .enselect {color:#fff;}
+.noteApp .note1 .viselect {color:#fff;padding-left:15px;margin-left:5px;background:url(http://appstore.vn/android/images/right.png) no-repeat 0 2px;}
+.noteApp .note1 img {float:left;margin-right:5px;position:relative;top:3px;}
+.noteApp .note1 a {color:#fff!important;margin-left:5px;}
+.noteApp .note1 a:hover {color:#ffff00!important;}
+.noteApp .note2 {float:right;text-align:right;}
+.noteApp .note2 a {color: #555;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;border: 1px solid #999;border-bottom-color: #AAA;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);
+background: #F6F6F6;
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 0 0px rgba(255,255,255,.6);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 0 0px rgba(255,255,255,.6);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 0 0px rgba(255,255,255,.6);
+border-image: initial;
+font-weight: bold;font-size: 12px;padding: 0 10px;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:22px;line-height:22px;display:inline-block;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;}
+.noteApp  select {background: #F6F6F6 ;font-size: 12px;padding: 0;border: 1px solid #999;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;padding:5px;height:24px;text-indent:0 0 0 #fff!important;outline:0;max-width:200px;}
+.noteApp  select:disabled {color:#999;}
+
+.noteUser {padding:0;float:left;text-align:left;margin-top:20px;width: 440px;}
+.noteUser img {margin-right:10px;width:30px;float:left;}
+.noteUser span {font-size:12px;text-align:left;line-height:30px;}
+.noteUser p {clear:both;display:block;text-align:left;line-height:18px;}
+
+.successUser {padding:0;text-align:left;margin-top:50px;width: 350px;}
+.successUser img {margin-right:10px;width:30px;float:left;}
+.successUser span {font-size:12px;text-align:left;line-height:30px;display: inline-block;float: left;}
+.successUser #install-error span {width: 280px;line-height: 16px;position: relative;top:0;}
+.successUser p {clear:both;display:block;text-align:left;line-height:18px;margin-top:20px;}
+
+.tymUser {padding:0;float:right;max-width:180px;}
+.tymUser-in {clear:both;-moz-border-radius: 7px;-webkit-border-radius: 7px;background-color: #ddd;border-radius: 7px;background: rgba(0, 0, 0, 0.1);
+	    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.8),0 1px 1px rgba(0,0,0,0.75) inset;
+	    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.8),0 1px 1px rgba(0,0,0,0.75) inset;
+	    box-shadow: 0 1px 0 rgba(255,255,255,0.8),0 1px 1px rgba(0,0,0,0.75) inset;padding:10px;height:104px;}
+.tymUser ul {margin:0;padding:0;list-style:none;}
+.tymUser ul li {display:block;padding:0 5px; font-size:12px;margin-bottom:3px;overflow:hidden;}
+.tymUser ul li span {display:block;font-weight:bold;font-size:12px;}
+.tymUser ul .titleItem {list-style:30px;}
+.tymUser ul .iTYM {padding:0 0 0 25px;font-weight:normal;float:right;}
+.tymUser ul .tymRed,
+.tymUser ul .tymGreen,
+.tymUser ul .tymPurple,
+.tymUser ul .tymYellow {float:left;font-size:16px;}
+.tymUser ul .iRed {background:url(http://appstore.vn/android/images/icon/tymRed.png) no-repeat center left; }
+.tymUser ul .iGreen {background:url(http://appstore.vn/android/images/icon/tymGreen.png) no-repeat center left;}
+.tymUser ul .iPurple {background:url(http://appstore.vn/android/images/icon/tymPurple.png) no-repeat center left;}
+.tymUser ul .iYellow {background:url(http://appstore.vn/android/images/icon/tymYellow.png) no-repeat center left;}
+
+/*adv right*/
+.advRight {clear:both;overflow:hidden;position:relative;}
+.advRight .itemAdv {width:250px!important;overflow:hidden;margin:0 auto;margin-bottom:5px;}
+.advRight img {width:250px!important;}
+
+/***** Giao dich *****/
+.sendSMS  {margin-top:0;clear: both;}
+.sendSMS ul {font-size:12pt;overflow:hidden;padding:0;position:relative;display:block;height:auto;width:auto;margin:0 0 0 0;list-style:none;}
+.sendSMS li{position:relative;list-style-type:none;display:block;overflow:hidden;width:auto;padding: 0;float:left;display:inline;margin-left:21px;
+-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;overflow: hidden;-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.15);
+-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.75);box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,0.15);position: relative;margin-bottom: 20px;background: rgba(40, 40, 40, 0.1);padding:5px 0;height:200px;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
+.sendSMS li .shadown {margin:0 auto;margin-bottom:20px;}
+.sendSMS li:hover{-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.15);
+-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.75);box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,0.15);background: rgba(240, 240, 240, 0);}
+.sendSMS li:first-child {border-top:0;margin:0;}
+
+.sendSMS li a:hover .comment{color:#CCF}
+.sendSMS li a {display:block;width:auto;text-decoration:none;overflow:hidden;position:relative;text-align:center;}
+.sendSMS li a img{width:100px;margin:0 auto;height:100px;}
+.sendSMS li .name{margin:0 auto;font-weight:bold;font-size:12px;overflow:hidden;position:relative;display:block;clear:both;text-align:center;width:140px;line-height:18px;padding-top:20px;}
+.sendSMS li .comment{margin:25px 30px 0 0;width:auto;font-size:18px;text-overflow:ellipsis;overflow:hidden;max-width:75%;white-space:nowrap;float:right;color:#666666}
+.sendSMS li .arrow{position:absolute;width:8px!important;height:13px!important;right:10px;top:30px;margin:0!important;background:url("http://appstore.vn/android/images/arrow.png") 0 0 no-repeat}
+.sendSMS li .smsHelp {position:absolute;bottom:1px;right:1px;z-index:5000;height:30px;width:30px;-webkit-border-radius: 30px 0 5px 0;      -moz-border-radius: 30px 0 5px 0;          border-radius: 30px 0 5px 0;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;background-color:#ccc;}
+.sendSMS li .smsHelp a  {z-index:300;color:#fff;display:block;height:20px;line-height:20px;width:20px;font-size:12px;position:relative;left:10px;top:8px;font-weight:bold;}
+.sendSMS li .smsHelp:hover {background-color: #333;color:#333;}
+.sendSMS li .smsHelp:hover a {color:#fff;}
+
+/***** Log Giao dich *****/
+.transactionLog  {margin-top:0;padding: 0;clear: both;}
+.transactionLog ul {font-size:12pt;overflow:hidden;padding:0;position:relative;display:block;height:auto;width:auto;margin:0 0 0 0;list-style:none;}
+.transactionLog li{position:relative;list-style-type:none;display:block;overflow:hidden;width:auto;padding: 0;float:left;display:inline;width:160px;margin-left:21px;
+-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;overflow: hidden;-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.15);
+-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.75);box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,0.15);position: relative;margin-bottom: 20px;background: rgba(40, 40, 40, 0.1);padding:5px 0;height:200px;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
+.transactionLog li .shadown {margin:0 auto;margin-bottom:20px;}
+.transactionLog li:hover{-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.15);
+-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.75);box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,0.15);background: rgba(240, 240, 240, 0);}
+.transactionLog li:first-child {border-top:0;margin: 0;}
+
+.transactionLog li a:hover .comment{color:#CCF}
+.transactionLog li a {display:block;width:auto;text-decoration:none;overflow:hidden;position:relative;text-align:center;}
+.transactionLog li a img{width:100px;margin:0 auto;height:100px;}
+.transactionLog li .name{margin:0 auto;font-weight:bold;font-size:12px;overflow:hidden;position:relative;display:block;clear:both;text-align:center;width:150px;line-height:18px;padding-top:20px;}
+.transactionLog li .comment{margin:25px 30px 0 0;width:auto;font-size:18px;text-overflow:ellipsis;overflow:hidden;max-width:75%;white-space:nowrap;float:right;color:#666666}
+.transactionLog li .arrow{position:absolute;width:8px!important;height:13px!important;right:10px;top:30px;margin:0!important;background:url("http://appstore.vn/android/images/arrow.png") 0 0 no-repeat}
+.transactionLog li .smsHelp {position:absolute;bottom:1px;right:1px;z-index:5000;height:30px;width:30px;-webkit-border-radius: 30px 0 5px 0;      -moz-border-radius: 30px 0 5px 0;          border-radius: 30px 0 5px 0;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;background-color:#ccc;}
+.transactionLog li .smsHelp a  {z-index:300;color:#fff;display:block;height:20px;line-height:20px;width:20px;font-size:12px;position:relative;left:10px;top:8px;font-weight:bold;}
+.transactionLog li .smsHelp:hover {background-color: #333;color:#333;}
+.transactionLog li .smsHelp:hover a {color:#fff;}
+
+.logDetail {margin-bottom:30px;}
+.logDetail ul {margin: 0;padding: 0;list-style: none;border-top: 3px #7B9726 solid;}
+.logDetail ul li {overflow: hidden;padding: 6px 0;border-bottom: 1px #e5e5e5 solid;font-size: 12px;}
+.logDetail ul li:nth-child(old) {background: rgba(150,150,150,0.1);}
+.logDetail ul li:nth-child(even) {background: rgba(150,150,150,0.1);}
+.logDetail ul li:hover {background: rgba(150,150,150,0.3);}
+.logDetail .col-1 {width: 60px;padding-left: 10px;text-align:center;font-family: franklin-gothic-urw-cond,"Helvetica Condensed Bold",Helvetica,Arial,sans-serif;
+font-weight: bold;}
+.logDetail .col-3 {width: 100px;margin-right: 10px;text-align: right;font-weight: bold;}
+.logDetail .col-2 {width: 300px;color:#09C; }
+.logDetail .col-4 {width: 60px;text-align: center;font-weight: bold;}
+.logDetail .col-5 {width: 120px;text-align: center;padding-right: 10px;}
+.logDetail .col-1,
+.logDetail .col-2,
+.logDetail .col-3,
+.logDetail .col-4{float: left;}
+.logDetail .col-5{float: right;}
+.logDetail li .col-3 {}
+.logDetail .titleLog {font-weight: bold;overflow: hidden;clear: both;padding: 12px 0;border: 0 solid #ccc;background: rgba(150,150,150,0.3);font-size: 14px;color: #000!important;}
+  
+.storeLog {clear: both;overflow: hidden;}
+.storeLog ul {margin:0;padding:0;list-style:none;text-align: center;}
+.storeLog li {display:inline-block;height:40px;margin: 0 1px;}
+.storeLog li:first-child {}
+.storeLog li.selected {/*background: url(http://appstore.vn/android/images/bg/vertical_sprite.png) no-repeat center top;*/}
+.storeLog li.selected a,
+.storeLog li.selected a:hover {background:#999999 ;}
+.storeLog li a {display: block;cursor: pointer;float: left!important;color: #666;height:40px;background-color:#009bba;-webkit-border-radius: 5px; -moz-border-radius: 5px;  border-radius: 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;width:135px;color:#fff;font-weight:bold;text-align:center;line-height:40px;font-size:12px;}
+.storeLog li a:hover {background-color:#3bc3f3}
+/***** List download *****/
+.downloadStore  {margin-top:0;clear: both;}
+.downloadStore ul {font-size:12pt;overflow:hidden;padding:0;position:relative;display:block;height:auto;width:auto;margin:0 0 0 0;list-style:none;}
+.downloadStore li {float: left;width: 300px;margin-left: 30px;margin-bottom: 20px;height:150px;}
+.downloadStore li .picPlatform {float: left;width: 110px;}
+.downloadStore li .picPlatform img {width: 110px;}
+.downloadStore li .infoPlatform {float: left;width: 160px; }
+.platform h3 {text-shadow: 0 1px 0 white;color: #6B7183;margin: 7px 0 10px 0;padding: 0;}
+.platform .button  {height: 25px;line-height: 25px;margin: 0;padding: 0 40px;font-size: 14px;color: #666;}
+.platform a:hover.button {
+background-image:  -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.05)),   color-stop(100%,rgba(0, 0, 0, 0.45)));
+background-image:  -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,rgba(0, 0, 0, 0.45) 100%);
+background-image:  -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -ms-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,   rgba(0, 0, 0, 0.45) 100%);
+background-image:  rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-color: #0088D5;
+color: #fff!important;
+border: 1px solid #004487;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+text-shadow: 0px -1px 1px black!important;
+font-weight: bold;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+
+.platform p {margin: 10px 0 18px 0;font-size: 11px;line-height: 16px;color: #333;}
+
+  /*Account*/
+.card {margin-top:10px;}
+.card .left {float:left;}
+.card .right {float:right;}
+.card ul {padding: 0 1px;-moz-border-radius: 5px;-webkit-border-radius:5px;border-radius:5px;overflow: hidden;-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.15);-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.75);box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,0.15);position: relative;margin-bottom: 20px;background: rgba(40, 40, 40, 0.1);}
+.card li{position:relative;list-style-type:none;display:block;overflow:hidden;border-top:1px #fff solid;border-bottom:1px #ccc solid; width:auto;padding:10px; }
+.card li:first-child {border-top:0;}
+.card li:last-child {border-bottom:0;}
+.card .name {position:relative;left:0;font-size:14px;text-overflow:ellipsis;white-space:nowrap;font-weight:bold;line-height:25px;overflow:hidden;text-shadow:#fff 0 1px 0;color:#666;}
+.card .info_name {font-size:12px;text-overflow:ellipsis;white-space:nowrap;color:#fff;}
+.card .title {}
+.card .point {color:#7B9726;font-weight:bold;}
+.card span {font-size:13px;text-shadow:#fff 0 1px 0;line-height:30px;}
+
+.card a {color:#fff;text-decoration:none;font-weight:bold;float:left;}
+
+.card a  {z-index:3;-webkit-border-top-left-radius:6px;-webkit-border-bottom-left-radius:6px;-webkit-border-top-right-radius:6px;-webkit-border-bottom-right-radius:6px;background:-webkit-gradient(linear,0% 0%,0% 100%,from(#242424),color-stop(3%,#727272),color-stop(50%,#2d2d2d),color-stop(51%,#141414),color-stop(97%,#141414),to(#141414));padding:0 10px;margin-left:5px; box-shadow: 0px 1px 0 #4c4c4c;}
+.card a:hover  {z-index:3;-webkit-border-top-left-radius:6px;-webkit-border-bottom-left-radius:6px;-webkit-border-top-right-radius:6px;-webkit-border-bottom-right-radius:6px;background:-webkit-gradient(linear,0% 0%,0% 100%,from(#fe947f),color-stop(3%,#fe947f),color-stop(50%,#f0533c),color-stop(51%,#f5290c),color-stop(97%,#f60805),to(#f60805));}
+.card a{height:30px;top:6px;text-align:center;line-height:30px;display:block;font-size:13px;text-align:center;}
+
+.cardTYM {margin:0;clear: both;}
+.cardTYM .left {float:left;}
+.cardTYM .right {float:right;}
+.cardTYM ul {padding: 0 1px;overflow: hidden;position: relative;margin-bottom: 20px;text-align: center;}
+.cardTYM ul li {display: inline-block;}
+/*.cardTYM ul {padding: 0 1px;-moz-border-radius: 5px;-webkit-border-radius:5px;border-radius:5px;overflow: hidden;-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.15);-webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.75), inset -1px -1px 0 rgba(0,0,0,0.75);box-shadow: inset 0 1px 2px rgba(0,0,0,0.75), inset 0 -1px 0 rgba(0,0,0,0.15);position: relative;margin-bottom: 20px;background: rgba(40, 40, 40, 0.1);}
+*/
+.cardTYM .infoTYM {margin: 50px 0;}
+.cardTYM .buyTYM li {margin: 0 10px;}
+.cardTYM .infoTYM li{position:relative;list-style-type:none;display:inline-block;overflow:hidden;width:auto;width: 180px;margin-left: 65px; }
+.cardTYM .infoTYM li:first-child {border-top:0;margin: 0;}
+.cardTYM .name {position:relative;left:0;font-size:14px;text-overflow:ellipsis;white-space:nowrap;font-weight:bold;line-height:25px;overflow:hidden;text-shadow:#fff 0 1px 0;color:#666;}
+.cardTYM .info_name {font-size:12px;text-overflow:ellipsis;white-space:nowrap;color:#fff;}
+.cardTYM .title {}
+.cardTYM .point {color:#7B9726;font-weight:bold;}
+.cardTYM  span {font-size:14px;text-shadow:#fff 0 1px 0;}
+.cardTYM .infoTYM span {padding-top: 180px;line-height:40px;height: auto;width: 180px;display: block;text-align: center;}
+.cardTYM .tymRed {background: url(http://appstore.vn/android/images/icon/tym-r.png) no-repeat 0 0;}
+.cardTYM .tymGreen {background: url(http://appstore.vn/android/images/icon/tym-g.png) no-repeat 0 0;}
+.cardTYM .tymPurple {background: url(http://appstore.vn/android/images/icon/tym-p.png) no-repeat 0 0;}
+.cardTYM .tymYellow {background: url(http://appstore.vn/android/images/icon/tym-y.png) no-repeat 0 0;}
+.cardTYM .infoTYM span {font-size: 28px;color: #000!important;font-weight: bold;}
+.cardTYM img {vertical-align:middle;}
+.cardTYM a {color:#fff;text-decoration:none;font-weight:bold;float:left;}
+
+.cardTYM a  {z-index:3;color: #555;
+font-weight: bold;font-size: 16px;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;padding: 0 20px;border: 1px solid #CCC;border-bottom-color: #AAA;filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);background: #F6F6F6;background-image: -moz-linear-gradient(top,white 0,#E0E0E0 100%);background-image: -ms-linear-gradient(top,white 0,#E0E0E0 100%);background-image: -o-linear-gradient(top,white 0,#E0E0E0 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,white),color-stop(100%,#E0E0E0));background-image: -webkit-linear-gradient(top,white 0,#E0E0E0 100%);background-image: linear-gradient(to bottom,white 0,#E0E0E0 100%);-moz-border-radius:0 5px 5px 0;-webkit-border-radius: 0 5px 5px 0;border-radius: 0 5px 5px 0;-moz-box-shadow: inset 0 0 1px #fff;-ms-box-shadow: inset 0 0 1px #fff;-webkit-box-shadow: inset 0 0 1px #fff;box-shadow: inset 0 0 1px #fff;border-image: initial;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;}
+.cardTYM a:first-child  {-moz-border-radius:5px 0 0 5px;-webkit-border-radius:5px 0 0 5px;border-radius:5px 0 0 5px;}
+.cardTYM a:hover  {color:#fff;text-shadow:0 -1px 1px #666;border: 1px solid #CC0000;
+background-color: #CC0000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe947f), to(#CC0000)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #fe947f, #CC0000); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #fe947f, #CC0000); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #fe947f, #CC0000); /* IE10 */
+  background-image:      -o-linear-gradient(top, #fe947f, #CC0000); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #fe947f, #CC0000);
+}
+.cardTYM a{height:40px;top:6px;text-align:center;line-height:40px;display:block;font-size:13px;text-align:center;}
+
+.cardFilm {border: 1px solid #ccc;background: #efefef;padding: 5px;border-collapse: separate;-moz-box-shadow: inset 0px 1px 0px #fff;-webkit-box-shadow: inset 0px 1px 0px white;box-shadow: inset 0px 1px 0px white;margin-bottom: 20px;width: 610px;margin: 0 auto;}
+.cardFilm .name {display: block;}
+.cardFilm span {line-height: 42px;}
+.cardFilm ul  {background-color: #fff;border: 1px solid #ccc;margin: 0;}
+.cardFilm ul li {float: left;padding: 10px;}
+.cardFilm ul li:first-child {width: 400px;float: left;text-align: left;}
+.cardFilm ul li:last-child {float: right!important;}
+
+#filmbox .formDialog li a {text-shadow: #fff 0 1px 0;display: block;text-align: center;color: #000;}
+/*Đăng nhập - Đăng ký*/
+
+.pageacc {padding: 0 1px;-moz-border-radius: 5px;-webkit-border-radius:5px;border-radius:5px;overflow: hidden;border: 0 #ccc solid;
+-moz-box-shadow: 0 0 0 rgba(0,0,0,0.3),0 2px 2px rgba(0,0,0,0.0) inset;
+-webkit-box-shadow: 0 0 0 rgba(0,0,0,0.3),0 2px 2px rgba(0,0,0,0.0) inset;
+box-shadow: 0 0 0 rgba(0,0,0,0.3),0 2px 2px rgba(0,0,0,0.0) inset;position: relative;margin-bottom: 50px;background: rgba(250, 250, 250, 0.0);margin:0 0 20px 0!important;}
+.pageacc li{position:relative;list-style-type:none;display:block;overflow:hidden;width:auto;padding:6px 0!important;border-top:0 #fff solid!important;border-bottom:0 #ccc solid!important; }
+.pageacc li:first-child {border-top:0!important;}
+.pageacc li:last-child {border-bottom:0!important;}
+.contentsUser .titleItem {font-weight: bold;line-height: 30px;overflow: hidden;text-shadow: white 0 1px 0;color: #000;display:block;font-size:16px;border-bottom: 2px #7B9726 solid;padding-top: 5px;}
+.contentsUser input,
+.contentsUser select {margin:0!important;}
+.contentsUser  {width:704px;float: left;}
+
+.menuUser  {width:259px;float: left;padding: 0 0 40px 20px;border-right: 1px #ccc solid;
+}
+.menuUser ul {margin: 0;padding: 0;list-style: none;border-bottom: 1px #fff solid;border-top: 1px #ccc solid;
+background-color: transparent;
+background-image: -webkit-gradient(linear, right top, left top, from(#EDF1F5), to(#EBEBEB));
+background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.0));
+background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.0));
+background-image: -ms-linear-gradient(right, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.0));
+background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.0));
+background-image: linear-gradient(right, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.0));}
+.menuUser ul li {height: 40px;display: block;position: relative;}
+.menuUser ul li a {height: 40px;display: block;line-height: 40px;padding-left: 50px;font-weight: normal;font-size: 14px;color: #666;position: relative;text-shadow: 0 1px 0 #fff;}
+.menuUser ul li {background:url(http://appstore.vn/android/images/icon/info.png) no-repeat;margin: 0;padding: 0;border-top: 1px #fff solid;border-bottom: 1px #ccc solid;}
+.menuUser ul li:first-child {border-top: 1px #fff solid;}
+.menuUser ul li:hover {background:url(http://appstore.vn/android/images/icon/info-hover.png) no-repeat;}
+.menuUser ul li:hover a {color: #000;}
+.menuUser ul li.selected {background:#EBEBEB url(http://appstore.vn/android/images/icon/info-select.png) no-repeat;right: -1px;}
+.menuUser ul li.selected a {color: #0099cc;}
+.menuUser ul li:hover.userMain,
+.menuUser ul .userMain,
+.menuUser ul .userMain {background-position:  0 0;}
+.menuUser ul li:hover.creditMain,
+.menuUser ul .creditMain.selected,
+.menuUser ul .creditMain {background-position:  0 -40px;}
+.menuUser ul li:hover.buyMain,
+.menuUser ul .buyMain.selected,
+.menuUser ul .buyMain {background-position:  0 -80px;}
+.menuUser ul li:hover.mailMain,
+.menuUser ul .mailMain.selected,
+.menuUser ul .mailMain {background-position:  0 -120px;}
+.menuUser ul li:hover.transMain,
+.menuUser ul .transMain.selected,
+.menuUser ul .transMain {background-position:  0 -160px;}
+.menuUser ul li:hover.downnMain,
+.menuUser ul .downnMain.selected,
+.menuUser ul .downnMain {background-position:  0 -200px;}
+.menuUser ul li:hover.eventMain,
+.menuUser ul .eventMain.selected,
+.menuUser ul .eventMain {background-position:  0 -240px;}
+.menuUser ul li:hover.avaMain,
+.menuUser ul .avaMain.selected,
+.menuUser ul .avaMain {background-position:  0 -280px;}
+.menuUser ul li:hover.nameMain,
+.menuUser ul .nameMain.selected,
+.menuUser ul .nameMain {background-position:  0 -280px;}
+
+.avatar {overflow: hidden;padding: 10px 0;position: relative;}
+.avatar a {font-weight: bold;font-size: 16px;display: block;text-shadow: 0 1px 0 #fff;}
+.avatar img {width:50px;-webkit-border-radius: 0;  border-radius: 0;}
+.avatar .picAvatar {width:50px;float: left;margin: 0;}
+.avatar .nameAvatar {float: left;line-height: 50px;padding-left: 10px;color: #0099cc;}
+.avatar .linkAvatar {font-size: 11px;font-weight: normal;color: #666;}
+.avatar a:hover .nameAvatar{text-decoration: underline;}
+.avatar .changeAvatar {position: absolute;font-size: 12px;background-color: #fff;color: #000;border: 1px #ccc solid;padding: 5px;display: none;top:22px;}
+.avatar a:hover.picUser .changeAvatar {display: block;}
+
+/*Số trong thông tin*/
+.nums{width:50px;height:auto;display:block;position:absolute;left:440px;top:34px;font-size:12px;color:#333;text-align:right;text-shadow:#fff 0 1px 0;}
+.nums.current {color:#999;}
+
+#feedbackbox .content-bx {height:460px;position:relative;}
+#feedbackbox .content-bx .panelBox {position:absolute;bottom:0;width:530px;left:0;}
+#feedbackbox .content-bx .error, 
+#feedbackbox .content-bx .alert, 
+#feedbackbox .content-bx .notice, 
+#feedbackbox .content-bx .success, 
+#feedbackbox .content-bx .info {margin:0 20px 1em 20px;}
+.feedback {	cursor:pointer;	border:3px solid #ddd!important;border-right:0;	-webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px;border-radius: 5px 0 0 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.feedback img {	-webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px;border-radius: 5px 0 0 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+
+.bxFB {padding:10px 20px 0 20px;overflow:hidden;}
+.bxFB .titleItem {font-weight: bold!important;line-height: 30px;overflow: hidden;text-shadow: white 0 1px 0;color: #666;display: block;font-size: 16px;}
+.bxFB input,
+.bxFB select,
+.bxFB textarea{margin:0!important;}
+.bxFB li{border-top: 0 white solid!important;border-bottom: 0 #CCC solid!important;}
+.bxFB ul {background-color:transparent;}
+.bxFB .itemSupport {margin:0 auto;text-align:center;}
+.bxFB .itemSupport a {margin:0 5px;}
+.bxFB img {float: left;top:-3px!important;}
+.bxFB .captcha {float: right!important;top:-3px!important;right:20px;}
+
+.dialog .phoneOS {padding:5px 20px;}
+.phoneOS {}
+.phoneOS .itemOS {overflow:hidden;border-bottom:0 #e5e5e5 solid;padding:5px 0;font-size: 12px;font-weight: normal;overflow: hidden;color: #333;text-shadow: white 0 1px 0;clear:both;}
+.phoneOS .itemOS:last-child {border:0;}
+.phoneOS .itemOS .selectOS {float:left;width:80px;}
+.phoneOS .itemOS .selectOS label {position:relative;top:4px;}
+.phoneOS .itemOS .selectOS input {position:relative;top:4px;margin-right:5px!important;}
+.phoneOS .itemOS .primaryOS {float:right;width:100px;text-align:center;}
+.phoneOS .itemOS .valueOS {float:right;width:230px;}
+.phoneOS .itemOS .valueOS input,
+.phoneOS .itemOS .valueOS select {margin:0;}
+.phoneOS .itemOS .valueOS select {width:100%!important}
+.phoneOS .itemOS .primaryOS input {position:relative;top:10px;text-align:center;}
+.phoneOS .itemOS .findDevice {float:left;width:320px;}
+.phoneOS .itemOS .findDevice input[type="text"] {width:230px!important;float:left;margin:0;}
+.phoneOS .itemOS .findDevice .btSubmit {width:27px!important;border:0;cursor:pointer;float:left;line-height:27px;height:27px;
+color: #555;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;border: 1px solid #999;border-bottom-color: #AAA;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);
+background: #F6F6F6;
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+border-image: initial;
+font-weight: bold;font-size: 12px;padding:0px;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;
+}
+.phoneOS .itemOS .findDevice .btSubmit span {text-indent:-9999px;display:block;background:url(http://appstore.vn/android/images/icon/search.png) no-repeat 0 -51px;}
+.phoneOS .itemOS .examples {font-size:11px;color:#666;clear:both!important;display:block;}
+.phoneOS .itemOS .examples a {text-shadow:0 1px 0 #fff;color:#7B9726;}
+.phoneOS .itemOS .examples a:hover {color:#666;}
+.phoneOS .addDevice {margin-top:10px;text-decoration:none;margin-bottom:20px;}
+.phoneOS .tyDevice {text-shadow:0 1px 0 #fff!important;color:#333;margin:0;padding:0;font-size:12px;}
+.phoneOS .addDevice a {text-decoration:none!important;height:30px!important;line-height:30px!important;padding:0 10px!important;text-shadow:0 1px 0 #fff!important;}
+
+.popupDevice .phoneOS .itemOS .selectOS label {position:relative;top:10px!important;}
+.popupDevice .phoneOS .itemOS .selectOS input {position:relative;top:10px!important;margin-right:5px!important;}
+
+/*404*/
+.pageFound {background:url(http://appstore.vn/android/images/bg/404.png) no-repeat center top;height:500px;position:relative;width:1024px;margin:0 auto; }
+.pageFound-in {position:relative;height:500px;width:1024px;}
+.pageFound .linkHome {position:absolute;top:230px;left:60px;display:block;width:100px;height:70px;text-indent:-9999px;}
+.pageFound .linkBack {position:absolute;top:250px;left:450px;display:block;width:120px;height:120px;text-indent:-9999px;background:url(http://appstore.vn/android/images/icon/back.png) no-repeat center;}
+.pageFound a:hover.linkBack {background:url(http://appstore.vn/android/images/icon/back_hover.png) no-repeat center;}
+
+/*404 Lag*/
+.pageFound-lag {background:url(http://appstore.vn/android/images/bg/404-lag.png) no-repeat center top;height:500px;position:relative;width:1024px;margin:0 auto; }
+.pageFound-lag-in {position:relative;height:500px;width:1024px;}
+.pageFound-lag .linkHome {position:absolute;top:230px;left:60px;display:block;width:100px;height:70px;text-indent:-9999px;}
+.pageFound-lag .linkBack {position:absolute;top:250px;left:450px;display:block;width:120px;height:120px;text-indent:-9999px;background:url(http://appstore.vn/android/images/icon/back.png) no-repeat center;}
+.pageFound-lag a:hover.linkBack {background:url(http://appstore.vn/android/images/icon/back_hover.png) no-repeat center;}
+
+/*info*/
+.infoPage {position:relative;float:right;}
+.infoPage ul {margin:0;padding:0;list-style:none; }
+.infoPage ul li:first-child {-webkit-border-radius: 5px 5px 0 0;     -moz-border-radius: 5px 5px 0 0;          border-radius: 5px 5px 0 0;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.infoPage ul li:last-child {-webkit-border-radius:0 0 5px 5px;     -moz-border-radius:0 0 5px 5px;          border-radius:0 0 5px 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.infoPage ul li {background-color:#F6F6F6;padding:10px 0 10px 10px;-moz-box-shadow: 0 0 1px #93938b, inset 0 1px 0 #ffffff;
+-webkit-box-shadow: 0 0 1px #93938b, inset 0 1px 0 #ffffff;box-shadow: 0 0 1px #93938b, inset 0 1px 0 #ffffff;margin-bottom:1px;}
+.infoPage ul li strong {display: block;font-size: 16px;line-height: 20px;color: #7B9726;font-weight: normal;margin-bottom: 0;}
+.infoPage ul li p {padding: 0;margin:0;color:#555;}
+
+.userDevice {clear:both;overflow:hidden;margin-top:10px;border-bottom:0 #ccc solid;padding-top:0;}
+.userDevice ul {margin:10px 0 0 0;padding:0;list-style:none;}
+.userDevice ul li {float:left;display:inline-block;margin:0!important;padding:4px 0 0 0!important;border:0 #fff solid!important;position:relative;height:155px;}
+.userDevice ul li:hover .delDevice {display:block;}
+.userDevice .itemDevice {float:left;margin-left:15px;border:1px #ccc solid;text-align:center;margin-bottom:5px;text-decoration:none!important;background-color:#fff;position:relative;}
+.userDevice .itemDevice span {display:block;padding:5px;text-decoration:none!important;position:relative;width:80px;height:110px;}
+.userDevice .itemDevice img {width:80px;height:80px;margin-bottom:5px;border:0 #fff solid;}
+.userDevice .itemDevice span {border:1px #fff solid;}
+.userDevice .itemDevice em {line-height:14px;font-size:11px;display:block;text-decoration:none!important;position:absolute;width:80px;bottom:0;left:0;right:0;padding:5px 5px 3px 5px;font-style:normal;text-shadow:0 0 0 #fff;}
+.userDevice .selected {border:1px #990000 solid;-webkit-box-shadow: 0px 0px 4px 0px #666;  -moz-box-shadow: 0px 0px 4px 0px #666; box-shadow: 0px 0px 4px 0px #666;}
+.userDevice .selected span {border:1px #990000 solid;}
+.userDevice .primaryDevice {background:url(http://appstore.vn/android/images/icon/primary.png) no-repeat center;width:96px!important;height:126px!important;position:absolute;top:-3px;left:-3px;z-index:9999;border:0 #fff solid!important;}
+.userDevice .delDevice {clear:both;margin-left: 13px;display:none;}
+.userDevice .delDevice a {color: #555;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;border: 1px solid #CCC;border-bottom-color: #AAA;text-decoration:none;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);
+background: #F6F6F6;
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+border-image: initial;
+font-weight: bold;font-size: 12px;padding: 0 ;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:20px;line-height:20px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;width:94px;text-align:center;}
+.userDevice .delDevice a:hover {
+background-image:  -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.05)),   color-stop(100%,rgba(0, 0, 0, 0.45)));
+background-image:  -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,rgba(0, 0, 0, 0.45) 100%);
+background-image:  -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -ms-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,   rgba(0, 0, 0, 0.45) 100%);
+background-image:  rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-color: #0088D5;
+color: #fff!important;
+border: 1px solid #004487;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+text-shadow: 0px -1px 1px black!important;}
+
+.selectDevice {clear:both;overflow:hidden;margin-top:10px;border-bottom:0 #ccc solid;padding-top:15px;}
+.selectDevice .itemDevice {float:left;margin-left:15px;border:1px #ccc solid;text-align:center;margin-bottom:10px;text-decoration:none!important;background-color:#fff;}
+.selectDevice .itemDevice span {display:block;padding:5px;text-decoration:none!important;position:relative;width:80px;height:110px;}
+.selectDevice .itemDevice:hover {border:1px #7B9726 solid;-webkit-box-shadow: 0px 0px 4px 0px #666;  -moz-box-shadow: 0px 0px 4px 0px #666; box-shadow: 0px 0px 4px 0px #666;}
+.selectDevice .itemDevice img {width:80px;height:80px;margin-bottom:5px;border:0 #fff solid;}
+.selectDevice .itemDevice span {border:1px #fff solid;}
+.selectDevice .itemDevice:hover span {border:1px #7B9726 solid;}
+.selectDevice .itemDevice em {line-height:12px;font-size:11px;display:block;text-decoration:none!important;position:absolute;width:80px;bottom:0;left:0;right:0;padding:5px 5px 3px 5px;font-style:normal;text-shadow:0 0 0 #fff;}
+.selectDevice .selected {border:1px #7B9726 solid;-webkit-box-shadow: 0px 0px 4px 0px #666;  -moz-box-shadow: 0px 0px 4px 0px #666; box-shadow: 0px 0px 4px 0px #666;}
+.selectDevice .selected span {border:1px #7B9726 solid;}
+.bxSupport {color:#333;line-height:1.4em;}
+.selectDevice .privete {border:1px #990000 solid;-webkit-box-shadow: 0px 0px 4px 0px #666;  -moz-box-shadow: 0px 0px 4px 0px #666; box-shadow: 0px 0px 4px 0px #666;}
+.selectDevice .privete span {border:1px #990000 solid;}
+
+.popupDevice {padding:0!important;margin:0 auto!important;width:560px}
+.selectDevice-in {overflow:hidden;}
+
+.dialog .selectDevice {height:134px;background:url(http://appstore.vn/android/images/bgdevice.png) no-repeat center center;}
+.dialog .selectDevice-in {overflow:hidden;overflow-y: auto;overflow-x: hidden;width: 560px;height: 100%;_height: 134px;background-color:#ededed;}
+.dialog .selectDevice .itemDevice {margin-left:5px!important;margin-right:10px!important;}
+
+.dialog .userDevice .itemDevice {margin-left:5px!important;margin-right:10px!important;}
+.dialog .userDevice .delDevice {margin-left: 3px!important;}
+.dialog .userDevice .currentDevice {height: 124px;}
+.dialog .userDevice .selectDevice-in {overflow:hidden;overflow-y: auto;overflow-x: hidden;width: 560px;height: 100%;height: 124px;}
+
+/* SMS */
+.listsms  {margin:9px 9px 0 9px;clear:both;}
+.listsms ul {font-size:12pt;overflow:hidden;padding:0;position:relative;display:block;height:auto;width:auto;list-style:none;clear:both;margin:0;border-top:0 solid #595959!important;border-bottom:0 solid #ccc!important;}
+.listsms ul li {position:relative;list-style-type:none;display:block;overflow:hidden;background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C8CACC), to(#C8CACC))!important;border:1px solid #999!important;padding:0 9px!important;-webkit-border-radius:6px;margin-bottom:9px;}
+.listsms ul li:last-child {}
+.listsms .comm {color:#333;font-size:12px;}
+.listsms .des_comm {text-align:left;clear:both;margin-top:10px;position:relative;overflow:hidden;}
+.listsms .des_comm span {display:inline-block;}
+.listsms .des_comm a {text-align:center;margin-top:5px;}
+.listsms .des_comm a {color:#fff;text-decoration:none;font-weight:bold;float:right;}
+.listsms .des_comm a  {-webkit-border-top-left-radius:6px;-webkit-border-bottom-left-radius:6px;-webkit-border-top-right-radius:6px;-webkit-border-bottom-right-radius:6px;background:-webkit-gradient(linear,0% 0%,0% 100%,from(#242424),color-stop(3%,#727272),color-stop(50%,#2d2d2d),color-stop(51%,#141414),color-stop(97%,#141414),to(#141414));padding:0 10px;margin-left:5px; }
+.listsms .des_comm a:hover  {z-index:3;-webkit-border-top-left-radius:6px;-webkit-border-bottom-left-radius:6px;-webkit-border-top-right-radius:6px;-webkit-border-bottom-right-radius:6px;background:-webkit-gradient(linear,0% 0%,0% 100%,from(#fe947f),color-stop(3%,#fe947f),color-stop(50%,#f0533c),color-stop(51%,#f5290c),color-stop(97%,#f60805),to(#f60805));}
+.listsms .des_comm a{height:30px;text-align:center;line-height:30px;display:block;font-size:13px;text-align:center;}
+.listsms .name_comm {color:#fff;font-size:18px;background-color:#999;padding:0 8px;-webkit-border-radius: 8px;        -moz-border-radius: 8px;text-shadow: 0 1px 0 #666;height:30px;line-height:30px;margin-top:5px;}
+.listsms .send_comm {color:#333;font-size:13px;padding:0 10px;position:relative;top:0;}
+
+.helpSms {margin:20px;clear:both;font-size:14px;}
+.helpSms ul {overflow:hidden;padding:0;position:relative;display:block;height:auto;width:auto;list-style:none;clear:both;margin:0;border-top:0 solid #595959!important;border-bottom:0 solid #ccc!important;}
+.helpSms ul li {font-size:14px;}
+
+/*Form*/
+.formDialog {font-size:14px;overflow:hidden;padding:0;position:relative;display:block;height:auto;width:auto;margin:0;list-style:none;margin:20px 20px 0 20px;}
+.formDialog li {margin:0;padding:0;}
+
+.formDialog .smallfield {position:relative;list-style-type:none;display:block;overflow:hidden;border-top:0 solid #595959;border-bottom:0 solid #1c1c1c;width:auto;padding:5px 0; }
+/*
+.formDialog .smallfield select{background: #F6F6F6 url(http://appstore.vn/android/images/icon/select.png) no-repeat right center;font-size: 13px;padding: 0;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 310px;margin-bottom:10px;height:30px;-webkit-appearance: none;text-indent:5px;}*/
+.formDialog .smallfield select{background: #F6F6F6 ;font-size: 13px;padding: 0;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 510px;margin-bottom:10px;padding:5px;height:30px;text-indent:0 0 0 #fff!important;}
+.formDialog .smallfield input[disabled="disabled"]{color:#333;}
+.formDialog .smallfield option{max-width:100%;text-shadow:rgba(0,0,0,0.6) 0 1px 0;}
+.formDialog .smallfield .arrow{background:url('http://appstore.vn/android/images/arrow.png');width:8px;height:13px;display:block;-webkit-transform:rotate(90deg);position:absolute;right:10px;top:18px}
+.formDialog .smallfield .arrow{background:url('http://appstore.vn/android/images/arrow.png');width:8px;height:13px;display:block;-webkit-transform:rotate(90deg);position:absolute;right:10px;top:18px}
+.formDialog .smallfield .name,
+.formDialog .select .name {position:relative;left:0;font-size:12px;text-overflow:ellipsis;white-space:nowrap;font-weight:bold;line-height:25px;overflow:hidden;color:#333;text-shadow:#fff 0 1px 0;padding:0;display: block;}
+.formDialog .smallfield .name_error,
+.formDialog .select .name_errir {width:90%;position:relative;right:55px;font-size:12px;text-overflow:ellipsis;white-space:nowrap;font-weight:normal;line-height:16px;overflow:hidden;color:#ff3d3d;float:left;display:block;padding:0 0 0 65px;margin:0;}
+.formDialog .smallfield input[type="text"],
+.formDialog .smallfield input[type="password"] {background: #F6F6F6;font-size: 12px;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 495px;padding:6px 5px;margin-bottom:10px;}
+.formDialog .smallfield input[type="checkbox"] {margin:7px 5px 0 0;float:left;}
+.formDialog .smallfield textarea{background: #F6F6F6;font-size: 12px;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 495px;padding:7px 5px;margin-bottom:10px;height:60px;}
+.formDialog .picsn  {width:50px;float: left;}
+.formDialog .picsn img {border: 0 #fff solid;}
+.formDialog .infosn  {width:650px;float: right;padding-top: 8px;}
+.formDialog .smallfield input[disabled='disabled'],
+.formDialog .smallfield input:disabled {color:#999;}
+
+.formDialog .smallfield select[disabled='disabled'],
+.formDialog .smallfield select:disabled {color:#999;}
+
+.formDialog .contentGift {text-align:center;padding:10px 0;}
+.formDialog img {max-width:300px;border:1px #ccc solid}
+
+.buttonPanel {padding:20px 20px 20px 20px;overflow:hidden;height:40px;text-align:center;clear: both;}
+
+.bxTypeuser .formDialog .smallfield select{width: 450px;}
+.bxTypeuser .formDialog .smallfield input[type="text"],
+.bxTypeuser .formDialog .smallfield input[type="password"] {width: 440px;}
+
+.panelBox {box-shadow: inset 0 1px 0 0 #fff;border: 1px solid #CED8E3;border-width: 1px 0 0;border-bottom-right-radius: 4px;border-bottom-left-radius: 4px;background-color: #E3E7EA;background-image: -webkit-gradient(linear, left top, left bottom, from(#E3E7EA), to(#D4D8DB));
+background-image: -webkit-linear-gradient(top, #E3E7EA, #D4D8DB);
+background-image: -moz-linear-gradient(top, #E3E7EA, #D4D8DB);
+background-image: -ms-linear-gradient(top, #E3E7EA, #D4D8DB);
+background-image: -o-linear-gradient(top, #E3E7EA, #D4D8DB);
+background-image: linear-gradient(top, #E3E7EA, #D4D8DB);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e3e7ea', EndColorStr='#d4d8db');}
+
+.buttonPanel a {font-weight: bold;font-size: 16px;padding: 0 50px;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:40px;line-height:40px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+
+.button {color: #555;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;border: 1px solid #CCC;border-bottom-color: #AAA;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);
+background: #F6F6F6;
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+border-image: initial;
+font-weight: bold;font-size: 16px;padding: 0 50px;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:40px;line-height:40px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+
+.primary {
+background-image:  -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.05)),   color-stop(100%,rgba(0, 0, 0, 0.45)));
+background-image:  -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,rgba(0, 0, 0, 0.45) 100%);
+background-image:  -o-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-image:  -ms-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%,   rgba(0, 0, 0, 0.45) 100%);
+background-image:  rgba(0, 0, 0, 0.05) 0%,  rgba(0, 0, 0, 0.45) 100%);
+background-color: #0088D5;
+color: #fff!important;
+border: 1px solid #004487;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+text-shadow: 0px -1px 1px black!important;
+font-weight: bold;font-size: 16px;padding: 0 50px;margin:0 2px;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:40px;line-height:40px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+
+/*Đăng nhập */
+.formContact {padding:0;position:relative;list-style:none;margin:0;}
+.formContact a {text-decoration:underline;}
+.formContact .smallfield {position:relative;list-style-type:none;display:block;border-top:0 solid #595959;border-bottom:0 solid #1c1c1c;width:auto;padding:3px 0; }
+.formContact .smallfield option{max-width:100%;text-shadow:rgba(0,0,0,0.6) 0 1px 0;}
+.formContact .smallfield .arrow{background:url('http://appstore.vn/android/images/arrow.png');width:8px;height:13px;display:block;-webkit-transform:rotate(90deg);position:absolute;right:10px;top:18px}
+.formContact .smallfield .arrow{background:url('http://appstore.vn/android/images/arrow.png');width:8px;height:13px;display:block;-webkit-transform:rotate(90deg);position:absolute;right:10px;top:18px}
+.formContact .smallfield .name,
+.formContact .select .name {position:relative;left:0;font-weight:normal;line-height:25px;overflow:hidden;color:#333;text-shadow:#fff 0 1px 0;padding:0;font-weight:bold;display:block;}
+.formContact label {font-weight:normal;margin-top:5px;display:inline-block;}
+.formContact .radio {margin-right:10px;}
+.formContact textarea{background: #F6F6F6;color: #666;font-size: 13px;padding: 7px 10px;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 97%;padding: 5px;height: 60px;resize: vertical;margin-bottom:10px;}
+.formContact input[type="text"],
+.formContact input[type="password"] {background: #F6F6F6;color: #666;font-size: 13px;padding: 7px 10px;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 98%;padding:6px 5px;margin-bottom:10px;}
+
+.formContact .btSubmit {color: #555;font-weight: bold;font-size: 16px;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;padding: 10px 30px;border: 1px solid #CCC;border-bottom-color: #AAA;filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);background: #F6F6F6;background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;-moz-box-shadow: inset 0 0 1px #fff;-ms-box-shadow: inset 0 0 1px #fff;-webkit-box-shadow: inset 0 0 1px #fff;box-shadow: inset 0 0 1px #fff;border-image: initial;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;}
+
+
+.formContact select{background: #F6F6F6;font-size: 13px;padding: 0;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 100%;margin-bottom:10px;height:30px;padding:0 ;line-height:30px;text-shadow:0 0 0 #fff;}
+
+.activation .ac-sms,
+.activation .ac-email  {margin:0;clear:both;overflow:hidden;padding:10px;margin:10px 0;background: #F6F6F6;color: #666;font-size: 13px;padding: 10px 0;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 97%;padding: 5px;margin-bottom:10px;}
+.activation .des_comm {text-align:left;clear:both;margin-top:10px;position:relative;overflow:hidden;padding:3px 0;}
+.activation .des_comm span {float:left;}
+.activation .name_comm,
+.activation .name_comm {color:#333;font-size:18px;background-color:#D0D0C9;padding:0 8px;-webkit-border-radius: 5px;	-moz-border-radius: 5px;text-shadow: 0 1px 0 #000;height:30px;line-height:30px;text-decoration:none;-moz-box-shadow: 0 1px 1px #93938b, inset 0 1px 0 #ffffff;
+-webkit-box-shadow: 0 1px 1px #93938b, inset 0 1px 0 #ffffff;
+box-shadow: 0 1px 1px #93938b, inset 0 1px 0 #ffffff;}
+.activation .send_comm {padding:0 10px;position:relative;top:7px;}
+
+
+.activateEmail {overflow:hidden;}
+.activateEmail input[type="text"] {width:65%!important;float:left;margin:0;}
+.activateEmail input[type="submit"] {width:30%!important;float:right;font-size:13px;padding:5px 10px!important;margin:0;text-align:center;}
+.errorStep {background: url('http://appstore.vn/android/images/captcha/error.png');height: 16px;width: 16px;display: block;position: absolute;font-size: 13px;color: #666;text-align: right;position:absolute;right:-25px;top:26px;}
+.checkStep {background: url('http://appstore.vn/android/images/captcha/check.png');height: 16px;width: 16px;display: block;position: absolute;font-size: 13px;color: #666;text-align: right;position:absolute;right:-25px;top:26px;}
+
+.captcha {overflow:hidden;}
+.captcha input {float:left!important;width:50%!important;margin-right:20px;}
+.captcha label {float:left;line-height:30px;margin-right:10px;}
+.captcha a img {margin:0 0 0 10px;width: 26px!important;height: 26px!important;display: none;}
+.captcha a {margin:3px 10px 0 0;cursor:pointer;background: url('http://appstore.vn/android/images/refresh.png') no-repeat 0 0;width: 26px;height: 26px;position: relative;top:-2px;display: inline-block;}
+.captcha a:hover {background: url('http://appstore.vn/android/images/refresh-hover.png') no-repeat 0 0;}
+textarea {-webkit-appearance: textarea;background-color: white;border: 1px solid;border-image: initial;-webkit-rtl-ordering: logical;-webkit-user-select: text;-webkit-box-orient: vertical;resize: auto;cursor: auto;padding: 2px;white-space: pre-wrap;word-wrap: break-word;}
+input, textarea, keygen, select, button, isindex {margin: 0em;font: -webkit-small-control;color: initial;letter-spacing: normal;word-spacing: normal;line-height: normal;text-transform: none;text-indent: 0px;text-shadow: none;display: inline-block;text-align: -webkit-auto;}
+
+.smallfield .captcha {overflow:hidden;position: relative;top:10px;width: 310px;float: right;}
+.smallfield .captcha input {width: 295px!important;float: right;}
+
+.support_app {}
+.support_app ul {margin: 0;padding: 0;list-style:none;overflow:hidden;clear:both;border:0 #999 solid;}
+.support_app li small {	position: absolute;	right: 25px;	margin-top: 3px;	z-index: 3;	}
+.support_app li h3 {	font-size: 14px;	line-height: 18px;margin: 0 5px 0 0;	float: left;overflow: hidden;	padding: 0;}
+.support_app li span {		font-size: 13px;	line-height: 18px;	padding: 0;	margin: 0 0 0 0;	vertical-align: top;		}
+.support_app li big {	font-size: 14px;	line-height: 18px;		font-weight: normal;	color:#000;	}
+.support_app li small {		font-size: 13px;	font-weight: bold;		}
+.support_app li a {	text-decoration:none;color:#000;}
+.support_app li  {float: left;margin-left: 20px;}
+.support_app li:first-child  {margin: 0;}
+.support_app label  {display: block;font-weight: bold;}
+.support_app input[type="text"] {background: #F6F6F6;font-size: 12px;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 692px;padding:7px 5px;margin:0 10px 10px 0;}
+
+.send_mess {padding-right:5px;}
+.send_mess input[type="text"] {background: #F6F6F6;font-size: 12px;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 60px!important;padding:7px 5px;margin:0 10px 10px 0;}
+
+textarea {-webkit-appearance: textarea;background-color: white;border: 1px solid;border-image: initial;-webkit-rtl-ordering: logical;-webkit-user-select: text;-webkit-box-orient: vertical;resize: auto;cursor: auto;padding: 2px;white-space: pre-wrap;word-wrap: break-word;}
+input, textarea, keygen, select, button, isindex {margin: 0em;font: -webkit-small-control;color: initial;letter-spacing: normal;word-spacing: normal;line-height: normal;text-transform: none;text-indent: 0px;text-shadow: none;display: inline-block;text-align: -webkit-auto;}
+
+.noApps,
+.no-deposite {text-align:center;color: #000;text-align: center;font-family: "Courier New",monospace;width:744px;margin:0 auto;text-shadow:0 1px 0 #fff;height:50px;line-height:50px;-webkit-box-shadow: 3px 3px 3px 0px #999; -moz-box-shadow: 3px 3px 3px 0px #999; box-shadow: 3px 3px 3px 0px #999;font-size:18px;position:relative;background-color: rgba(0, 0, 0, 0.1);
+-moz-box-shadow: inset 0 1px 10px #ccc, inset0px -1px 10px #ccc;
+-webkit-box-shadow: inset 0 1px 10px #ccc, inset 0px -1px 10px #ccc;
+box-shadow: inset 0 1px 10px #ccc, inset 0px -1px 10px #ccc;border-bottom:1px #aaa solid;border-top:1px #aaa solid;
+}
+.no-deposite { -webkit-border-radius: 5px;  -moz-border-radius: 5px; border-radius: 5px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;clear:both;}
+
+/*Support*/
+.support_faq {	padding: 0 0 20px;	overflow: hidden;}
+.support_faq .box {	margin: 0 0 0;	padding: 10px 0 30px;	overflow: hidden;	position: relative;	background: url(http://appstore.vn/android/images/x36.png) no-repeat center bottom;}
+.support_faq .box .questions {	width: 30px;	font-size: 14px;	font-weight: bold;	color: #000;	text-align: right;}
+.support_faq .box .questions-info {	font-size: 12px;	line-height: 15px;	color: #000;	font-weight: bold;	padding: 3px 0 11px 20px;	background: url(images/xq.png) no-repeat 0 2px;}
+.support_faq .box .answers {	font-size: 14px;	font-weight: bold;	text-align: right;}
+.support_faq .box .answers-info {	color: #494949;	padding: 0px 0 0 20px;	position: relative;	background: url(http://appstore.vn/android/images/xa.png) no-repeat;}
+.support_faq .box .answers-info p {	margin: 0 0 10px;padding: 0;}
+.support_faq .box .top {	position: absolute;	right: 51px;	bottom: 0;	display: block;	width: 82px;	height: 20px;	background: url(images/l_back_to_top.png) no-repeat;}
+.support_faq .box .top em {	display: none;}
+.support_faq .title {	clear: both;}
+.support_faq .title-number {	font-family: Georgia;	font-size: 40px;	width: 30px;	padding: 5px 0 10px 0;	display: inline-block;	color: #7B9726;	text-align: right;	vertical-align: middle;}
+.support_faq .title-info {	font-size: 18px;	padding-left: 20px;color: #7B9726;}
+.title-faq {	font-size: 18px;	padding: 10px 0;	font-weight: bold;	margin-bottom: 20px;text-transform: uppercase;}
+.support_faq .box ul {margin-left: 10px;list-style: disc;}
+.support_faq .box ul a {color: #7B9726;}
+.support_faq .box ul a:hover {color: #333;}
+.support_faq img {max-width: 640px!important;}
+
+.bxRule {padding: 0;}
+.forgotPassword {width: 420px;}
+.forgotPassword input[type="submit"]{margin-bottom: 50px;}
+.noPic,
+.noReview {display: none;}
+
+.box-upcoming {	position: fixed;	bottom: 10px;	left:0;z-index:9999;}
+.box-upcoming .title-bx {position:relative;}
+.box-upcoming #close_upcoming {position:absolute;right:10px;top:9px;display: block;background: url(http://appstore.vn/android/javascript/colorbox/images/controls.png) no-repeat top center!important;width: 14px;height: 14px;text-indent: -9999px;}
+.box-upcoming #close_upcoming:hover{background-position:bottom center!important;}
+.box-upcoming .single_news_container {  display:none;}
+.box-upcoming #news_navigation { position:absolute;right:5px;bottom:12px;line-height:18px;}
+.box-upcoming #news_navigation img{position:relative;top:-2px;}
+
+.searchbx {position: absolute;-webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px;border-radius: 5px 0 0 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+.searchbx img {	-webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px;border-radius: 5px 0 0 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+
+#searchbox{position: fixed;z-index:100000000;width: 500px;right: 0;}
+#searchbox .title-bx {position:relative;float: left;}
+#searchbox .content-bx {position:relative;float: left;}
+#searchbox .title-bx {position:absolute;left:0;z-index: 100000000;width: 30px;height: 120px;background-color: #669900;top:0;-webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px;border-radius: 5px 0 0 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+#searchbox .bxSearch {overflow: hidden;}
+#searchbox .bxSearch {overflow: hidden;padding-left: 30px;margin-top: 37px;}
+#searchbox #close_search {display: block;-webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px;border-radius: 5px 0 0 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;}
+#searchbox #close_search:hover{background-color: #ff0000;}
+.searchbx .inputSearch {color: rgba(61, 58, 2, .5);height: 45px!important;line-height: 1.4em;padding: 0 5px!important;border: none;font-size: 20px;width: 300px;font-weight: normal;float: left;margin-right: 5px;}
+.searchbx .inputSearch {outline: none;color: #5C5E61;font: normal normal normal 18px/21px Arial, sans-serif;border: 1px solid #BFC3C7;
+background-color: #F5F6F9;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F6F9), to(#F9FBFD));
+background-image: -webkit-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -moz-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -ms-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -o-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: linear-gradient(top, #F5F6F9, #F9FBFD);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f9', EndColorStr='#f9fbfd');
+-moz-box-shadow: 0px 1px 0px white;-webkit-box-shadow: 0px 1px 0px white;box-shadow: 0px 1px 0px white;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-background-clip: padding;-webkit-background-clip: padding-box;background-clip: padding-box;}
+
+.searchbx .buttonSearch {
+	-moz-box-shadow:inset 0 1px 0 #529E21,inset 1px 0 0 #4A911C,inset -1px 0 0 #4A911C,inset 0 -1px 0 #3D7F12,inset 0 2px 0 rgba(255, 255, 255, 0.3),inset 0 0 4px rgba(255, 255, 255, 0.3),0 1px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:inset 0 1px 0 #529E21,inset 1px 0 0 #4A911C,inset -1px 0 0 #4A911C,inset 0 -1px 0 #3D7F12,inset 0 2px 0 rgba(255, 255, 255, 0.3),inset 0 0 4px rgba(255, 255, 255, 0.3),0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 0 1px 0 #529E21,inset 1px 0 0 #4A911C,inset -1px 0 0 #4A911C,inset 0 -1px 0 #3D7F12,inset 0 2px 0 rgba(255, 255, 255, 0.3),inset 0 0 4px rgba(255, 255, 255, 0.3),0 1px 2px rgba(0, 0, 0, 0.3);	
+
+	background:#6dbd45;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.2, #6dbd45), color-stop(1, #5EAD2F));
+	background:-moz-linear-gradient(center top, #6dbd45 20%, #5EAD2F 100%);
+	
+	border:0;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	
+	cursor:pointer;
+  	text-shadow:1px 1px 3px #666666;filter:shadow(color=#666666, direction=135, Strength=2);
+  	
+  	height:45px;line-height:32px;color:#fff;padding:0 15px;
+	font-size:20px;display: block;line-height: 45px;text-align: center;float: left;}
+
+#searchbox .dialog_search{padding:0 0 0 20px;position: relative;top:-120px;height: 120px;}
+#searchbox .dialog_search {color: #5B636A;z-index: 100000000;-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);-moz-box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0px 2px 4px 0 rgba(0,0,0,.35);-webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px;border-radius: 5px 0 0 5px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;display: block;position:relative;background-color: #EBEBEB;}
+
+
+.socialNetwork {text-align:center;font-size:12px;color:#999;padding:5px;text-shadow: 0 -1px 0 #000;line-height: 18px;}
+#ScrollToTop {
+bottom: 2px;
+position: relative;
+display: inline-block;
+text-align: center;
+line-height: 1em;
+width: 26px;height: 26px;
+background: url(http://appstore.vn/android/images/scrolltop.png) 0 0 no-repeat;display: block;text-indent: -9999px;}
+
+
+.getApp {overflow: hidden;}
+.getApp .titleGetapp {font-size:16px;text-shadow:0 1px 0 #222;margin-right:20px;color:#999;line-height:20px;display:inline-block;position:absolute;left:32px;top:12px;}
+.getApp .contentGetapp {display:inline-block;}
+.getApp .contentGetapp ul {margin:0;padding:0;list-style:none;}
+.getApp .contentGetapp ul li {float:left;display:inline-block;margin:0;padding:0;}
+
+#appLinks {  overflow: hidden;  width: 495px;}
+#iphone, #android, #blackberry, #other, #windowsphone {  background: #999;  display: block;  height: 23px;  float: left;  margin: 0 8px 0 7px;  text-indent: -9999px;}
+#iphone {  background: url(http://appstore.vn/android/images/icon/getApp.png) 0 0 no-repeat;  width: 64px;}
+#iphone:hover {background-position: 0 -23px;}
+#android {  background: url(http://appstore.vn/android/images/icon/getApp.png) -84px 0 no-repeat;  width: 85px;}
+#android:hover {background-position: -84px -23px;}
+#blackberry {  background: url(http://appstore.vn/android/images/icon/getApp.png) -188px 0 no-repeat;  width: 96px;}
+#blackberry:hover {background-position: -188px -23px;}
+#other {  background: url(http://appstore.vn/android/images/icon/getApp.png) -308px 0 no-repeat;  width: 52px;}
+#other:hover {background-position: -308px -23px;}
+#windowsphone {  background: url(http://appstore.vn/android/images/icon/getApp.png) -378px 0 no-repeat;  width: 117px;}
+#windowsphone:hover {background-position: -378px -23px;}
+
+.bxTypeacc .page-banner .page-banner-text {float: none;display: block;border-bottom: 1px #ccc solid;margin: 0!important;}
+.bxTypeacc .page-banner-heading {border-bottom: 1px #fff solid;height: 51px!important;}
+
+
+.top-list-container .category-list li a.title-category span {float: left;}
+.top-list-container .category-list li a.title-category small {color: #666;font-weight: normal;float: right;margin-right: 10px;font-size: 11px;height: 16px;line-height: 16px;padding: 0 8px;margin-top: 6px;-webkit-border-radius: 20px; border-radius: 20px;}
+.top-list-container .category-list li a.title-category small {
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(255,255,255,1);
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(255,255,255,1);
+box-shadow: inset 0 1px 1px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(255,255,255,1);
+
+border: 1px #ccc dotted;/*
+background-color: #eee;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#FDFDFD));
+background-image: -webkit-linear-gradient(top, #eee, #FDFDFD);
+background-image: -moz-linear-gradient(top, #eee, #FDFDFD);
+background-image: -ms-linear-gradient(top, #eee, #FDFDFD);
+background-image: -o-linear-gradient(top, #eee, #FDFDFD);
+background-image: linear-gradient(top, #eee, #FDFDFD);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eee', EndColorStr='#FDFDFD');*/
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255, 255, 255, .5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255, 255, 255, .5);
+text-shadow: 0px 1px -1px #fff;}
+
+.top-list-container .category-list li a:hover.title-category small {
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(255,255,255,1);
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(255,255,255,1);
+box-shadow: inset 0 1px 1px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 0 rgba(255,255,255,1);
+color: #fff!important;
+border: 1px solid #468000;background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255, 255, 255, .5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255, 255, 255, .5);
+text-shadow: 0px -1px -1px #666;}
+
+.imgareaselect-outer, .imgareaselect-selection, 
+.imgareaselect-border1, .imgareaselect-border2{    margin-top: -44px;}
+
+.video {text-align:center;}

@@ -1,0 +1,4 @@
+/*border for download pc*/
+.no-search-result {background:url(http://appstore.vn/android/images/notsearch.jpg) no-repeat center top;text-align: center;font-size: 30px;padding-top: 320px;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif;color: #666;}
+.installApp .itemInstall .title-container .app-install  {}
+.installApp .itemInstall .title-container .app-install a {color: white;cursor: pointer;font-size: 14px;ldisplay:block;-webkit-border-radius: 0 5px 5px 0!important; -moz-border-radius: 0 5px 5px 0!important; border-radius: 0 5px 5px 0!important;}

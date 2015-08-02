@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\bin\Debug\ChildSecService.exe.config
+C:\Users\Admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\bin\Debug\ChildSecService.exe
+C:\Users\Admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\bin\Debug\ChildSecService.pdb
+C:\Users\Admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\obj\Debug\ChildSecService.csprojResolveAssemblyReference.cache
+C:\Users\Admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\obj\Debug\ChildSecService.Form1.resources
+C:\Users\Admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\obj\Debug\ChildSecService.Properties.Resources.resources
+C:\Users\Admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\obj\Debug\ChildSecService.csproj.GenerateResource.Cache
+C:\Users\Admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\obj\Debug\ChildSecService.exe
+C:\Users\Admin\documents\visual studio 2013\Projects\ChildSecService\ChildSecService\obj\Debug\ChildSecService.pdb

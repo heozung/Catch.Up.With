@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{663C082C-7302-489B-8BA0-A6447B8DC5F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeChildren</RootNamespace>
+    <AssemblyName>CodeChildren</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>2</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=11.7.0.0, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs" />
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockWebFromUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockWebFromUser.Designer.cs">
+      <DependentUpon>BlockWebFromUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockWebQickSt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockWebQickSt.Designer.cs">
+      <DependentUpon>BlockWebQickSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BockProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BockProgram.Designer.cs">
+      <DependentUpon>BockProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPass.Designer.cs">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Idea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Idea.Designer.cs">
+      <DependentUpon>Idea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\x86\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\x86\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\x86\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="RegisChil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisChil.Designer.cs">
+      <DependentUpon>RegisChil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LimitSoft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimitSoft.Designer.cs">
+      <DependentUpon>LimitSoft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFailed.Designer.cs">
+      <DependentUpon>LoginFailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestFailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestFailed.Designer.cs">
+      <DependentUpon>RequestFailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestSuccess.Designer.cs">
+      <DependentUpon>RequestSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status.Designer.cs">
+      <DependentUpon>Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoad.Designer.cs">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuOffical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOffical.Designer.cs">
+      <DependentUpon>MenuOffical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLogin.Designer.cs">
+      <DependentUpon>MenuLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thanks.Designer.cs">
+      <DependentUpon>Thanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tienich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tienich.Designer.cs">
+      <DependentUpon>Tienich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TienIchKhac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TienIchKhac.Designer.cs">
+      <DependentUpon>TienIchKhac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimerSetting.Designer.cs">
+      <DependentUpon>TimerSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFailed.Designer.cs">
+      <DependentUpon>UpdateFailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSucess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSucess.Designer.cs">
+      <DependentUpon>UpdateSucess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhenStartAg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhenStartAg.Designer.cs">
+      <DependentUpon>WhenStartAg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsSettingMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsSettingMain.Designer.cs">
+      <DependentUpon>WindowsSettingMain.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockWebFromUser.resx">
+      <DependentUpon>BlockWebFromUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockWebQickSt.resx">
+      <DependentUpon>BlockWebQickSt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BockProgram.resx">
+      <DependentUpon>BockProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPass.resx">
+      <DependentUpon>ForgetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idea.resx">
+      <DependentUpon>Idea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\CodeChildren.About.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Backup.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.BlockProgram.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.BlockWebFromUser.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.BlockWebQickSt.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.ChangePass.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Failed.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.ForgetPass.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.FormLoad.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.History.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Idea.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Intro.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.LimitSoft.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Login.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.LoginFailed.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.MenuLogin.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.MenuOffical.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Register.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.RequestFailed.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.RequestSuccess.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Status.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.SuccessForm.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Thanks.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.Tienich.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.TienIchKhac.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.TimerSetting.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.UpdateFailed.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.UpdateSucess.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.WhenStartAg.resources" />
+    <EmbeddedResource Include="obj\Debug\CodeChildren.WindowsSettingMain.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.About.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Backup.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.BlockProgram.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.BlockWebFromUser.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.BlockWebQickSt.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.ChangePass.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Failed.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.ForgetPass.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Form1.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.FormLoad.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.History.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Idea.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Intro.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.LimitSoft.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Login.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.LoginFailed.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.MenuLogin.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.MenuOffical.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Register.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.RequestFailed.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.RequestSuccess.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Status.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.SuccessForm.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Thanks.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.Tienich.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.TienIchKhac.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.TimerSetting.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.UpdateFailed.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.UpdateSucess.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.WhenStartAg.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\CodeChildren.WindowsSettingMain.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.About.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Backup.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.BlockProgram.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.BlockWebFromUser.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.BlockWebQickSt.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.ChangePass.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Failed.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.ForgetPass.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Form1.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.FormLoad.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.History.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Idea.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Intro.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.LimitSoft.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Login.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.LoginFailed.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.MenuLogin.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.MenuOffical.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Register.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.RequestFailed.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.RequestSuccess.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Status.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.SuccessForm.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Thanks.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.Tienich.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.TienIchKhac.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.TimerSetting.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.UpdateFailed.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.UpdateSucess.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.WhenStartAg.resources" />
+    <EmbeddedResource Include="obj\x86\Release\CodeChildren.WindowsSettingMain.resources" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RegisChil.resx">
+      <DependentUpon>RegisChil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoad.resx">
+      <DependentUpon>FormLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimitSoft.resx">
+      <DependentUpon>LimitSoft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFailed.resx">
+      <DependentUpon>LoginFailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuOffical.resx">
+      <DependentUpon>MenuOffical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuLogin.resx">
+      <DependentUpon>MenuLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RequestFailed.resx">
+      <DependentUpon>RequestFailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestSuccess.resx">
+      <DependentUpon>RequestSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status.resx">
+      <DependentUpon>Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thanks.resx">
+      <DependentUpon>Thanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tienich.resx">
+      <DependentUpon>Tienich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TienIchKhac.resx">
+      <DependentUpon>TienIchKhac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimerSetting.resx">
+      <DependentUpon>TimerSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFailed.resx">
+      <DependentUpon>UpdateFailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSucess.resx">
+      <DependentUpon>UpdateSucess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhenStartAg.resx">
+      <DependentUpon>WhenStartAg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsSettingMain.resx">
+      <DependentUpon>WindowsSettingMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\CodeChildren.exe.config" />
+    <None Include="bin\Debug\CodeChildren.vshost.exe.config" />
+    <None Include="bin\Debug\CodeChildren.vshost.exe.manifest" />
+    <None Include="bin\x86\Debug\CodeChildren.exe.config" />
+    <None Include="bin\x86\Debug\CodeChildren.vshost.exe.config" />
+    <None Include="bin\x86\Release\CodeChildren.exe.config" />
+    <None Include="bin\x86\Release\CodeChildren.vshost.exe.config" />
+    <None Include="bin\x86\Release\CodeChildren.vshost.exe.manifest" />
+    <None Include="obj\Debug\CodeChildren.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\CodeChildren.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\CodeChildren.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Debug\CodeChildren.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Release\build.force" />
+    <None Include="obj\x86\Release\CodeChildren.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Release\CodeChildren.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Release\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CodeChildren.exe" />
+    <Content Include="bin\Debug\CodeChildren.pdb" />
+    <Content Include="bin\Debug\CodeChildren.vshost.exe" />
+    <Content Include="bin\Debug\DatabaseCodeChildren1Offical.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\x86\Debug\CodeChildren.vshost.exe" />
+    <Content Include="bin\x86\Release\CodeChildren.vshost.exe" />
+    <Content Include="obj\Debug\CodeChildren.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CodeChildren.exe" />
+    <Content Include="obj\Debug\codechildren.exe.licenses" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources1.Designer.cs.dll" />
+    <Content Include="obj\x86\Debug\CodeChildren.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\codechildren.exe.licenses" />
+    <Content Include="obj\x86\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\x86\Release\CodeChildren.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Release\codechildren.exe.licenses" />
+    <Content Include="obj\x86\Release\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="Resources\1402237706_login.png" />
+    <Content Include="Resources\1402267780_device_monitor_screen.png" />
+    <Content Include="Resources\1402268558_internt_web_technology-02.png" />
+    <Content Include="Resources\1402268836_openid_open_id.png" />
+    <Content Include="Resources\1402269345_window_list.png" />
+    <Content Include="Resources\1402269492_home.png" />
+    <Content Include="Resources\1402305141_04_In_alt.png" />
+    <Content Include="Resources\1402305910_key.png" />
+    <Content Include="Resources\1402305910_key1.png" />
+    <Content Include="Resources\1402383159_Typewriter.png" />
+    <Content Include="Resources\1402383243_Typewriter.png" />
+    <Content Include="Resources\1402383316_help.png" />
+    <Content Include="Resources\1402383343_help.png" />
+    <Content Include="Resources\1402383387_help.png" />
+    <Content Include="Resources\1402383449_business_namecard_contact_info_.png" />
+    <Content Include="Resources\1402480409_checkmark-24.png" />
+    <Content Include="Resources\1402480470_cross-24.png" />
+    <Content Include="Resources\1402480855_circle_back_arrow.png" />
+    <Content Include="Resources\1402481053_checkmark-24.png" />
+    <Content Include="Resources\1402481067_editor_floopy-dish_save.png" />
+    <Content Include="Resources\1402481216_cancel.png" />
+    <Content Include="Resources\1402525696_circle_backup_time_history_recent_time-machine.png" />
+    <Content Include="Resources\1402525789_circle_add_plus.png" />
+    <Content Include="Resources\1402525918_editor_trash_delete_recycle_bin.png" />
+    <Content Include="Resources\1402526088_exit.png" />
+    <Content Include="Resources\1402526413_Play1Disabled.png" />
+    <Content Include="Resources\1402527022_519564-060_Off.png" />
+    <Content Include="Resources\1402527236_bulb.png" />
+    <Content Include="Resources\1402527294_light_off.png" />
+    <Content Include="Resources\1402527362_lock.png" />
+    <Content Include="Resources\1402527407_lock.png" />
+    <Content Include="Resources\1403166443_circle_clock_time_history_recent_2.png" />
+    <Content Include="Resources\1403166538_circle_clock_time_history_recent_2.png" />
+    <Content Include="Resources\1403166982_protect yellow.png" />
+    <Content Include="Resources\1403167034_internt_web_technology-07.png" />
+    <Content Include="Resources\1403167826_common_login_enter_signin.png" />
+    <Content Include="Resources\1403167888_key.png" />
+    <Content Include="Resources\1403167993_note.png" />
+    <Content Include="Resources\1403168409_08.Credit-Card.png" />
+    <Content Include="Resources\1403195111_Restart-64.png" />
+    <Content Include="Resources\1403195239_Turn_off.png" />
+    <Content Include="Resources\1403281980_button_ok.png" />
+    <Content Include="Resources\ij04o.jpg" />
+    <Content Include="Resources\register_icon.png" />
+    <Content Include="Resources\Sidebar-Applications-icon.png" />
+    <Content Include="Resources\wallpaper-435586.jpg" />
+    <Content Include="Resources\word011.jpg" />
+    <Content Include="Resources\word0111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

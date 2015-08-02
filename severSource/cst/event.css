@@ -1,0 +1,24 @@
+/*
+ Appota.com
+ CSS Framework 1.0.1
+ W: http://dangdinhkhanh.com
+ E: khanhdd83@gmail.com
+*/
+
+#f21 {}
+#f21 .browse-page,
+#f24 .browse-page{background:#fff  url(http://appstore.vn/android/images/event/bg_fg1_top.png) no-repeat center top!important;}
+#f21 .browse-page #content,
+#f24 .browse-page #content {background: transparent url(http://appstore.vn/android/images/event/bg_fg1_bottom.png) no-repeat center bottom!important;padding-bottom: 350px;}
+#f21 .container-container,
+#f24 .container-container {background-color: transparent;}
+#f21 .page-banner-heading,
+#f24 .page-banner-heading {background: -webkit-gradient(linear,0% 0%,0% 100%,from(rgba(255, 255, 255, 0.8)),to(rgba(255, 255, 255, 0.0)));}
+#f21 #tab-list,
+#f24 #tab-list {-webkit-box-shadow: 0px 0px 0 #333!important;-moz-box-shadow: 0px 0px 0 #333!important;box-shadow: 0px 0px 0 #333!important;background-image: none;}
+
+#f21 #breadcrumb,
+#f24 #breadcrumb {border-left: 0 solid #7B9726!important;border-right: 0 solid #7B9726!important;width: 1024px!important;}
+
+
+

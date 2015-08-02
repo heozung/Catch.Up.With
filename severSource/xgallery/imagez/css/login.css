@@ -1,0 +1,104 @@
+/*
+**	@desc:	PHP ajax login form using jQuery
+**	@author:	programmer@chazzuka.com
+**	@url:		http://www.chazzuka.com/blog
+**	@date:	15 August 2008
+**	@license:	Free!, but i'll be glad if i my name listed in the credits'
+*/
+/* CSS Document */
+	html,
+	BODY
+		{
+			background: #2a669a;
+			padding:30px;
+			margin:0;
+			font:normal 11px/normal arial;
+			color: #aebbc7;
+			text-align:center;
+		}
+	#wrapper
+		{
+			background: url(../bg.jpg);	
+			text-align:left;
+			padding:25px;
+		}
+	a
+		{
+			text-decoration:none;
+			color:#aebbc7;
+			border-bottom:dotted 1px #aebbc7;
+			font-weight:bold;
+		}
+	a:hover
+		{
+			color:#00ccff;
+			border-bottom:solid 1px #00ccff;
+			font-weight:bold;
+		}
+	form
+		{
+			padding:15px; margin:0;
+		}
+	#msg
+		{
+		text-align:center; color:red; padding:0px 0 10px 0;
+		}
+	label
+		{
+		font-weight:bold;
+		display:block;
+		}
+	.textfield
+		{
+			background:#2d3e55;
+			border:solid 1px #00ccff;
+			padding:3px;
+			margin:4px 0px 4px 0px;
+			width:90%;
+		}
+	.textfield:hover,
+	.textfield:focus
+		{
+		color:#ffffff;
+		}
+	
+	.buttonfield
+		{
+			background:#333;
+			border:solid 1px #00ccff;
+			color:#00ccff;
+			font:bold 11px/normal Tahoma, Verdana;
+			margin-top:10px;
+			padding:4px;
+		}
+	.buttonfield:hover,
+	.buttonfield:focus
+		{
+			border:solid 1px #00ccff;
+			color:#fff;
+		}
+	#wait{ position:absolute; top:0px; left:0px; color:#fff; padding:5px;
+	BACKGROUND: url(../t_cat.jpg);
+	BORDER-RIGHT: #00ccff 1px solid;
+	BORDER-BOTTOM: #00ccff 1px solid;
+	height: 20px;
+	}
+	#changepass{ position:absolute; top:0px; left:0px;  color:#fff; padding:10px; 
+	BACKGROUND: url(../t_cat.jpg);
+	BORDER-RIGHT: #00ccff 1px solid;
+	BORDER-BOTTOM: #00ccff 1px solid;
+	}
+.tborder {
+BORDER-LEFT: #00ccff 1px solid;
+BORDER-TOP: #00ccff 1px solid;
+BORDER-RIGHT: #446f97 1px solid;
+
+}
+.tcat {
+BACKGROUND: url(../t_cat.jpg) #f7fcf2 repeat-x left;
+FONT: tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif; 
+COLOR: #ffffff;
+FONT-SIZE: 13px;
+height: 30px;
+BORDER-RIGHT: #00ccff 1px solid;
+}	

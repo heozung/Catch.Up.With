@@ -1,0 +1,934 @@
+/*
+ Appota.com
+ CSS Framework 1.0.1
+ W: http://appota.com
+*/
+@import url("home.css");
+@import url("event.css");
+@import url("store.css");
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, caption, tbody, tfoot, thead, tr, th, td, form, fieldset, embed, object, applet {
+	margin:0;	padding:0;	border:0;}
+body {	position:relative;	margin:0;	-webkit-text-size-adjust:none;	font-size: 62.5%;font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;color:#000;}
+html {background:url(http://appstore.vn/android/images/bg/bg-body.jpg) center top;}
+html { 	overflow: -moz-scrollbars-vertical !important; }
+html {	margin-left: -1px;	overflow-Y: scroll;}
+
+/*end noel*/
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0)
+{
+	head~body *{ margin-left: -1px;}
+}
+
+.center {	margin:auto;	display:block;	text-align:center!important}
+img,
+a {	border:0;outline:0;}
+a, a:visited {text-decoration: none;color:#7B9726;cursor:pointer;}
+a:hover  {color: #000;}
+table {	border-collapse:collapse;	border-width:0;	empty-cells:show}
+ul {	padding:0 0 1em 1em}
+ol {	padding:0 0 1em 1.3em}
+li {	line-height:1.5em;	padding:0 0 .5em 0}
+p {	padding:0 0 1em 0}
+h1, h2, h3, h4, h5, h6 {	padding:0 0 1em 0}
+
+sup, sub {	font-size:.7em}
+input, select, textarea, option {	font-family:inherit;	font-size:inherit}
+
+.ribbon {position: absolute;height: 35px;width: 35px;display: block;-webkit-border-radius: 0 15px 0 0; border-radius: 0 15px 0 0;top:0;right:0;}
+.ribbon_new {background:url(http://appstore.vn/android/images/icon/ribbon_new.png) no-repeat right top;-webkit-background-size: 35px; background-size: 35px;}
+.ribbon_hot {background:url(http://appstore.vn/android/images/icon/ribbon_hot.png) no-repeat right top;-webkit-background-size: 35px; background-size: 35px;}
+.ribbon_update {background:url(http://appstore.vn/android/images/icon/ribbon_update.png) no-repeat right top;-webkit-background-size: 35px; background-size: 35px;}
+.ribbon_ipad {background:url(http://appstore.vn/android/images/icon/ribbon_ipad.png) no-repeat right top;left:0!important;bottom:0!important;height: 78px!important;width: 78px!important;-webkit-border-radius:0; border-radius: 0;background-size: 78px 78px;}
+
+.error, .alert, .notice, .success, .info {padding:0.8em;margin-bottom:1em;border:2px solid #ddd;}
+.error, .alert {background:#fbe3e4;color:#8a1f11;border-color:#fbc2c4;}
+.notice {background:#fff6bf;color:#514721;border-color:#ffd324;}
+.success {background:#e6efc2;color:#264409;border-color:#c6d880;}
+.info {background:#d5edf8;color:#205791;border-color:#92cae4;}
+.error a, .alert a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+.info a {color:#205791;}
+.left {float:left;}
+.right {float:right;}
+.center {text-align:center;clear:both;}
+.both {clear:both;}
+
+.ribbon_sale {position:absolute;width:50px!important;height:35px!important;left:83px;top:15px;margin:0!important;background:url("http://appstore.vn/android/images/icon/sale.png") 0 0 no-repeat}
+.ribbon_sale b {position:absolute;width:40px!important;height:40px!important;color:#fff;font-size:14px;-webkit-transform: rotate(-15deg);-moz-transform: rotate(-15deg);-ms-transform: rotate(-15deg);-o-transform: rotate(-15deg);transform: rotate(-15deg);left:4px;right:0;top:7px;text-align:center;font-weight:normal;}
+
+#mainUser .infoMember,
+#mainUser .titleForm a,
+#mainTYM .infoMember,
+#mainTYM .titleForm a,
+#mainLogin .loginAppota,
+#mainLogin .titleForm a {background-color: #EBEBEB;}
+
+/*path*/
+#breadcrumb {background:#fff url(http://appstore.vn/android/images/bg/bg_breadcrumb.png) repeat-x 0 0;margin:0 auto;position:relative;width:1022px;border-top: 3px solid #7B9726;border-left: 1px solid #7B9726;border-right: 1px solid #7B9726;}
+#breadcrumb ul {height: 24px;clear: both;display: block;padding: 0;margin:0;list-style:none;}
+#breadcrumb li.home, 
+#breadcrumb li.home a, 
+#breadcrumb li.home a span {padding: 0;width: 29px;height: 24px;display: block;position: relative;z-index: 5;}
+#breadcrumb li.home a  {background: url(http://appstore.vn/android/images/icon/home.png) 0 0;position: absolute;top: 0;left: 0;z-index: 10;text-indent:-9999px;}
+#breadcrumb a {display: block;line-height: 24px;padding: 0 1em;text-decoration: none;font-size: 11px;display: block;position: relative;overflow: hidden;color: #000;}
+#breadcrumb a:hover {color: #7B9726;}
+#breadcrumb li {float: left;background: url(http://appstore.vn/android/images/bg/bg_dividers.png) no-repeat right 0;padding: 0 1em 0 0;height:24px;}
+#breadcrumb li:last-child {background-image: none;}
+
+/*Page*/
+.browse-page {clear:both;background:#EBEBEB ;margin-top:0;-webkit-box-shadow: 0px 0px 1px #000;-moz-box-shadow: 0px 0px 1px #000;box-shadow: 0px 0px 1px #000;width:100%;}
+#content {clear:both;font-size: 130%;margin: 0 auto;text-align: left;padding-top:0;position:relative;top:0px;}
+
+/*detail*/
+#doc-banner {clear:both;overflow:hidden;margin-bottom:4px;}
+#container-header {margin:0 auto;background: #262626;background: rgba(0, 0, 0, 0.1);-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;box-shadow: 0 1px 1px rgba(0,0,0,0.75) inset;padding-top: 20px;width:1024px;margin:0 auto;position: relative;}
+#container-header-in {padding: 5px 0 20px 0;overflow:hidden;width:1024px;margin:0 auto;}
+#container-header .title-container {position:relative;float:left;width:510px;overflow:hidden;height:124px;}
+#container-header .title-container-in {}
+#container-header .title-container .banner-title {font-size: 20px;font-weight: bold;line-height: 1.1em;overflow: hidden;margin:0 0 5px 0;padding:0;color:#fff;line-height: 24px;max-height: 50px;}
+#container-header .title-container .header-link {font-size: 14px;color:#ccc;}
+#container-header .title-container a:hover.header-link {color:#7B9726!important;}
+#container-header .icon-container {float: left;width: 134px;}
+#container-header .icon-container img {float: left;width: 124px;height:124px;-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;-webkit-box-shadow: 0px 0px 0 0px #000;  -moz-box-shadow: 0px 0px 0 0px #000;box-shadow: 0px 0px 0 0px #000;background-color:#fff;}
+#container-header .ratings-price {clear:both;position:absolute;top:70px;width:500px;}
+#container-header .ratings-wrapper {height: 30px;}
+#container-header .ratings-wrapper img {margin:0 3px 0 0;position:relative;width:14px;float: left;}
+.average-rating .ratings-wrapper {height: 16px;margin-bottom:5px;}
+.average-rating .ratings-wrapper img {margin:0 3px 0 0;position:relative;width:16px!important;float: none!important;}
+#container-header .ratings-wrapper .snippet-reviews {font-size: 11px;color:#ccc;margin: 2px 0 0 5px;float: left;}
+#container-header .buy-wrapper {}
+#container-header .buy-wrapper,
+#container-header .install-wrapper {white-space: nowrap;position:relative;top:-5px;display:block!important;}
+#container-header .buy-wrapper .buy-button,
+#container-header .install-wrapper .install-button {border: 1px solid #dedede;color: #666;cursor: pointer;font-size: 14px;line-height: 1em;font-weight:bold;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px;cursor:pointer; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; background-color: #fdfdfd;margin-right:5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eee)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #fdfdfd, #eee); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #fdfdfd, #eee); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #fdfdfd, #eee); /* IE10 */
+  background-image:      -o-linear-gradient(top, #fdfdfd, #eee); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #fdfdfd, #eee);}
+#container-header .buy-wrapper .buy-button-price,
+#container-header .install-wrapper .install-button-price {border: 0 solid white;display: block;padding: 6px 30px;text-shadow:#fff 0 1px 0;}
+#container-header .install-wrapper .install-button-price {text-shadow:#666 0 -1px 0;}
+#container-header .install-wrapper .install-button{color: white;cursor: pointer;font-size: 14px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px; border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #468000;
+background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#83B842), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow:#666 0 -1px 1px;
+}
+
+#container-image {background-color: black;height: 344px;overflow: hidden;position: relative;text-align: center;width: 705px;float:right;}
+.itemDetail {float:left;width:650px;padding-left:20px;}
+.itemDetail-in {float:right;width:330px;padding-right:20px;}
+
+#tab-body {top:0;clear:both;position:relative;overflow:hidden;background:url(http://appstore.vn/android/images/bg/bg-content.png) repeat-y 0 0;width: 1024px;margin: 0 auto;}
+#tab-list {top:0;clear:both;position:relative;overflow:hidden;width: 1024px;margin: 0 auto;background: url(http://appstore.vn/android/images/bg/bg-content.png) repeat-y 0 0;}
+
+.bxTypeList #tab-list{top:0;clear:both;position:relative;overflow:hidden;width: 1024px;margin: 0 auto;background: url(http://appstore.vn/android/images/bg/bg-tab.png) repeat-y 0 0;}
+
+.bxTypeacc #tab-list,
+.bxTypeuser #tab-list{top:0;clear:both;position:relative;overflow:hidden;width: 1024px;margin: 0 auto;background-image: none!important;}
+.bxTypeuser,
+.bxTypeacc {border-top: 3px #7B9726 solid;}
+
+/*Tab Left*/
+#tab-body-categories {width:280px;float:left;position:relative;top:0;}
+.inline-block {position: relative;display: inline-block;float:left;vertical-align:top!important;margin:0;}
+
+.tab-panel-header {padding-top:0;-webkit-box-shadow: 0px -1px 0px #ccc;
+-moz-box-shadow: 0px -1px 0px #ccc;
+box-shadow: 0px -1px 0px #ccc;}
+.tabBar {border-bottom: 0 solid #3D3D3D;cursor: default;outline: none;margin:0;padding: 0;list-style:none;height:40px;background: url(http://appstore.vn/android/images/tab/tab-bg-gradient-sml.gif) repeat-x 0 0;}
+.tabBar.col3 li:first-child {width:248px!important;}
+.tabBar.col3 li {width:248px;}
+.tabBar.col4 li:first-child {width:186px!important;}
+.tabBar.col4 li {width:186px;}
+.tabBar .tab {height:40px;float:left;display:inline-block;margin:0;padding:0;filter: }
+.tabBar .tab a{height:40px;}
+.tabBar .tab a{cursor: pointer;color: white;font-size: 21px;height: 0;padding: 0;height:40px;line-height:40px;display:block;background:url(http://appstore.vn/android/images/tab/tab-shadow-right.png) no-repeat left bottom;}
+.tabBar li:first-child a{cursor: pointer;color: white;font-size: 21px;height: 0;padding: 0;height:40px;line-height:40px;display:block;background:url(http://appstore.vn/android/images/tab/tab-shadow-right0.png) no-repeat left bottom;}
+.tabBar .tab a span {display:block;color:#666;padding:0 10px;text-align:center;font-size:16px;font-weight:bold;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;text-shadow:1px 1px 0 #fff;}
+.tabBar .tab a:hover span {color: #7B9726;}
+.tabBar .tab a.selected span {background:#fff url(http://appstore.vn/android/images/tab/tab-shadow-right.png) no-repeat left bottom;height:40px;color:#7B9726;}
+.tabBar li:first-child a.selected span {background:#fff url(http://appstore.vn/android/images/tab/tab-shadow-right0.png) no-repeat left bottom;height:40px;color:#7B9726;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;}
+.tabBar li:last-child a.selected  {background:#fff url(http://appstore.vn/android/images/tab/tab-shadow-right.png) no-repeat left bottom;height:40px;color:#7B9726;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;}
+.tabBar li:last-child a.selected span{background: url(http://appstore.vn/android/images/tab/tab-shadow-left.png) no-repeat right bottom;height:40px;color:#7B9726;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;}
+.tabBar li:last-child a span{background: url(http://appstore.vn/android/images/tab/tab-shadow-left.png) no-repeat right bottom;height:40px;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;}
+
+.more-arrow-link {text-decoration: none!important;}
+.more-arrow {color: #3a7ec7;font-size: 150%;padding-left: 4px;}
+.tabBar-fake {border-bottom: 2px solid #3D3D3D;height: 25px;}
+
+/*Tab header*/
+.shadetabs{background-color:#7B9726;height:45px;}
+.shadetabs li{display: inline;margin: 0;}
+.shadetabs li a.selected{}
+.shadetabs li a.selected:hover{ text-decoration: none;}
+
+.tabcontent{display:none;}
+
+@media print {.tabcontent {display:block !important;}}
+
+.content-panel-tab {margin-bottom:0;border-left:0 #ccc solid}
+.content-panel-tab.col-content {}
+
+.top-list-container {overflow: hidden;padding-left: 20px;padding-top: 0;width: 260px;position: relative;margin-bottom:20x;clear:both;padding-bottom:20px;}
+.top-list-container h2 {color: #7B9726;font-weight: normal;margin:0 0 0 0;height:40px;line-height:40px;padding:0;}
+.top-list-container h2 a {color: #7B9726;font-weight: normal;text-decoration:none;display:block;height:40px;line-height:40px;font-size:16px;font-weight:bold;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;}
+.top-list-container h2 a:hover {color:#666;}
+.top-list-container ul {margin:0;padding:0;list-style:none;width: 259px;}
+.top-list-container ul li {border-top: 1px solid #ECECEC;padding: 5px 0;overflow:hidden;display:block;position:relative;}
+.top-list-container ul li:first-child {border-top: 1px solid #ccc;}
+.top-list-container ul li a {text-decoration:none;font-weight:normal;display:block;}
+.top-list-container ul li a.more-arrow-link {text-decoration:none;font-weight:normal;}
+.top-list-container ul li a:hover {text-decoration:none;color: #7B9726;}
+.top-list-container ul li a.selected {background-color:#ECECEC;color:#7B9726;}
+.top-list-container ul li .content-list {overflow:hidden;}
+
+.top-list-container ul li .top-list-number-column {margin-right: 10px;vertical-align: top;display: inline-block;float:left;}
+.top-list-container ul li .top-list-number-column .bullet-number {color: #3D3D3D;font-size: 18px;font-weight: bold;line-height: 40px;overflow: hidden;text-align: center;vertical-align: middle;width: 30px;}
+.top-list-container ul li .top-list-content-column {display: inline-block;float:left;}
+.top-list-container ul li .top-list-content-column .top-title {color: #414242;display: block;font-weight: bold;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 210px;}
+.top-list-container ul li .top-list-content-column a:hover.top-title {color: #7B9726;}
+.top-list-container ul li .top-list-content-column .top-title .iconAudio {width:16px;vertical-align:middle;height:18px;background:url(http://appstore.vn/android/images/icon/audio-sm2.png) no-repeat 0 0;display:inline-block;}
+.top-list-container ul li .top-list-content-column .top-subtitle-container-wrapper {white-space: nowrap;width: 210px;}
+.top-list-container ul li .top-list-content-column .top-subtitle-container {max-width: 200px;overflow: hidden;text-overflow: ellipsis;}
+.top-list-container ul li .top-list-content-column .top-subtitle-container .top-subtitle {color: #8E8E8E!important;font-size: 11px;font-weight: normal;padding-top: 3px;text-transform: uppercase;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.top-list-container ul li .top-list-content-column .top-subtitle-container a:hover.top-subtitle {color: #7B9726!important;}
+
+.top-list-container ul li .top-list-see-all {display: block;padding: 10px 0;}
+.top-list-container ul li .top-list-see-all a {color: #000;}
+.top-list-container ul li .top-list-see-all a:hover {color: #7B9726;}
+.top-list-container ul li .top-list-see-all .more-arrow {color: #3a7ec7;font-size: 150%;padding-left: 4px;position:relative;top:1px;}
+
+.top-list-container .tags-list li {padding: 0;}
+.top-list-container ul li .top-tags-number-column {margin-right: 10px;vertical-align: top;display: inline-block;float:left;}
+.top-list-container ul li .top-tags-content-column {display: inline-block;float:left;}
+.top-list-container ul li .top-tags-content-column .top-title {color: #414242;display: block;font-weight: bold;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 210px;height: 30px;line-height: 30px;background:url(http://appstore.vn/android/images/icon/tags.png) no-repeat 10px 7px;padding-left: 40px;}
+.top-list-container ul li .top-tags-content-column a:hover.top-title {color: #7B9726;}
+.top-list-container ul li .top-tags-content-column .top-title .iconAudio {width:16px;vertical-align:middle;height:18px;background:url(http://appstore.vn/android/images/icon/audio-sm2.png) no-repeat 0 0;display:inline-block;}
+.top-list-container ul li:hover .top-tags-content-column .top-title {width:210px!important;}
+
+
+.top-list-container ul li .buy-wrapper,
+.top-list-container ul li .install-wrapper {white-space: nowrap;position:absolute;right:10px;top:16px;display:none;}
+.top-list-container ul li:hover .buy-wrapper,
+.top-list-container ul li:hover .install-wrapper {display:block;}
+.top-list-container ul li:hover .top-title {width:160px!important;}
+.top-list-container ul li:hover .top-subtitle {width:160px!important;}
+.top-list-container ul li .buy-wrapper .buy-button,
+.top-list-container ul li .install-wrapper .install-button {border: 1px solid #dedede;color: #666;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px;cursor:pointer; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; background-color: #fdfdfd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eee)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #fdfdfd, #eee); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #fdfdfd, #eee); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #fdfdfd, #eee); /* IE10 */
+  background-image:      -o-linear-gradient(top, #fdfdfd, #eee); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #fdfdfd, #eee);}
+.top-list-container ul li .buy-wrapper .buy-button-price,
+.top-list-container ul li .install-wrapper .install-button-price {border: 0 solid white;display: block;padding: 3px 7px;text-shadow:#fff 0 1px 0;}
+.top-list-container ul li .install-wrapper .install-button-price {text-shadow:#666 0 -1px 0;}
+.top-list-container ul li .install-wrapper .install-button{color: white;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;border: 1px solid #337923;-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #468000;
+background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#83B842), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow: 0px 1px -1px #666;}
+
+
+.top-list-container .category-list li{padding:0;}
+.top-list-container .category-list li a {padding-left:12px!important;}
+.top-list-container .category-list li .title-category {height:30px;line-height:30px;font-weight:bold;}
+.top-list-container .category-list li a.title-category span {color: #000;}
+.top-list-container .category-list li a:hover.title-category span {color: #7B9726;}
+.top-list-container .category-list li .selected {background-color:#ececec;color:#7B9726;}
+.top-list-container .category-list li .selected span {color:#7B9726!important;}
+/*Tab Right*/
+#tab-body-featured-lists {width:744px;float:right;position:relative;top:0px;}
+#tab-body-featured-lists .content-panel-tab {clear:both;-webkit-box-shadow: 0 -1px 0 #ccc;-moz-box-shadow: 0 -1px 0 #ccc;box-shadow: 0 -1px 0 #ccc;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel {padding: 0;position:relative;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-heading {margin:0 0 30px 0;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-heading ,
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-heading  a {color: #7B9726!important;font-weight: normal;text-decoration: none;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini {position:relative;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages {border-bottom: 0 solid #D7D7D7;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages-wrapper {padding: 25px 0 25px 20px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .contentBlock {position:relative;}
+
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .snippet-tall {height: 130px;margin: 0px 0 25px 10px;max-width: 165px;text-overflow: ellipsis;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .overview-tall {max-height: 200px;margin: 0px;max-width: 180px;text-overflow: ellipsis;display:none;border:1px #aaa solid;position:absolute;top:-11px;left:-1px;padding:10px;-webkit-box-shadow: 0px 0px 10px #aaa;      -moz-box-shadow: 0px 0px 10px #aaa; box-shadow: 0px 0px 10px #aaa;-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px; }
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .overview-tall .attribution a {white-space:inherit!important;max-width: none!important;}
+
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .contentBlock:hover .snippet-tall {}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .contentBlock:hover .overview-tall {display:block!important;z-index:99999;background-color:#fff;}
+
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .social_widget {margin-top:10px;overflow:hidden;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .social_widget a {display:inline-block;float:left;width:16px;height:16px;background:url(http://appstore.vn/android/images/logo/widget16x16.png) no-repeat;margin-right:5px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .social_widget a.facebook {background-position:0 -16px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .social_widget a.tweet {background-position:0 -32px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .social_widget a.googleplus {background-position:0 -48px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .social_widget a.zingme {background-position:0 -64px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .social_widget a.govn {background-position:0 -80px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .social_widget .itemShare {margin-right:5px;float:left;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .thumbnail-wrapper {zoom: 1;position:relative;margin-bottom:5px;height:78px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .thumbnail-wrapper .thumbnail {float:left;position: relative;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .thumbnail-wrapper .thumbnail img {width:78px;height:78px;-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;-webkit-box-shadow: 0px 0 0 0px #666;-moz-box-shadow: 0px 0 0 0px #666;box-shadow: 0px 0 0 0px #666;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .ordinal-overlay {left: -8px;bottom: 4px;cursor: default;height: 20px;min-width: 25px;position: absolute;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .ordinal-overlay .ordinal-value {background-color: #88B131;-khtml-opacity: 0.95;-moz-opacity: 0.95;color: white;filter: alpha(opacity=95);font-weight: normal;opacity: 0.95;padding: 2px;text-align: center;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .ordinal-overlay .ordinal-3d-effect {border-top-color: #7B9726;border-left: 3px solid transparent;border-right: 3px solid transparent;border-top: 3px solid #7B9726;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details {margin: 0;padding-left: 0;width: 165px;clear:both;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .overview-tall .details {width: 175px;}
+
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details a.title {color: #414242;font-weight: bold;max-width: 170px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;position: relative;display:block;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details a:hover.title {color: #7B9726;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .overview-tall .details a.title {max-width: 180px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .attribution {padding-top: 3px;text-overflow: ellipsis;white-space: nowrap;display: block;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .attribution a {color: #8E8E8E;font-size: 11px;line-height: 1;overflow: hidden;text-transform: uppercase;line-height: 13px;max-width: 150px;text-overflow: ellipsis;display:block;white-space:nowrap;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .attribution a:hover {color: #7B9726;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .info-wapper {font-size:11px;white-space:nowrap;display:block;overflow:hidden;color:#000;text-overflow:ellipsis;font-weight:normal;color:#999999!important;line-height:11px;padding: 0;position: relative;top:-8px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .info-wapper img {height:16px!important;float:none;display:inline;position:relative;top:3px;margin:0 0 0 0;-webkit-border-radius: 0!important;	-moz-border-radius: 0!important;-webkit-background-size:0!important;}
+
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iVers,
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iDown,
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iSize,
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iView,
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iComm {height:11px;display:inline-block;margin-right:8px!important;font-weight:normal!important;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iVers {background:url(http://appstore.vn/android/images/ivers.png) no-repeat 0 center;padding-left:27px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iDown {background:url(http://appstore.vn/android/images/idownload.png) no-repeat 0 center;padding-left:15px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iSize {background:url(http://appstore.vn/android/images/isize.png) no-repeat 0 center;padding-left:15px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iComm {background:url(http://appstore.vn/android/images/icomment.png) no-repeat 0 center;padding-left:18px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .iView {background:url(http://appstore.vn/android/images/iview.png) no-repeat 0 center;padding-left:20px;}
+
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .time{text-align: center;margin-left:0;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .time .cd-time{display:inline;font-size:0.8em;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .details .sales {font-size:11px;white-space:nowrap;display:block;overflow:hidden;text-overflow:ellipsis;font-weight:normal;color:#999999;margin-top:5px;}
+
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .ratings-wrapper {height: 30px;vertical-align: top;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .ratings-wrapper img {margin:0 3px 0 0;position:relative;top:1px;width:14px;float: left;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .ratings-wrapper .snippet-reviews {font-size: 11px;color: #999;vertical-align: top;float: left;margin: 3px 0 0 10px;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .buy-wrapper {white-space: nowrap;position:absolute;left:83px;bottom:25px;display:block!important;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .install-wrapper {white-space: nowrap;position:absolute;left:83px;bottom:0;display:block!important;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .buy-wrapper .buy-button,
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .install-wrapper .install-button {color: #666;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px;cursor:pointer; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+  /*border: 1px solid #dedede;
+  background-color: #fdfdfd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eee)); 
+  background-image: -webkit-linear-gradient(top, #fdfdfd, #eee);
+  background-image:    -moz-linear-gradient(top, #fdfdfd, #eee);
+  background-image:     -ms-linear-gradient(top, #fdfdfd, #eee);
+  background-image:      -o-linear-gradient(top, #fdfdfd, #eee); 
+  background-image:         linear-gradient(to bottom, #fdfdfd, #eee);
+  */
+  }
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .buy-wrapper .buy-button-price,
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .install-wrapper .install-button-price {border: 0 solid white;display: block;padding: 3px 7px;text-shadow:#fff 0 1px 0;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .install-wrapper .install-button-price {text-shadow:#666 0 -1px 0;}
+#tab-body-featured-lists .content-panel-tab .browse-carousel .carousel-mini .carousel-pages .inline-block .install-wrapper .install-button{color: white;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;border: 1px solid #337923;-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #468000;
+background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#83B842), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow: 0px 1px -1px #666;}
+
+
+.carousel-more-link  {color: #433F3E;margin: 0 20px;border-top: 0 solid #D7D7D7;padding: 0;text-align:right;clear:both;background: url(http://appstore.vn/android/images/bg/facet_category.jpg) no-repeat center 35px;height:50px;text-align:center;margin-bottom:50px;}
+.carousel-more-link  a {background: #A5A5A5;border-left: 0 solid white;color: white;cursor: pointer;font-size: 12px;margin-top: 0px;outline: 0;padding: 0.2em 0.5em;text-transform: uppercase;color: #555;font-weight: bold;font-size: 11px;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;height: 2.95em;padding: 0 0.91em;border: 1px solid #CCC;border-bottom-color: #AAA;filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;-moz-box-shadow: inset 0 0 1px #fff;-ms-box-shadow: inset 0 0 1px #fff;-webkit-box-shadow: inset 0 0 1px #fff;box-shadow: inset 0 0 1px #fff;position:relative;top:30px;text-align:center;}
+.carousel-more-link  a:hover {color: #7B9726;}
+.carousel-more-link .more-arrow-link {text-decoration: none!important;}
+.carousel-more-link .more-arrow {color: #3a7ec7;font-size: 150%;padding-left: 4px;position:relative;top:1px;}
+
+/*Left detail*/
+.similar-container {padding: 15px 20px 20px 20px;}
+.similar-container h2 {border-bottom: 0 solid #CECECE;margin-bottom: 0;font-weight:normal;color: #7B9726;height:30px;font-size:16px;font-weight:bold;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;}
+.similar-container ul {margin:0;padding:0;list-style:none;}
+.similar-container ul li {overflow:hidden;}
+.similar-container .app-left {margin-bottom: 13px;width: 276px;overflow:hidden;}
+.similar-container .app-left .app-left-icon {width:78px;margin-right:10px;}
+.similar-container .app-left .app-left-icon img {width:78px;height:78px;-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;/*-webkit-box-shadow: 0px 2px 3px  #666;-moz-box-shadow: 0px 2px 3px  #666;box-shadow: 0px 2px 3px #666;*/}
+.similar-container .app-left .app-left-content {width:155px;}
+.similar-container .app-left .app-left-content .overflow-content-frame {}
+.similar-container .app-left .app-left-content .common-title {line-height: 1.5em;color: #414242;font-weight: bold;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;position: relative;display:block;}
+.similar-container .app-left .app-left-content a:hover.common-title {color: #7B9726;}
+.similar-container .app-left .app-left-content .attribution {padding-top: 3px;text-overflow: ellipsis;white-space: nowrap;height: 14px;line-height: 1.5em;margin-bottom: 0;}
+.similar-container .app-left .app-left-content .attribution a {color: #8E8E8E;font-size: 11px;line-height: 2em;overflow: hidden;text-transform: uppercase;white-space: nowrap;text-overflow: ellipsis;display:block;}
+.similar-container .app-left .app-left-content .attribution a:hover {color: #7B9726;}
+.similar-container .app-left .app-left-content .ratings-wrapper {height: 16px;margin: 5px 0;}
+.similar-container .app-left .app-left-content .ratings-wrapper img {margin:0 3px 0 0;position:relative;top:1px;}
+.similar-container .app-left .app-left-content .ratings-wrapper .snippet-reviews {font-size: 11px;color: #515151;}
+.similar-container .app-left .app-left-content .value {color: #666;}
+.similar-container .app-left .app-left-content .buy-wrapper,
+.similar-container .app-left .app-left-content .install-wrapper {white-space: nowrap;margin-top:5px;}
+.similar-container .app-left .app-left-content .buy-wrapper .buy-button,
+.similar-container .app-left .app-left-content .install-wrapper .install-button {border: 1px solid #dedede;color: #666;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px;cursor:pointer; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; background-color: #fdfdfd;float:left;margin-top:10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eee)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #fdfdfd, #eee); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #fdfdfd, #eee); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #fdfdfd, #eee); /* IE10 */
+  background-image:      -o-linear-gradient(top, #fdfdfd, #eee); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #fdfdfd, #eee);}
+.similar-container .app-left .app-left-content .buy-wrapper .buy-button-price,
+.similar-container .app-left .app-left-content .install-wrapper .install-button-price {border: 0 solid white;display: block;padding: 3px 7px;text-shadow:#fff 0 1px 0;}
+.similar-container .app-left .app-left-content .install-wrapper .install-button-price {text-shadow:#666 0 -1px 0;}
+.similar-container .app-left .app-left-content .install-wrapper .install-button{color: white;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;border: 1px solid #337923;-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #468000;
+background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#83B842), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow: 0px 1px -1px #666;}
+
+.similar-container .more-list {display: block;margin-top: 0;}
+.similar-container .more-list .more-arrow {color: #3a7ec7;font-size: 14px;padding-left: 4px;position:relative;top:1px;}
+
+/*Detail app*/
+.details-tab {padding: 20px 0;color: #333;line-height: 1.4;}
+.details-tab h2 {color: #333;font-weight:bold;height:20px;line-height:20px;padding:0;float:left;padding-right:20px;font-size:14px;text-indent:0;cursor: pointer;font-weight: bold;text-transform: uppercase;border-bottom: 20px solid transparent;border-left: 20px solid #7B9726;border-right: 20px solid transparent;height: 0;}
+.details-tab .title-item {overflow:hidden;margin-bottom:10px;background-color:#ebebeb;display:inline-block;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#fff)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(left, #ebebeb, #fff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(left, #ebebeb, #fff); /* FF3.6 */
+  background-image:     -ms-linear-gradient(left, #ebebeb, #fff); /* IE10 */
+  background-image:      -o-linear-gradient(left, #ebebeb, #fff); /* Opera 11.10+ */
+  background-image:         linear-gradient(left, #ebebeb, #fff);}
+.app-overview {margin: 0;padding: 0;}
+.description-container,
+.overview-screenshots,
+.overview-videos {margin-bottom:20px;clear:both;}
+
+.description-container img {max-width: 705px!important;}
+.permissions {padding:20px 0;width: 705px;margin: 0 auto;}
+.original-text,
+.review-summary {width:705px;margin:0 auto;}
+.review-summary .send_review {overflow:hidden;border-bottom:0 #ccc solid;}
+.review-summary input[type="text"] {background: #F6F6F6;font-size: 12px;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 60px!important;padding:7px 5px;margin:0 5px 10px 0;}
+
+.overview-screenshots .jMyCarousel {margin:0 auto;}
+.overview-screenshots .jMyCarousel img {width:332px!important;}
+.overview-videos .video-section {text-align:center;}
+.overview-videos .video-section * {z-index:1000;position:relative;}
+
+.meta-overview {border-left: 0 solid #D7D7D7;float: left;font-size: 11px;width: 180px;}
+.metadata-list  {margin-top: 0;}
+.metadata-list ul {margin: 0;padding:0;list-style:none;clear:both;}
+.metadata-list li {margin-bottom: 1px;text-align:right;color:#fff;}
+.metadata-list a {color:#fff;}
+.metadata-list span {color:#999;}
+.ratings-wrapper {height: 30px;overflow: hidden;}
+.ratings-wrapper .snippet-reviews {float: left;margin: 4px 0 0 10px;}
+.ratings-wrapper span {}
+.ratings-wrapper img {margin:0 2px 0 0;position:relative;width:14px;float: left;}
+
+.average-rating {-moz-border-radius: 7px;-webkit-border-radius: 7px;background-color: #ddd;border-radius: 7px;margin: 0;padding: 10px;vertical-align: top;width: 124px;float:left;overflow:hidden;float:right;height:104px;color:#000;background-image: url("http://appstore.vn/android/images/tab/noise.png");background-color: #fff;
+background-image: url("http://appstore.vn/android/images/tab/noise.png"), -moz-linear-gradient(top, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0) 100%);
+background-image: url("http://appstore.vn/android/images/tab/noise.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.07)), color-stop(100%,rgba(255,255,255,0)));
+background-image: url("http://appstore.vn/android/images/tab/noise.png"), -webkit-linear-gradient(top, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0) 100%);
+background-image: url("http://appstore.vn/android/images/tab/noise.png"), -o-linear-gradient(top, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0) 100%);
+background-image: url("http://appstore.vn/android/images/tab/noise.png"), -ms-linear-gradient(top, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0) 100%);
+background-image: url("http://appstore.vn/android/images/tab/noise.png"), linear-gradient(top, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0) 100%);
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), inset 0 0 0 1px rgba(255,255,255,0.05), 0 1px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), inset 0 0 0 1px rgba(255,255,255,0.05), 0 1px 3px rgba(0,0,0,0.75);
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), inset 0 0 0 1px rgba(255,255,255,0.05), 0 1px 3px rgba(0,0,0,0.75);
+-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;position: relative;-moz-transform: scale(1.01);-webkit-transform: scale(1.01);-o-transform: scale(1.01);transform: scale(1.01);}
+.average-rating > div {text-align: center;width: 100%;}
+.average-rating .average-rating-title {font-weight: bold;font-size:12px;margin-top:10px;}
+.average-rating .average-rating-value {font-size: 28px;margin: 7px 0;font-weight:bold;}
+.average-rating .votes {font-size:11px;position: relative;top:-12px;}
+
+.sharing-section {clear:both;position:relative;margin:10px 0 20px 20px;}
+.sharing-section .titleSocial {float:left;font-weight:bold;color:#666;margin-right:10px;display: none;}
+.sharing-section .social_widget {margin-top:10px;}
+.sharing-section .social_widget a {display:inline-block;float:left;width:240px;height:45px;}
+.sharing-section .social_widget a.facebook {background:url(http://appstore.vn/android/images/sharefb.png) no-repeat 0 0;}
+.sharing-section .social_widget a.tweet {background-position:0 -32px;display: none;}
+.sharing-section .social_widget a.googleplus {background-position:0 -48px;display: none;}
+.sharing-section .social_widget a.zingme {background-position:0 -64px;display: none;}
+.sharing-section .social_widget a.govn {background-position:0 -80px;display: none;}
+/*more*/
+.slider-more { 	overflow: hidden; 	display: none;	line-height: 20px;padding-bottom:10px;}
+.slider_menu a.expand {	font-size: 13px;}
+.slider_menu {border-top: 0 solid #D7D7D7;margin-bottom: 0.75em;position: relative;text-align:center;background:url(http://appstore.vn/android/images/bg/facet_category.jpg) no-repeat center 7px;height:30px;margin-top:10px;}
+.slider_menu a {background: #A5A5A5;border-left: 0 solid white;color: white;cursor: pointer;font-size: 12px;margin-top: 0px;outline: 0;padding: 0.2em 0.5em;text-transform: uppercase;color: #555;font-weight: bold;font-size: 11px;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;height: 2.95em;padding: 0 0.91em;border: 1px solid #CCC;border-bottom-color: #AAA;filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;-moz-box-shadow: inset 0 0 1px #fff;-ms-box-shadow: inset 0 0 1px #fff;-webkit-box-shadow: inset 0 0 1px #fff;box-shadow: inset 0 0 1px #fff;}
+.slider_menu a:hover {color: #7B9726;}
+
+/*screenshots*/
+.jMyCarousel .prev{	background: url('http://appstore.vn/android/images/left.png') center center no-repeat;	width:47px;	height:61px;	border:0px;}
+.jMyCarousel .next{	background: url('http://appstore.vn/android/images/right.png') center center no-repeat;	width:40px;	height:61px;	border:0px;}
+.jMyCarousel img {margin:0 1px;}
+
+/*review-summary*/
+.review-summary {clear:both;}
+.review-summary ul {margin:0 0 20px 0;padding:0;list-style:none;clear:both;}
+.review-summary ul li {border-bottom:1px #ccc dotted;margin: 0;padding: 0;}
+.review-summary .review-list {margin-top: 10px;padding-bottom: 0;}
+.review-summary .review-author {}
+.review-summary .review-date {color:#666;}
+.review-summary .ratings-wrapper {margin-top: 0;margin-bottom: 0;overflow:hidden;height:auto!important}
+.review-summary .ratings-wrapper span:last-child {font-weight:bold;color:#333;}
+.review-summary .ratings-wrapper img {margin:0 2px 0 0;position:relative;top:3px;float: left;}
+.review-summary .review-title {display: inline;margin-left: 5px;padding-top: 5px;padding-bottom: 0;font-weight:bold;}
+.review-summary .review-text {padding: 0 0 1em 0;clear:both;}
+
+/*dev*/
+.page-banner {border-top: 0 solid #7B9726;margin-bottom: 0;padding: 0;width:1024px;height:60px;margin:0 auto;position:relative;top:0px;}
+.page-banner .page-banner-heading {height:60px;position:relative;clear:both;}
+.page-banner .page-banner-icon {height: 35px;margin-top: 0;padding-left: 20px;width: 35px;}
+.page-banner .page-banner-text {color: #7B9726;font-size: 16px;font-weight: bold;padding: 0;margin-left:20px;height:50px;line-height:50px;clear:both;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;float: left;}
+.page-banner .sRight {float: right;margin: 15px 20px 0 0;}
+.page-banner .sRight label {color: #666;font-size: 12px;}
+.page-banner .sRight .sItem {float: left;margin-left: 10px;}
+.page-banner .sRight .sItem input[type="text"] {outline: none;color: #5C5E61;font: normal normal normal 12px/21px Arial, sans-serif;border: 1px solid #BFC3C7;
+background-color: #F5F6F9;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F6F9), to(#F9FBFD));
+background-image: -webkit-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -moz-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -ms-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -o-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: linear-gradient(top, #F5F6F9, #F9FBFD);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f9', EndColorStr='#f9fbfd');
+-moz-box-shadow: 0px 1px 0px white;-webkit-box-shadow: 0px 1px 0px white;box-shadow: 0px 1px 0px white;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-background-clip: padding;-webkit-background-clip: padding-box;background-clip: padding-box;}
+.page-banner .sRight .sItem input[type="submit"],
+.page-banner .sRight .sItem input[type="button"]{
+color: #555;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;border: 1px solid #CCC;border-bottom-color: #AAA;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);
+background: #F6F6F6;
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+border-image: initial;
+font-weight: bold;font-size: 12px;padding: 0 5px ;margin:0 ;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:25px;line-height:25px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.page-banner .sRight .connect-on img,
+.page-banner .sRight .connect-off img{height: 30px;}
+.page-banner .sRight .connect-off img{opacity: 0.6; filter: alpha(opacity=60);}
+
+.bxTypeuser .page-banner {height:30px;padding: 0 1px;width: auto!important;}
+.bxTypeuser .page-banner .page-banner-heading {height:30px;position:relative;clear:both;padding-top: 0px;}
+.bxTypeuser .page-banner .page-banner-text {height:30px;line-height: 30px;margin: 0 0 20px 0;text-shadow: 0 1px 0 #fff;}
+.bxTypeuser .page-banner .sRight {float: right;margin: 0 0 0 0;}
+
+/*dev*/
+.page-header {border-top: 0 solid #7B9726;margin-bottom: 0;padding: 0;width:1024px;height:60px;margin:0 auto;position:relative;top:0px;}
+.page-header .page-banner-heading {height:60px;position:relative;clear:both;}
+.page-header .page-banner-icon {height: 35px;margin-top: 0;padding-left: 20px;width: 35px;}
+.page-header .page-banner-text {color: #7B9726;font-size: 18px;font-weight: bold;padding: 0;margin-left:20px;height:50px;line-height:50px;clear:both;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif; ;text-transform: uppercase;float: left;}
+.page-header .sRight {float: right;margin: 15px 20px 0 0;}
+.page-header .sRight label {color: #666;font-size: 12px;}
+.page-header .sRight .sItem {float: left;margin-left: 10px;}
+.page-header .sRight .sItem input[type="text"] {outline: none;color: #5C5E61;font: normal normal normal 12px/21px Arial, sans-serif;border: 1px solid #BFC3C7;
+background-color: #F5F6F9;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#F5F6F9), to(#F9FBFD));
+background-image: -webkit-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -moz-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -ms-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: -o-linear-gradient(top, #F5F6F9, #F9FBFD);
+background-image: linear-gradient(top, #F5F6F9, #F9FBFD);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f9', EndColorStr='#f9fbfd');
+-moz-box-shadow: 0px 1px 0px white;-webkit-box-shadow: 0px 1px 0px white;box-shadow: 0px 1px 0px white;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-background-clip: padding;-webkit-background-clip: padding-box;background-clip: padding-box;}
+.page-header .sRight .sItem input[type="submit"],
+.page-header .sRight .sItem input[type="button"]{
+color: #555;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;border: 1px solid #CCC;border-bottom-color: #AAA;
+filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);
+background: #F6F6F6;
+background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));
+background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#0088D5', EndColorStr='#0088D5');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+border-image: initial;
+font-weight: bold;font-size: 12px;padding: 0 5px ;margin:0 ;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;height:25px;line-height:25px;display:inline-block;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.page-header .sRight .connect-on img,
+.page-header .sRight .connect-off img{height: 30px;}
+.page-header .sRight .connect-off img{opacity: 0.6; filter: alpha(opacity=60);}
+
+.bxTypeuser .page-header {height:30px;padding: 0 1px;width: auto!important;}
+.bxTypeuser .page-header .page-banner-heading {height:30px;position:relative;clear:both;padding-top: 0px;}
+.bxTypeuser .page-header .page-banner-text {height:30px;line-height: 30px;margin: 0 0 20px 0;text-shadow: 0 1px 0 #fff;}
+.bxTypeuser .page-header .sRight {float: right;margin: 0 0 0 0;}
+
+.container-container {border-top: 0 solid #4C4C4C;clear:both;overflow:hidden;width: 1024px;margin: 0 auto;min-height: 300px;}
+.container-container .container-contents {padding: 20px 0 20px 50px;position:relative;}
+.container-container .container-contents .snippet-reviews {}
+.container-container .container-contents .num-pagination-content {position: relative;}
+.container-container .container-contents .num-pagination-content ul {margin:0;padding:0 0 0 0;list-style:none;}
+.container-container .container-contents .num-pagination-content li {display:inline-block;float:left;margin-right: 18px;padding: 0 0 30px 0;width:300px;position:relative;color: #515151;height:90px;}
+.container-container .container-contents .num-pagination-content li:hover .snippet-medium {display:none;}
+.container-container .container-contents .num-pagination-content li:hover .overview-medium {display:block;}
+.container-container .container-contents .num-pagination-content .snippet-medium {margin-bottom: 1em;color: #515151;}
+.container-container .container-contents .num-pagination-content .overview-medium {position:absolute;display:none;max-height: 200px;margin: 0px;width: 320px;text-overflow: ellipsis;display:none;border:1px #aaa solid;position:absolute;top:-11px;left:-11px;padding:10px;-webkit-box-shadow: 0px 0px 10px #aaa;      -moz-box-shadow: 0px 0px 10px #aaa; box-shadow: 0px 0px 10px #aaa;z-index:9999;z-index:99999;background-color:#fff;box-shadow: 0px 0px 10px #aaa;-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px; }
+.container-container .container-contents .num-pagination-content .thumbnail-wrapper-container {width:78px;}
+.container-container .container-contents .num-pagination-content .thumbnail-wrapper-container .ordinal-overlay {left: -8px;bottom: 20px;cursor: default;height: 20px;min-width: 25px;position: absolute;}
+.container-container .container-contents .num-pagination-content .thumbnail-wrapper-container .ordinal-overlay .ordinal-value {background-color: #88B131;-khtml-opacity: 0.95;-moz-opacity: 0.95;color: white;filter: alpha(opacity=95);font-weight: normal;opacity: 0.95;padding: 2px;text-align: center;}
+.container-container .container-contents .num-pagination-content .thumbnail-wrapper-container .ordinal-overlay .ordinal-3d-effect {border-top-color: #7B9726;border-left: 3px solid transparent;border-right: 3px solid transparent;border-top: 3px solid #7B9726;}
+.container-container .container-contents .num-pagination-content .thumbnail-wrapper-container .thumbnail {display: block;width: 78px;}
+.container-container .container-contents .num-pagination-content .thumbnail-wrapper-container .thumbnail img {width:78px;height:78px;-webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;-webkit-box-shadow: 0px 2px 3px 0px #666;-moz-box-shadow: 0px 2px 3px 0px #666;box-shadow: 0px 2px 3px 0px #666;}
+.container-container .container-contents .num-pagination-content .thumbnail-wrapper-container .ratings-wrapper {height: 16px;margin-left:5px;margin-top:3px;}
+.container-container .container-contents .num-pagination-content .thumbnail-wrapper-container .ratings-wrapper img {margin:0 3px 0 0;position:relative;top:1px;}
+.container-container .container-contents .num-pagination-content .details {width: 200px;overflow: hidden;padding-left: 12px;vertical-align: top;}
+.container-container .container-contents .num-pagination-content .overview-medium .details {width: 230px;}
+.container-container .container-contents .num-pagination-content .details .title {color: #414242;font-weight: bold;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;position: relative;display:block;}
+.container-container .container-contents .num-pagination-content .details .title:hover {color:#7B9726;}
+.container-container .container-contents .num-pagination-content .details .attribution {height: 14px;line-height: 1.5em;margin-bottom: 0;display:block;}
+.container-container .container-contents .num-pagination-content .details .attribution a {color: #8E8E8E;font-size: 11px;overflow: hidden;text-transform: uppercase;white-space: nowrap;text-overflow: ellipsis;position: relative;display:block;}
+.container-container .container-contents .num-pagination-content .details .attribution a:hover {color:#7B9726;}
+.container-container .container-contents .num-pagination-content .details .snippet-content {font-size: 11px;height: 40px;line-height: 1.2em;overflow: hidden;padding-bottom: 0;padding-top: 6px;margin:0;}
+.container-container .container-contents .num-pagination-content .snippet-medium .details .purchaseDate {width: 190px;font-size: 11px;color: #8E8E8E;margin-top: 4px;}
+.container-container .container-contents .num-pagination-content .overview-medium .details .purchaseDate {width: 190px;font-size: 11px;color: #8E8E8E;margin-top: 4px;}
+.container-container .container-contents .num-pagination-content .details .buy-wrapper,
+.container-container .container-contents .num-pagination-content .details .install-wrapper {white-space: nowrap;margin-top: -15px;display:block!important;}
+.container-container .container-contents .num-pagination-content .details .buy-wrapper .buy-button,
+.container-container .container-contents .num-pagination-content .details .install-wrapper .install-button {color: #666;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; float:left;margin-top:10px;
+/*
+border: 1px solid #dedede;background-color: #fdfdfd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eee));
+  background-image: -webkit-linear-gradient(top, #fdfdfd, #eee); 
+  background-image:    -moz-linear-gradient(top, #fdfdfd, #eee);
+  background-image:     -ms-linear-gradient(top, #fdfdfd, #eee); 
+  background-image:      -o-linear-gradient(top, #fdfdfd, #eee);
+  background-image:         linear-gradient(to bottom, #fdfdfd, #eee);
+  */
+  }
+.container-container .container-contents .num-pagination-content .details .buy-wrapper .buy-button-price {border: 0 solid white;display: block;padding: 3px 10px 3px 0px;text-shadow:#fff 0 1px 0;}
+.container-container .container-contents .num-pagination-content .details .install-wrapper .install-button-price {border: 0 solid white;display: block;padding: 3px 7px 3px 7px;text-shadow:#fff 0 1px 0;}
+.container-container .container-contents .num-pagination-content .details .install-wrapper .install-button-price {text-shadow:#666 0 -1px 0;}
+.container-container .container-contents .num-pagination-content .details .install-wrapper .install-button{color: white;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;border: 1px solid #337923;cursor:pointer;-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #468000;
+background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#83B842), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow: 0px 1px -1px #666;}
+
+.container-container .container-contents .num-pagination-content .details .info-wapper {font-size:11px;white-space:nowrap;display:block;overflow:hidden;color:#000;text-overflow:ellipsis;font-weight:normal;color:#999999!important;line-height:11px;padding: 10px 0 0 0;margin:0;clear:both;}
+.container-container .container-contents .num-pagination-content .details .info-wapper img {height:16px!important;float:none;display:inline;position:relative;top:3px;margin:0 0 0 0;-webkit-border-radius: 0!important;	-moz-border-radius: 0!important;-webkit-background-size:0!important;}
+.container-container .container-contents .num-pagination-content .details .iVers,
+.container-container .container-contents .num-pagination-content .details .iDown,
+.container-container .container-contents .num-pagination-content .details .iSize,
+.container-container .container-contents .num-pagination-content .details .iView,
+.container-container .container-contents .num-pagination-content .details .iComm {height:11px;display:inline-block;margin-right:8px!important;font-weight:normal!important;line-height:11px;color: #999!important;font-size:11px;}
+.container-container .container-contents .num-pagination-content .details .iVers {background:url(http://appstore.vn/android/images/ivers.png) no-repeat 0 center;padding-left:27px;}
+.container-container .container-contents .num-pagination-content .details .iDown {background:url(http://appstore.vn/android/images/idownload.png) no-repeat 0 center;padding-left:15px;}
+.container-container .container-contents .num-pagination-content .details .iSize {background:url(http://appstore.vn/android/images/isize.png) no-repeat 0 center;padding-left:15px;}
+.container-container .container-contents .num-pagination-content .details .iComm {background:url(http://appstore.vn/android/images/icomment.png) no-repeat 0 center;padding-left:18px;}
+.container-container .container-contents .num-pagination-content .details .iView {background:url(http://appstore.vn/android/images/iview.png) no-repeat 0 center;padding-left:20px;}
+
+.container-container .container-contents .num-pagination-content .details .social_widget {padding-top:10px;overflow:hidden;clear: both;}
+.container-container .container-contents .num-pagination-content .details .social_widget a {display:inline-block;float:left;width:16px;height:16px;background:url(http://appstore.vn/android/images/logo/widget16x16.png) no-repeat;margin-right:5px;}
+.container-container .container-contents .num-pagination-content .details .social_widget a.facebook {background-position:0 -16px;}
+.container-container .container-contents .num-pagination-content .details .social_widget a.tweet {background-position:0 -32px;}
+.container-container .container-contents .num-pagination-content .details .social_widget a.googleplus {background-position:0 -48px;}
+.container-container .container-contents .num-pagination-content .details .social_widget a.zingme {background-position:0 -64px;}
+.container-container .container-contents .num-pagination-content .details .social_widget a.govn {background-position:0 -80px;}
+.container-container .container-contents .num-pagination-content .details .social_widget .itemShare {margin-right:5px;float:left;}
+
+/*appsSlide*/
+.appsSlide  {padding:10px;overflow:hidden;}
+.appsSlide .snippet-medium {margin-bottom: 1em;color: #515151;}
+.appsSlide .overview-medium {position:absolute;display:none;max-height: 200px;margin: 0px;width: 320px;text-overflow: ellipsis;display:none;border:1px #aaa solid;position:absolute;top:-11px;left:-11px;padding:10px;-webkit-box-shadow: 0px 0px 10px #aaa;      -moz-box-shadow: 0px 0px 10px #aaa; box-shadow: 0px 0px 10px #aaa;z-index:9999;z-index:99999;background-color:#fff;box-shadow: 0px 0px 10px #aaa;-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px; }
+.appsSlide .thumbnail-wrapper-container {width:78px;}
+.appsSlide .thumbnail-wrapper-container .ordinal-overlay {left: -8px;bottom: 20px;cursor: default;height: 20px;min-width: 25px;position: absolute;}
+.appsSlide .thumbnail-wrapper-container .ordinal-overlay .ordinal-value {background-color: #88B131;-khtml-opacity: 0.95;-moz-opacity: 0.95;color: white;filter: alpha(opacity=95);font-weight: normal;opacity: 0.95;padding: 2px;text-align: center;}
+.appsSlide .thumbnail-wrapper-container .ordinal-overlay .ordinal-3d-effect {border-top-color: #7B9726;border-left: 3px solid transparent;border-right: 3px solid transparent;border-top: 3px solid #7B9726;}
+.appsSlide .thumbnail-wrapper-container .thumbnail {display: block;width: 78px;}
+.appsSlide .thumbnail-wrapper-container .thumbnail img {width:78px;height:78px;-webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;-webkit-box-shadow: 0px 2px 3px 0px #666;-moz-box-shadow: 0px 2px 3px 0px #666;box-shadow: 0px 2px 3px 0px #666;background-color:#fff;}
+.appsSlide.thumbnail-wrapper-container .ratings-wrapper {height: 16px;margin-left:5px;margin-top:3px;}
+.appsSlide .thumbnail-wrapper-container .ratings-wrapper img {margin:0 3px 0 0;position:relative;top:1px;}
+.appsSlide .details {width: 200px;overflow: hidden;padding-left: 12px;vertical-align: top;}
+.appsSlide .overview-medium .details {width: 230px;}
+.appsSlide .details .title {color: #414242;font-weight: bold;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;position: relative;display:block;font-size:14px;}
+.appsSlide .details .title:hover {color:#7B9726;}
+.appsSlide .details .attribution {height: 14px;line-height: 1.5em;margin-bottom: 0;display:block;}
+.appsSlide .details .attribution a {color: #8E8E8E;font-size: 11px;overflow: hidden;text-transform: uppercase;white-space: nowrap;text-overflow: ellipsis;position: relative;display:block;}
+.appsSlide .details .attribution a:hover {color:#7B9726;}
+.appsSlide .details .snippet-content {font-size: 11px;height: 40px;line-height: 1.2em;overflow: hidden;padding-bottom: 0;padding-top: 6px;margin:0;}
+.appsSlide .snippet-medium .details .purchaseDate {width: 190px;font-size: 11px;color: #8E8E8E;margin-top: 4px;}
+.appsSlide .overview-medium .details .purchaseDate {width: 190px;font-size: 11px;color: #8E8E8E;margin-top: 4px;}
+.appsSlide .details .buy-wrapper,
+.appsSlide .details .install-wrapper {white-space: nowrap;}
+.appsSlide .details .buy-wrapper .buy-button,
+.appsSlide .details .install-wrapper .install-button {border: 1px solid #dedede;color: #666;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; background-color: #fdfdfd;float:left;margin-top:10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eee)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #fdfdfd, #eee); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #fdfdfd, #eee); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #fdfdfd, #eee); /* IE10 */
+  background-image:      -o-linear-gradient(top, #fdfdfd, #eee); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #fdfdfd, #eee);}
+.appsSlide .details .buy-wrapper .buy-button-price,
+.appsSlide .details .install-wrapper .install-button-price {border: 0 solid white;display: block;padding: 3px 7px;text-shadow:#fff 0 1px 0;}
+.appsSlide .details .install-wrapper .install-button-price {text-shadow:#666 0 -1px 0;}
+.appsSlide .details .install-wrapper .install-button{color: white;cursor: pointer;font-size: 11px;line-height: 1em;display:block;-webkit-border-radius: 3px;      -moz-border-radius: 3px;           border-radius: 3px; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;border: 1px solid #337923;cursor:pointer;-webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+border: 1px solid #468000;
+background-color: #83B842;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#83B842), to(#629721));
+background-image: -webkit-linear-gradient(top, #83B842, #629721);
+background-image: -moz-linear-gradient(top, #83B842, #629721);
+background-image: -ms-linear-gradient(top, #83B842, #629721);
+background-image: -o-linear-gradient(top, #83B842, #629721);
+background-image: linear-gradient(top, #83B842, #629721);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#83b842', EndColorStr='#629721');
+-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0 0px rgba(255,255,255,.5);
+text-shadow: 0px 1px -1px #666;}
+
+.appsSlide .details .info-wapper {font-size:11px;white-space:nowrap;display:block;overflow:hidden;color:#000;text-overflow:ellipsis;font-weight:normal;color:#999999!important;line-height:11px;padding: 10px 0 0 0;margin:0;clear:both;}
+.appsSlide .details .info-wapper img {height:16px!important;float:none;display:inline;position:relative;top:3px;margin:0 0 0 0;-webkit-border-radius: 0!important;	-moz-border-radius: 0!important;-webkit-background-size:0!important;}
+.appsSlide .details .iVers,
+.appsSlide .details .iDown,
+.appsSlide .details .iSize,
+.appsSlide .details .iView,
+.appsSlide .details .iComm {height:11px;display:inline-block;margin-right:8px!important;font-weight:normal!important;line-height:11px;color: #999!important;font-size:11px;}
+.appsSlide .details .iVers {background:url(http://appstore.vn/android/images/ivers.png) no-repeat 0 center;padding-left:27px;}
+.appsSlide .details .iDown {background:url(http://appstore.vn/android/images/idownload.png) no-repeat 0 center;padding-left:15px;}
+.appsSlide .details .iSize {background:url(http://appstore.vn/android/images/isize.png) no-repeat 0 center;padding-left:15px;}
+.appsSlide .details .iComm {background:url(http://appstore.vn/android/images/icomment.png) no-repeat 0 center;padding-left:18px;}
+.appsSlide .details .iView {background:url(http://appstore.vn/android/images/iview.png) no-repeat 0 center;padding-left:20px;}
+
+.appsSlide .details .social_widget {padding-top:10px;overflow:hidden;clear: both;}
+.appsSlide .details .social_widget a {display:inline-block;float:left;width:16px;height:16px;background:url(http://appstore.vn/android/images/logo/widget16x16.png) no-repeat;margin-right:5px;}
+.appsSlide .details .social_widget a.facebook {background-position:0 -16px;}
+.appsSlide .details .social_widget a.tweet {background-position:0 -32px;}
+.appsSlide .details .social_widget a.googleplus {background-position:0 -48px;}
+.appsSlide .details .social_widget a.zingme {background-position:0 -64px;}
+.appsSlide .details .social_widget a.govn {background-position:0 -80px;}
+.appsSlide .details .social_widget .itemShare {margin-right:5px;float:left;}
+.container-container-in {padding:0 20px;}
+
+/*support*/
+.bxAccount,
+.bxContact {padding:20px;width:550px;margin: 0 auto;}
+.areaSupport,
+.areaReview{background: #F6F6F6;color: #666;font-size: 13px;padding: 7px 10px;border: 1px solid #B9B9B9;border-top-color: #A4A4A4;-moz-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-ms-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-webkit-box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);box-shadow: 0 1px 0 #fff,inset 0 1px 1px rgba(0,0,0,.17);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border-image: initial;width: 692px;padding: 5px;height: 60px;resize: vertical;margin-bottom:10px;}
+.btSupport,
+.btReview {color: #555;font-weight: bold;font-size: 12px;text-shadow: 0 1px 0 white;text-shadow: 0 0 0 transparent,0 1px 0 white;height: 2.95em;padding: 0 0.91em;border: 1px solid #CCC;border-bottom-color: #AAA;filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff,EndColorStr=#e0e0e0);background: #F6F6F6;background-image: -moz-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -ms-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#e0e0e0));background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;-moz-box-shadow: inset 0 0 1px #fff;-ms-box-shadow: inset 0 0 1px #fff;-webkit-box-shadow: inset 0 0 1px #fff;box-shadow: inset 0 0 1px #fff;border-image: initial;white-space: nowrap;vertical-align: middle;cursor: pointer;overflow: visible;float:right;}
+
+.support {width: 705px;margin: 0 auto;}
+.support label  {font-weight: bold;}
+.support h4  {clear: both;padding: 10px 0;font-size: 16px;margin-bottom: 10px;}
+
+/*Form*/
+.formDialog li a {	text-shadow: rgb(51,51,51) 0 1px 0;}
+
+/*Support*/
+.bxSupport {background: #fff ;padding:20px;}
+.bxSupport-in {padding: 0 0 20px 0;}
+.contentSupport {}
+.contentSupport-in {}
+
+/*info*/
+.infoPage {width:350px;padding:20px;}
+
+/*Account*/
+.container-contentsCard {float: left;width: 704px;padding: 20px 0 20px 35px;}
+
+/***** Giao dich *****/
+.sendSMS li{width:160px; }
+
+/*User*/
+.container-contentsUser {float: left;width: 704px;padding: 20px 0 20px 35px;}
+
+.container-contents-in {padding:0 20px;}
+/*deviceUser*/
+.deviceUser {width:240px;margin:0 auto;margin-bottom:20px;position:relative;clear:both;top:20px;}
+.deviceUser .deviceUser-in {overflow: hidden;background: url(http://appstore.vn/android/images/bg/bg-box.png) no-repeat 0 0;padding:0;-webkit-border-radius: 0; -moz-border-radius: 0;border-radius: 0;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;margin-bottom:0;position:relative;height:200px;}
+.deviceUser .picDevice {text-align:center;width:120px;height:120px;position:absolute;left:10px;top:30px;}
+.deviceUser .picDevice img {width:120px;margin:0 auto;max-height:120px;}
+.deviceUser .titleDevice {font-weight:bold;text-align:left;margin-bottom:0;color:#666;position:absolute;width:100px;left:130px;bottom:100px;}
+.deviceUser .changeDevice {text-align:center;position:absolute;bottom:0;width:240px;text-align:center;}
+.deviceUser .changeDevice a {display:block;background-image:none;background-color:transparent;border:0 #fff solid;height:33px;line-height:33px;color:#fff;text-shadow:0 -1px 0 #333;font-size:14px;-moz-box-shadow: inset 0px 0 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2), 0px 1px 0px rgba(255,255,255,.7);
+-webkit-box-shadow: inset 0px 0 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 0 rgba(255, 255, 255, 0.2), 0px 0 0px rgba(255,255,255,.7);
+box-shadow: inset 0px 0 0px rgba(255, 255, 255, 0.4), inset 0px 0px 0px 0 rgba(255, 255, 255, 0.2), 0px 0 0px rgba(255,255,255,.7);margin:0;padding:0;text-align:center;}
+.deviceUser .changeDevice a:hover {color:#333;text-shadow:0 1px 0 #eee;}
+.deviceUser .softDevice {position: relative;}
+.deviceUser .softDevice img {position: absolute;top: 16px;left: 10px;}
+.deviceUser .softDevice div {padding-left: 35px;position: relative;}
+
+.typeDevice {clear:both;overflow:hidden;width:240px;margin:0 auto;margin-top:10px;margin-bottom:10px;}
+.typeDevice ul {margin:0;padding:0;list-style:none;overflow:hidden;}
+.typeDevice ul li {margin:0;width:49%;float:left!important;display:inline-block;height:26px;line-height:26px;  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;text-align:center;padding:0;border:1px #AAA solid;background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#bbb)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #fff, #bbb); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #fff, #bbb); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #fff, #bbb); /* IE10 */
+  background-image:      -o-linear-gradient(top, #fff, #bbb); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #fff, #bbb); color:#666; }
+.typeDevice ul li.selected {background-color: #bbb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#fff)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #bbb, #fff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #bbb, #fff); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #bbb, #fff); /* IE10 */
+  background-image:      -o-linear-gradient(top, #bbb, #fff); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #bbb, #fff);color:#333;  }
+.typeDevice ul li:first-child {-webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px;   border-radius: 5px 0 0 5px;border-right:0 #fff solid; }
+.typeDevice ul li:last-child {-webkit-border-radius: 0 5px 5px 0; -moz-border-radius: 0 5px 5px 0;   border-radius: 0 5px 5px 0;border-left:1px #999 solid; }
+.typeDevice ul li a {font-weight:bold;display:block;color:#666;text-shadow:0 1px 0 #fff;}
+.typeDevice ul li a:hover {color:#333;}
+.typeDevice ul li.selected a {color:#333;}
+
+.sendRating{overflow:hidden;margin:0 0 0 0;}
+.sendRating h4 {float:left;margin-right:10px;}
+
+/*loading*/
+#resultstep1load,
+#resultstep2load {font-size: 18px!important;margin: 0 20px;height: 40px!important;line-height: 40px!important;color: #333;padding: 0;text-align:center;text-shadow: 0 1px 0 #EEE;text-align:center!important;}
+
+.bxCorner {clear:both;overflow:hidden;padding:20px 0;}
+.bxCorner ul {margin:0;padding:0;list-style:none;vertical-align:top;}
+.bxCorner ul li {margin:0;padding:0;display:inline-block;margin-left:20px;vertical-align:top;position:relative;float:left;}
+.bxCorner ul li:first-child {}
+.bxCorner ul li:last-child {}
+.bxCorner ul li a {display:block;width:221px;height:90px;background:url(http://appstore.vn/android/images/ebook/bx.png) no-repeat 0 0;}
+.bxCorner ul li img {width:221px;height:90px;margin:0;}
+
+
+.bxebookMe {position:relative;height:205px;}
+.bxebookMe .titleItem {background: url(http://appstore.vn/android/images/ebook/bxMe-title.png) no-repeat 0 0;width:347px;height:70px;margin:0 auto;position:relative;z-index:9999;}
+.bxebookMe .titleItem a {display:block;height:40px;line-height:40px;font-size: 18px;font-weight: bold;text-shadow: -1px -1px 0 #000;text-align: left;font-family: Georgia,Palatino Linotype,Palatino,"Times New Roman",Times,serif;text-transform: uppercase;text-align:center;color:#fff;}
+.bxebookMe .titleItem a:hover {color:#603;text-shadow:0 1px 0 #ccc;}
+.bxebookMe .contentItem {background:url(http://appstore.vn/android/images/ebook/bxMe.png) no-repeat 0 0;height:190px;width:744px;position:absolute;bottom:0;-webkit-box-shadow: 0px 0px 5px #222;-moz-box-shadow: 0px 0px 5px #222;box-shadow: 0px 0px 5px #222;}
+.bxebookMe .contentItem ul {margin:0;padding:0;list-style:none;}
+.bxebookMe .contentItem ul li {margin:0;padding:0;display:inline;float:left;margin-left:15px;position:relative;}
+.bxebookMe ul li .overview-tall {display:none;}
+.bxebookMe ul li:hover .overview-tall {display:block!important;}
+
+.bxebookMe .contentItem .snippet-tall {height: 105px;margin:0;width: 100px;text-overflow: ellipsis;position:relative;padding:68px 0 15px 32px;background:url(http://appstore.vn/android/images/ebook/bgBook.png) no-repeat 0px 38px;}
+.bxebookMe .contentItem .snippet-tall .thumbnail-wrapper {zoom: 1;position:relative;margin-bottom:0;height:105px;}
+.bxebookMe .contentItem .snippet-tall .thumbnail-wrapper .thumbnail {float:left;}
+.bxebookMe .contentItem .snippet-tall .thumbnail-wrapper .thumbnail img {width:70px;height:105px;-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+
+.bxebookMe .contentItem .overview-tall {height: 230px;margin: 0px;width: 180px;text-overflow: ellipsis;position:absolute;top:38px;left:-30px;padding:10px;-webkit-box-shadow: 0px 0px 10px #000;      -moz-box-shadow: 0px 0px 10px #000; box-shadow: 0px 0px 10px #000;-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px;background:url(http://appstore.vn/android/images/ebook/bgHover3.png) no-repeat 0 0;z-index:9999; }
+.bxebookMe .contentItem .overview-tall .attribution {padding-top: 5px;text-overflow: ellipsis;white-space: nowrap;display: block;}
+.bxebookMe .contentItem .overview-tall .attribution a {white-space:inherit!important;max-width: none!important;}
+.bxebookMe .contentItem .overview-tall .thumbnail-wrapper {position:absolute;top:0;left:30px;background:url(http://appstore.vn/android/images/ebook/bgBook-hover.png) no-repeat 0 0;width:139px;height:150px;}
+.bxebookMe .contentItem .overview-tall .thumbnail-wrapper .thumbnail {float:left;}
+.bxebookMe .contentItem .overview-tall .thumbnail-wrapper .thumbnail img {width:70px;height:105px;-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+.bxebookMe .contentItem .overview-tall .thumbnail-wrapper .thumbnail {position:absolute;top:30px;left:32px;}
+.bxebookMe .contentItem .overview-tall .details {width: 180px;position:absolute;top:150px;left:10px;}
+.bxebookMe .contentItem .overview-tall .details a.title {color: #630;font-weight: bold;overflow: hidden;position: relative;display:block;text-shadow: 0 1px 0 #ccc;line-height:15px;}
+.bxebookMe .contentItem .overview-tall .details a.title img {vertical-align:middle;height:16px;}
+.bxebookMe .contentItem .overview-tall .purchaseDate {width: 175px;position:absolute;bottom:10px;left:10px;font-size:11px;color:#000;border-top:0 #666 solid;text-shadow:0 1px 0 #ccc;}
+.bxebookMe .contentItem .overview-tall .purchaseDate span {font-weight:bold;}
+
+/*adv right*/
+.advRight {border: 0 solid #ECECEC;border-top: 1px solid #ccc;padding:15px 0 0px 0;width:280px;position:relative;left:-20px;}
+
+/*install*/
+.helpIcon {position:absolute;top:5px;right:145px;}
+
+.installApp {padding:20px;overflow:hidden;font-size:13px;}
+.installApp .itemInstall {float:left;width:560px;}
+.installApp .itemInstall .icon-container {float: left;width: 134px;}
+.installApp .itemInstall .icon-container img {float: left;width: 124px;height: 124px;-webkit-border-radius: 22px;-moz-border-radius: 22px;border-radius: 22px;-webkit-border-radius: 22px; -moz-border-radius: 22px; border-radius: 22px;-webkit-box-shadow: 0px 0px 4px 0px #000;  -moz-box-shadow: 0px 0px 4px 0px #000;box-shadow: 0px 0px 4px 0px #000;background-color:#fff;}
+.installApp .itemInstall .title-container {position:relative;float:left;width:420px;height:124px;}
+.installApp .itemInstall .title-container .header-link {color:#999;text-shadow: 0 1px 0 #fff;}
+.installApp .itemInstall .title-container .app-version .titleVer {text-shadow: 0 1px 0 #fff;}
+.installApp .itemInstall .title-container .banner-title {font-size: 20px;font-weight: bold;line-height: 22px;overflow: hidden;width: 420px;margin:0 0 5px 0;padding:0;color:#333;text-shadow: 0 1px 0 #fff;max-height: 46px;white-space: nowrap;text-overflow: ellipsis;}
+
+#appbox2 .tymUser {padding:0;float:none!important;max-width:100%!important;}
+#appbox2 .tymUser-in {clear:both;-moz-border-radius: 7px;-webkit-border-radius: 7px;background-color: transparent;border-radius: 7px;background: rgba(0, 0, 0, 0);
+	    -moz-box-shadow: 0 0 0 rgba(255,255,255,0.8),0 0 0 rgba(0,0,0,0.75) inset;
+	    -webkit-box-shadow: 0 0 0 rgba(255,255,255,0.8),0 0 0 rgba(0,0,0,0.75) inset;
+	    box-shadow: 0 0 0 rgba(255,255,255,0.8),0 0 0 rgba(0,0,0,0.75) inset;padding:0;height:auto!important;}
+#appbox2 .tymUser ul {margin:0;padding:0;list-style:none;}
+#appbox2 .tymUser ul li {display:inline-block;padding:0 5px; font-size:14px;margin:0 10px 0 0;overflow:hidden;float: left;}
+#appbox2 .tymUser ul li:first-child {margin: 0;padding: 0}
+#appbox2 .tymUser ul li span {display:block;font-weight:bold;font-size:12px;}
+#appbox2 .tymUser ul .titleItem {list-style:30px;}
+#appbox2 .tymUser ul .iTYM {padding:0 0 0 5px;font-weight:normal;float:right;}
+#appbox2 .tymUser ul .tymRed,
+#appbox2 .tymUser ul .tymGreen,
+#appbox2 .tymUser ul .tymPurple,
+#appbox2 .tymUser ul .tymYellow {float:left;font-size:16px;}
+#appbox2 .tymUser ul .iRed {background:url(http://appstore.vn/android/images/icon/tymRed.png) no-repeat center left; }
+#appbox2 .tymUser ul .iGreen {background:url(http://appstore.vn/android/images/icon/tymGreen.png) no-repeat center left;}
+#appbox2 .tymUser ul .iPurple {background:url(http://appstore.vn/android/images/icon/tymPurple.png) no-repeat center left;}
+#appbox2 .tymUser ul .iYellow {background:url(http://appstore.vn/android/images/icon/tymYellow.png) no-repeat center left;}
+
+
+#container-header .noteInstall {top:160px;left:153px;}
+#content .noteInstall {top:40px;right:150px;}
+#appbox .noteInstall {top:220px;right:20px;}
+
+.banner-image-panel {background-color: transparent!important;}
+
+.app-price {clear: both!important;}
+
+.app-version {clear: both;margin-bottom: 10px;}
+.app-version select {height: auto!important;max-width: 120px!important;}
+
+.imgareaselect-outer, 
+.imgareaselect-selection, 
+.imgareaselect-border1, 
+.imgareaselect-border2 {margin-top: -44px;}
+
+.app_select_device {background-color:rgba(0,0,0,0.05);border-top:1px #fff solid;border-bottom:1px #bbb solid;margin:0!important;height:50px;}
+.app_select_device .txt_choose {height:40px;line-height:40px;width:135px;text-indent:10px;}
+.app_select_device #demoBasic,
+.app_select_device .dd-options,
+.app_select_device .dd-select {width:570px!important;}
+.app_select_device .dd-select {width:570px!important;}
+.app_select_device .dd-options {background-color:#fff;}
+.app_select_device .dd-selected {height:40px;line-height:40px;width:560px!important;padding: 5px!important;background-color:transparent!important;}
+.app_select_device .dd-selected-text {line-height:40px!important;font-size:12px!important;}
+.app_select_device .dd-selected img {float:left;}
+.app_select_device .dd-option-text {font-size:12px!important;}
+.app_select_device .dd-options li {font-size:12px!important;}
+
+.dat {margin:20px -20px -20px -20px!important;}
+.dat .noteapp {background-color:#ccc!important;}
+.dat .noteapp .note1 .enselect {color: #333!important;text-shadow:0 1px 0 #fff!important;}
+
+#image_device {width:120px!important;}
+#img_device {background-color:#fff;height:120px;text-align:center;}
+#img_device img {width:auto!important;margin:10px auto!important;height:100px!important;padding:0 0;}
+
+.ota_set {margin:0!important;}

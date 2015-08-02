@@ -1,0 +1,77 @@
+c:\users\hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\bin\Debug\ChildrenRandom.exe.config
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.csprojResolveAssemblyReference.cache
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Properties.Resources.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.csproj.GenerateResource.Cache
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.About.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.MenuOffical.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\bin\Debug\ChildrenRandom.exe
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\bin\Debug\ChildrenRandom.pdb
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.exe
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.pdb
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.BlockWebFromUser.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.BlockWebQickSt.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.BlockProgram.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.ChangePass.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.ForgetPass.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.FormLoad.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.History.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Idea.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Intro.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.LimitSoft.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Login.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.LoginFailed.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.MenuLogin.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Form1.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Register.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.RequestFailed.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.RequestSuccess.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Status.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Thanks.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Tienich.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.TienIchKhac.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.TimerSetting.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.UpdateSucess.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.WhenStartAg.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.WindowsSettingMain.resources
+C:\Users\Hung\Documents\Visual Studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.HistoryOfTime.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\bin\Debug\MySql.Data.dll
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Form2.resources
+C:\Users\Hung\documents\visual studio 2013\Projects\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.LockApp.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\bin\Debug\ChildrenRandom.exe.config
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\bin\Debug\ChildrenRandom.exe
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\bin\Debug\ChildrenRandom.pdb
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.csprojResolveAssemblyReference.cache
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.About.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.BlockWebFromUser.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.BlockWebQickSt.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.BlockProgram.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.ChangePass.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.ForgetPass.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Form2.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.FormLoad.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.History.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.HistoryOfTime.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Idea.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Intro.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.LimitSoft.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.LockApp.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Login.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.LoginFailed.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.MenuLogin.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.MenuOffical.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Properties.Resources.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Form1.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Register.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.RequestFailed.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.RequestSuccess.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Status.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Thanks.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.Tienich.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.TienIchKhac.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.TimerSetting.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.UpdateSucess.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.WhenStartAg.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.WindowsSettingMain.resources
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.csproj.GenerateResource.Cache
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.exe
+E:\Children Security 2014\Source\Visual 2013\ChildrenRandom\ChildrenRandom\obj\Debug\ChildrenRandom.pdb
