@@ -1,4 +1,4 @@
-<?
+<?php
 if(!defined('HoangXL')) exit('direct access is not allowed.');
 $sortname = date("Y.m.d_G.i.s");
 if(isset($_POST['Submit']))
@@ -56,13 +56,13 @@ if(isset($_POST['Submit']))
 			<form action="" method="post" enctype="multipart/form-data">
 			<table border="0" cellspacing="0" cellpadding="0" width="80%">
 				<tr>
-					<td align=center><hr><b>Thể loại hình (ảnh) : <?Gallery_Cat_F();?><hr><br></td>
+					<td align=center><hr><b>Thể loại hình (ảnh) : <?phpGallery_Cat_F();?><hr><br></td>
 				</tr>
 				<tr>
 					<td align=center>
-<? for($i=1; $i<=$NumUpload; $i++): ?>
-	Tập tin <?=$i;?>: <input type="file" name="file_<?=$i;?>" size="30" /><br /><br />
-<? endfor; ?>
+<?php for($i=1; $i<=$NumUpload; $i++): ?>
+	Tập tin <?php=$i;?>: <input type="file" name="file_<?php=$i;?>" size="30" /><br /><br />
+<?php endfor; ?>
 					</td>
 				</tr>
 				<tr>

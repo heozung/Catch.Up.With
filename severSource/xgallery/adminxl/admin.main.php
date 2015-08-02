@@ -1,7 +1,7 @@
 <table cellSpacing=0 cellPadding=0 width=100% border=0 valign=top background="../imagez/bg.jpg">
 	<tr>
 		<td>
-<?
+<?php
 if (!defined('HoangXL')) die("direct access is not allowed");
 $xl = $_REQUEST['xl'];
 switch ($xl ){

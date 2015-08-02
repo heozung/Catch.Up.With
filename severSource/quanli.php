@@ -30,7 +30,7 @@ else
 <!--<![endif]-->
 <head>
 <meta charset="utf-8" />
-<title>Children Security 2015 - LNH</title>
+<title>Children Security 2014 - LNH</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta content="" name="description" />
 <meta content="" name="author" />
@@ -248,7 +248,7 @@ while($row = mysql_fetch_array($result))
 <div class="widget">
 <div class="widget-title">
 <h4>
-<?
+<?php
  if ($_GET['act']!=null or $_GET['act']!="")
  {
 	setaction($_GET['act'],$_GET['hwid'],$_SESSION['usernamex']);
@@ -280,7 +280,7 @@ while($row = mysql_fetch_array($result))
 </tr>
 </thead>
 <tbody>
-<?
+<?php
 $result = mysql_query("SELECT content,thoigian FROM ChildrenCode where hwid='".$_GET['hwid']."'");
 while($row = mysql_fetch_array($result))
   {
@@ -305,7 +305,7 @@ while($row = mysql_fetch_array($result))
 </div>
 </div>
 </div>
-<div id="footer"> 2015 &copy; Children Security Software. 
+<div id="footer"> 2014 &copy; Children Security Software. 
   <div class="span pull-right">
 <span class="go-top">
 <i class="icon-arrow-up">

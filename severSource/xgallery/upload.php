@@ -1,4 +1,4 @@
- <?
+ <?php
 $domain='kid-dev.info';
  echo '<form method="POST" enctype="multipart/form-data" action="?id=up">
 <center></center><center><center><form  method="POST" enctype="multipart/form-data" action="index.php?id=up">

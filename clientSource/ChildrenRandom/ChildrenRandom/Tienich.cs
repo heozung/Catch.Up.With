@@ -103,7 +103,7 @@ namespace ChildrenRandom
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://childrensecurity.tk");
+            System.Diagnostics.Process.Start("localhost");
         }
 
         

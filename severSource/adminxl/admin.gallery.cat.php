@@ -1,4 +1,4 @@
-<?
+<?php
 if(!defined('HoangXL')) exit('direct access is not allowed.');
 
 if (isset($_POST['Gallery_Cat'])) {
@@ -26,7 +26,7 @@ fclose($fp) or die ("Error closing file!");
 			<hr><input type="submit" class=butt value="[ Cập nhật ]"><hr>
 			<input TYPE="HIDDEN" name="Gallery_Cat" value="1">
 <textarea rows="15" cols="50" name="content">
-<?
+<?php
 echo implode("",file($Gallery_Cats));
 ?>
 </textarea> 

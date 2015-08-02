@@ -50,6 +50,6 @@ session_destroy();
 <p class="center">Điền Email để lấy lại mật khẩu.</p><div class="control-group"><div class="controls"><div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span><input id="input-email" type="text" placeholder="Email" />
 </div></div><div class="space20"></div></div><input type="button" id="forget-btn" class="btn btn-block login-btn" value="Yêu cầu" />
 </form></div><div id="login-copyright"> 2014 &copy;    Children Security Software. </div><script src="./js/jquery-1.8.3.min.js"></script><script src="./assets/bootstrap/js/bootstrap.min.js"></script><script src="./js/jquery.blockui.js"></script><script src="./js/scripts.js"></script><script>jQuery(document).ready(function(){App.initLogin()});</script></body></html>
-<?
+<?php
 }
 ?>

@@ -1,4 +1,4 @@
-<?
+<?php
 if(!defined('HoangXL')) exit('direct access is not allowed.');
 ?>
 <table cellSpacing=0 cellPadding=0 width=100% align=center border=0>

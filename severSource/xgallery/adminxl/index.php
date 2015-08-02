@@ -37,7 +37,7 @@ include ('admin.config.php');
 			<table cellpadding=0 cellspacing=0 width=100% align=center valign=top class=tborder>	
 				<tr>
 					<td align=center>
-<? include('admin.main.php'); ?>					
+<?php include('admin.main.php'); ?>					
 					</td>
 				</tr>
 			</table>								

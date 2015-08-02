@@ -1,4 +1,4 @@
-<?
+<?php
 if(!defined('HoangXL')) exit('direct access is not allowed.');
 
 if (file_exists($UserData))

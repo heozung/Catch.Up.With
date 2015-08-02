@@ -75,7 +75,7 @@ else
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 <img src="./img/avatar-mini.png" alt="" />
-<span class="username"><? echo $_SESSION['usernamex']; ?></span>
+<span class="username"><?php echo $_SESSION['usernamex']; ?></span>
 <b class="caret">
 </b>
 </a>
@@ -187,7 +187,7 @@ while($row = mysql_fetch_array($result))
 </div>
 </div>
 </div>
-<div id="footer"> 2015 &copy; Children Security Software. 
+<div id="footer"> 2014 &copy; Children Security Software. 
   <div class="span pull-right">
 <span class="go-top">
 <i class="icon-arrow-up">
